@@ -61,7 +61,7 @@ public class H2AggregationQueryDAO implements IAggregationQueryDAO {
             });
         }
         sql.append(" group by ").append(Metrics.ENTITY_ID);
-        sql.append(")  as T order by value ")
+        sql.append(")  as T order by \"value\" ")
            .append(metrics.getOrder().equals(Order.ASC) ? "asc" : "desc")
            .append(" limit ")
            .append(metrics.getTopN());
@@ -72,7 +72,7 @@ public class H2AggregationQueryDAO implements IAggregationQueryDAO {
             while (resultSet.next()) {
                 SelectedRecord topNEntity = new SelectedRecord();
                 topNEntity.setId(resultSet.getString(Metrics.ENTITY_ID));
-                topNEntity.setValue(resultSet.getString("value"));
+                topNEntity.setValue(String.valueOf(resultSet.getLong("value")));
                 topNEntities.add(topNEntity);
             }
         } catch (SQLException e) {
@@ -83,9 +83,9 @@ public class H2AggregationQueryDAO implements IAggregationQueryDAO {
 
     protected StringBuilder buildMetricsValueSql(String valueColumnName, String metricsName) {
         StringBuilder sql = new StringBuilder();
-        sql.append("select * from (select avg(")
+        sql.append("select * from (select avg(\"")
                 .append(valueColumnName)
-                .append(") value,")
+                .append("\") \"value\",")
                 .append(Metrics.ENTITY_ID)
                 .append(" from ")
                 .append(metricsName)

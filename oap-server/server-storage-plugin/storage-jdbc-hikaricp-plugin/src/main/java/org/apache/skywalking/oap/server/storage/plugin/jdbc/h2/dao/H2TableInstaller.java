@@ -100,30 +100,30 @@ public class H2TableInstaller extends ModelInstaller {
     }
 
     protected String transform(ModelColumn column, Class<?> type, Type genericType) {
-        final String storageName = column.getColumnName().getStorageName();
+        String storageName = column.getColumnName().getStorageName();
         if (Integer.class.equals(type) || int.class.equals(type) || NodeType.class.equals(type)) {
-            return storageName + " INT";
+            return String.format("\"%s\" INT", storageName);
         } else if (Long.class.equals(type) || long.class.equals(type)) {
-            return storageName + " BIGINT";
+            return String.format("\"%s\" BIGINT", storageName);
         } else if (Double.class.equals(type) || double.class.equals(type)) {
-            return storageName + " DOUBLE";
+            return String.format("\"%s\" DOUBLE", storageName);
         } else if (String.class.equals(type)) {
-            return storageName + " VARCHAR(" + column.getLength() + ")";
+            return String.format("\"%s\" VARCHAR(%d)", storageName, column.getLength());
         } else if (StorageDataComplexObject.class.isAssignableFrom(type)) {
-            return storageName + " VARCHAR(20000)";
+            return String.format("\"%s\" VARCHAR(20000)", storageName);
         } else if (byte[].class.equals(type)) {
-            return storageName + " MEDIUMTEXT";
+            return String.format("\"%s\" MEDIUMTEXT", storageName);
         } else if (JsonObject.class.equals(type)) {
-            return storageName + " VARCHAR(" + column.getLength() + ")";
+            return String.format("\"%s\" VARCHAR(%d)", storageName, column.getLength());
         } else if (List.class.isAssignableFrom(type)) {
             final Type elementType = ((ParameterizedType) genericType).getActualTypeArguments()[0];
             String oneColumnType = transform(column, (Class<?>) elementType, elementType);
             // Remove the storageName as prefix
-            oneColumnType = oneColumnType.substring(storageName.length());
+            oneColumnType = oneColumnType.split("\\s+")[1];
             StringBuilder columns = new StringBuilder();
             for (int i = 0; i < maxSizeOfArrayColumn; i++) {
-                columns.append(storageName).append("_").append(i).append(oneColumnType)
-                       .append(i == maxSizeOfArrayColumn - 1 ? "" : ",");
+                columns.append(storageName).append("_").append(i).append(" ").append(oneColumnType)
+                       .append(i == maxSizeOfArrayColumn - 1 ? "" : ", ");
             }
             return columns.toString();
         } else {

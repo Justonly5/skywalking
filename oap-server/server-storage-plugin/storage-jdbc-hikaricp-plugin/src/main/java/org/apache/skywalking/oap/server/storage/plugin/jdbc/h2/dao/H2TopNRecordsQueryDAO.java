@@ -59,7 +59,7 @@ public class H2TopNRecordsQueryDAO implements ITopNRecordsQueryDAO {
         sql.append(" and ").append(TopN.TIME_BUCKET).append(" <= ?");
         parameters.add(duration.getEndTimeBucketInSec());
 
-        sql.append(" order by ").append(valueColumnName);
+        sql.append(" order by \"").append(valueColumnName).append("\"");
         if (condition.getOrder().equals(Order.DES)) {
             sql.append(" desc ");
         } else {

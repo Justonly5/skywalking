@@ -79,17 +79,6 @@ public class H2SQLExecutor {
         }
     }
 
-    protected StorageData getByColumn(JDBCHikariCPClient h2Client, String modelName, String columnName, Object value,
-                                      StorageHashMapBuilder<? extends StorageData> storageBuilder) throws IOException {
-        try (Connection connection = h2Client.getConnection();
-             ResultSet rs = h2Client.executeQuery(
-                 connection, "SELECT * FROM " + modelName + " WHERE " + columnName + " = ?", value)) {
-            return toStorageData(rs, modelName, storageBuilder);
-        } catch (SQLException | JDBCClientException e) {
-            throw new IOException(e.getMessage(), e);
-        }
-    }
-
     protected StorageData toStorageData(ResultSet rs, String modelName,
                                         StorageHashMapBuilder<? extends StorageData> storageBuilder) throws SQLException {
         if (rs.next()) {
@@ -157,7 +146,7 @@ public class H2SQLExecutor {
         List<Object> param = new ArrayList<>();
         for (int i = 0; i < columns.size(); i++) {
             ModelColumn column = columns.get(i);
-            sqlBuilder.append(column.getColumnName().getStorageName() + "= ?");
+            sqlBuilder.append("\"").append(column.getColumnName().getStorageName()).append("\" = ?");
             if (i != columns.size() - 1) {
                 sqlBuilder.append(",");
             }

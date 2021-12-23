@@ -50,7 +50,7 @@ public class H2MetricsQueryDAO extends H2SQLExecutor implements IMetricsQueryDAO
 
     @Override
     public long readMetricsValue(final MetricsCondition condition,
-                                String valueColumnName,
+                                final String valueColumnName,
                                 final Duration duration) throws IOException {
         int defaultValue = ValueColumnMetadata.INSTANCE.getDefaultValue(condition.getName());
         final Function function = ValueColumnMetadata.INSTANCE.getValueFunction(condition.getName());
@@ -82,7 +82,7 @@ public class H2MetricsQueryDAO extends H2SQLExecutor implements IMetricsQueryDAO
                 sql.toString(),
                 parameters.toArray(new Object[0])
             )) {
-                while (resultSet.next()) {
+                if (resultSet.next()) {
                     return resultSet.getLong("value");
                 }
             }
@@ -94,7 +94,7 @@ public class H2MetricsQueryDAO extends H2SQLExecutor implements IMetricsQueryDAO
 
     protected StringBuilder buildMetricsValueSql(String op, String valueColumnName, String conditionName) {
         return new StringBuilder(
-                "select " + Metrics.ENTITY_ID + " id, " + op + "(" + valueColumnName + ") value from " + conditionName + " where ");
+                "select " + Metrics.ENTITY_ID + " id, " + op + "(\"" + valueColumnName + "\") \"value\" from " + conditionName + " where ");
     }
 
     @Override
@@ -108,7 +108,7 @@ public class H2MetricsQueryDAO extends H2SQLExecutor implements IMetricsQueryDAO
         });
 
         StringBuilder sql = new StringBuilder(
-            "select id, " + valueColumnName + " from " + condition.getName() + " where id in (");
+            "select id, \"" + valueColumnName + "\" from " + condition.getName() + " where id in (");
         List<Object> parameters = new ArrayList();
         for (int i = 0; i < ids.size(); i++) {
             if (i == 0) {
@@ -157,7 +157,7 @@ public class H2MetricsQueryDAO extends H2SQLExecutor implements IMetricsQueryDAO
         });
 
         StringBuilder sql = new StringBuilder(
-            "select id, " + valueColumnName + " from " + condition.getName() + " where id in (");
+            "select id, \"" + valueColumnName + "\" from " + condition.getName() + " where id in (");
 
         List<Object> parameters = new ArrayList();
         for (int i = 0; i < ids.size(); i++) {
@@ -200,7 +200,7 @@ public class H2MetricsQueryDAO extends H2SQLExecutor implements IMetricsQueryDAO
         });
 
         StringBuilder sql = new StringBuilder(
-            "select id, " + valueColumnName + " dataset, id from " + condition.getName() + " where id in (");
+            "select id, \"" + valueColumnName + "\" dataset, id from " + condition.getName() + " where id in (");
         List<Object> parameters = new ArrayList();
         for (int i = 0; i < ids.size(); i++) {
             if (i == 0) {
