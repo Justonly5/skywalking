@@ -154,7 +154,8 @@
                             <goal>npm</goal>
                         </goals>
                         <configuration>
-                            <arguments>install --registry=https://registry.npmjs.org/</arguments>
+<!--                            <arguments>install &#45;&#45;registry=https://registry.npmjs.org/</arguments>-->
+                            <arguments>install --registry=http://registry.npm.taobao.org/ </arguments>
                         </configuration>
                     </execution>
                     <execution>
