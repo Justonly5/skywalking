@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.apm.agent.core.test.tools;
 
-import java.util.LinkedList;
-import java.util.List;
 import org.apache.skywalking.apm.agent.core.context.IgnoredTracerContext;
 import org.apache.skywalking.apm.agent.core.context.trace.TraceSegment;
+
+import java.util.LinkedList;
+import java.util.List;
 
 public class SegmentStorage {
     private LinkedList<TraceSegment> traceSegments;

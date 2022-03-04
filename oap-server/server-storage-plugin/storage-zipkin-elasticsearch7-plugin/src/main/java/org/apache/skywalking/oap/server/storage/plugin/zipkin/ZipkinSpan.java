@@ -18,13 +18,14 @@
 
 package org.apache.skywalking.oap.server.storage.plugin.zipkin;
 
-import java.util.ArrayList;
-import java.util.List;
 import lombok.Getter;
 import lombok.Setter;
 import org.apache.skywalking.oap.server.core.source.DefaultScopeDefine;
 import org.apache.skywalking.oap.server.core.source.ScopeDeclaration;
 import org.apache.skywalking.oap.server.core.source.Source;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.apache.skywalking.oap.server.core.source.DefaultScopeDefine.ZIPKIN_SPAN;
 

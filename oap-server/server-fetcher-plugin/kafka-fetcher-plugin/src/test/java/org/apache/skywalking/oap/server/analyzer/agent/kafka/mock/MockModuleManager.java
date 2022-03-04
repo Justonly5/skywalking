@@ -19,10 +19,11 @@
 package org.apache.skywalking.oap.server.analyzer.agent.kafka.mock;
 
 import com.google.common.collect.Maps;
-import java.util.Map;
 import org.apache.skywalking.oap.server.library.module.ModuleManager;
 import org.apache.skywalking.oap.server.library.module.ModuleNotFoundRuntimeException;
 import org.apache.skywalking.oap.server.library.module.ModuleProviderHolder;
+
+import java.util.Map;
 
 public abstract class MockModuleManager extends ModuleManager {
     private final Map<String, ModuleProviderHolder> moduleProviderHolderMap = Maps.newHashMap();

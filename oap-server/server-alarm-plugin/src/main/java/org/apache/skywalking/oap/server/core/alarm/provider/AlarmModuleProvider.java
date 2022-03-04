@@ -18,20 +18,17 @@
 
 package org.apache.skywalking.oap.server.core.alarm.provider;
 
-import java.io.FileNotFoundException;
-import java.io.Reader;
 import org.apache.skywalking.oap.server.configuration.api.ConfigurationModule;
 import org.apache.skywalking.oap.server.configuration.api.DynamicConfigurationService;
 import org.apache.skywalking.oap.server.core.CoreModule;
 import org.apache.skywalking.oap.server.core.alarm.AlarmModule;
 import org.apache.skywalking.oap.server.core.alarm.AlarmStandardPersistence;
 import org.apache.skywalking.oap.server.core.alarm.MetricsNotify;
-import org.apache.skywalking.oap.server.library.module.ModuleConfig;
-import org.apache.skywalking.oap.server.library.module.ModuleDefine;
-import org.apache.skywalking.oap.server.library.module.ModuleProvider;
-import org.apache.skywalking.oap.server.library.module.ModuleStartException;
-import org.apache.skywalking.oap.server.library.module.ServiceNotProvidedException;
+import org.apache.skywalking.oap.server.library.module.*;
 import org.apache.skywalking.oap.server.library.util.ResourceUtils;
+
+import java.io.FileNotFoundException;
+import java.io.Reader;
 
 public class AlarmModuleProvider extends ModuleProvider {
 

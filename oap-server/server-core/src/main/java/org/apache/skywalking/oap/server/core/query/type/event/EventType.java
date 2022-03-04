@@ -19,6 +19,7 @@
 package org.apache.skywalking.oap.server.core.query.type.event;
 
 import com.google.common.base.Strings;
+
 import java.util.Objects;
 
 public enum EventType {

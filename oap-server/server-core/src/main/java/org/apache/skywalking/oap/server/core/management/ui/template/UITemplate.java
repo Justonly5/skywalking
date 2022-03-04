@@ -18,8 +18,6 @@
 
 package org.apache.skywalking.oap.server.core.management.ui.template;
 
-import java.util.HashMap;
-import java.util.Map;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -29,6 +27,9 @@ import org.apache.skywalking.oap.server.core.analysis.worker.ManagementStreamPro
 import org.apache.skywalking.oap.server.core.source.ScopeDeclaration;
 import org.apache.skywalking.oap.server.core.storage.StorageHashMapBuilder;
 import org.apache.skywalking.oap.server.core.storage.annotation.Column;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import static org.apache.skywalking.oap.server.core.source.DefaultScopeDefine.UI_TEMPLATE;
 

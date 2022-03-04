@@ -18,10 +18,6 @@
 
 package org.apache.skywalking.apm.agent.core.context;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
-import java.util.concurrent.locks.ReentrantLock;
 import lombok.AccessLevel;
 import lombok.Getter;
 import org.apache.skywalking.apm.agent.core.boot.ServiceManager;
@@ -29,21 +25,17 @@ import org.apache.skywalking.apm.agent.core.conf.Config;
 import org.apache.skywalking.apm.agent.core.conf.dynamic.watcher.SpanLimitWatcher;
 import org.apache.skywalking.apm.agent.core.context.ids.DistributedTraceId;
 import org.apache.skywalking.apm.agent.core.context.ids.PropagatedTraceId;
-import org.apache.skywalking.apm.agent.core.context.trace.AbstractSpan;
-import org.apache.skywalking.apm.agent.core.context.trace.AbstractTracingSpan;
-import org.apache.skywalking.apm.agent.core.context.trace.EntrySpan;
-import org.apache.skywalking.apm.agent.core.context.trace.ExitSpan;
-import org.apache.skywalking.apm.agent.core.context.trace.ExitTypeSpan;
-import org.apache.skywalking.apm.agent.core.context.trace.LocalSpan;
-import org.apache.skywalking.apm.agent.core.context.trace.NoopExitSpan;
-import org.apache.skywalking.apm.agent.core.context.trace.NoopSpan;
-import org.apache.skywalking.apm.agent.core.context.trace.TraceSegment;
-import org.apache.skywalking.apm.agent.core.context.trace.TraceSegmentRef;
+import org.apache.skywalking.apm.agent.core.context.trace.*;
 import org.apache.skywalking.apm.agent.core.logging.api.ILog;
 import org.apache.skywalking.apm.agent.core.logging.api.LogManager;
 import org.apache.skywalking.apm.agent.core.profile.ProfileStatusReference;
 import org.apache.skywalking.apm.agent.core.profile.ProfileTaskExecutionService;
 import org.apache.skywalking.apm.util.StringUtil;
+
+import java.util.LinkedList;
+import java.util.List;
+import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * The <code>TracingContext</code> represents a core tracing logic controller. It build the final {@link

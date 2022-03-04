@@ -18,8 +18,6 @@
 
 package org.apache.skywalking.oal.rt.parser;
 
-import java.io.IOException;
-import java.util.List;
 import org.apache.skywalking.oap.server.core.analysis.metrics.expression.BooleanMatch;
 import org.apache.skywalking.oap.server.core.analysis.metrics.expression.BooleanNotEqualMatch;
 import org.apache.skywalking.oap.server.core.analysis.metrics.expression.EqualMatch;
@@ -31,6 +29,9 @@ import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import java.io.IOException;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;

@@ -17,8 +17,6 @@
 
 package org.apache.skywalking.oap.server.storage.plugin.influxdb.query;
 
-import java.io.IOException;
-import java.util.List;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.skywalking.apm.util.StringUtil;
@@ -34,12 +32,11 @@ import org.influxdb.dto.QueryResult;
 import org.influxdb.querybuilder.SelectQueryImpl;
 import org.influxdb.querybuilder.WhereQueryImpl;
 
+import java.io.IOException;
+import java.util.List;
+
 import static java.util.Objects.nonNull;
-import static org.influxdb.querybuilder.BuiltQuery.QueryBuilder.contains;
-import static org.influxdb.querybuilder.BuiltQuery.QueryBuilder.eq;
-import static org.influxdb.querybuilder.BuiltQuery.QueryBuilder.gte;
-import static org.influxdb.querybuilder.BuiltQuery.QueryBuilder.lte;
-import static org.influxdb.querybuilder.BuiltQuery.QueryBuilder.select;
+import static org.influxdb.querybuilder.BuiltQuery.QueryBuilder.*;
 
 @Slf4j
 @RequiredArgsConstructor

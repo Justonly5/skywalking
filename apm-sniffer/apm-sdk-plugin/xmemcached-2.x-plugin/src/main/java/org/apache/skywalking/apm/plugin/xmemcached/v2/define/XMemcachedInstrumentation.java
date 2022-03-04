@@ -18,21 +18,19 @@
 
 package org.apache.skywalking.apm.plugin.xmemcached.v2.define;
 
-import java.net.InetSocketAddress;
-import java.util.List;
-import java.util.Map;
-
 import net.bytebuddy.description.method.MethodDescription;
 import net.bytebuddy.matcher.ElementMatcher;
+import org.apache.skywalking.apm.agent.core.plugin.interceptor.ConstructorInterceptPoint;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.InstanceMethodsInterceptPoint;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.ClassInstanceMethodsEnhancePluginDefine;
 import org.apache.skywalking.apm.agent.core.plugin.match.ClassMatch;
 import org.apache.skywalking.apm.agent.core.plugin.match.NameMatch;
-import org.apache.skywalking.apm.agent.core.plugin.interceptor.ConstructorInterceptPoint;
 
-import static net.bytebuddy.matcher.ElementMatchers.named;
-import static net.bytebuddy.matcher.ElementMatchers.takesArgument;
-import static net.bytebuddy.matcher.ElementMatchers.takesArguments;
+import java.net.InetSocketAddress;
+import java.util.List;
+import java.util.Map;
+
+import static net.bytebuddy.matcher.ElementMatchers.*;
 
 /**
  * {@link XMemcachedInstrumentation} presents that skywalking intercept all constructors and methods of {@link

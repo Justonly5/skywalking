@@ -18,13 +18,14 @@
 
 package org.apache.skywalking.apm.agent.core.plugin.jdk9module;
 
-import java.lang.instrument.Instrumentation;
-import java.util.ArrayList;
-import java.util.List;
 import net.bytebuddy.agent.builder.AgentBuilder;
 import org.apache.skywalking.apm.agent.core.logging.api.ILog;
 import org.apache.skywalking.apm.agent.core.logging.api.LogManager;
 import org.apache.skywalking.apm.agent.core.plugin.ByteBuddyCoreClasses;
+
+import java.lang.instrument.Instrumentation;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Since JDK 9, module concept has been introduced. By supporting that, agent core needs to open the read edge

@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.oap.server.storage.plugin.jdbc.mysql;
 
-import java.util.Properties;
 import lombok.Getter;
 import lombok.Setter;
 import org.apache.skywalking.oap.server.library.module.ModuleConfig;
+
+import java.util.Properties;
 
 @Setter
 @Getter

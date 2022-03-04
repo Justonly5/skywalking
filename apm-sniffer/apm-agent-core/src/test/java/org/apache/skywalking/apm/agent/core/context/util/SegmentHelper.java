@@ -18,9 +18,10 @@
 
 package org.apache.skywalking.apm.agent.core.context.util;
 
-import java.util.List;
 import org.apache.skywalking.apm.agent.core.context.trace.AbstractTracingSpan;
 import org.apache.skywalking.apm.agent.core.context.trace.TraceSegment;
+
+import java.util.List;
 
 public class SegmentHelper {
 

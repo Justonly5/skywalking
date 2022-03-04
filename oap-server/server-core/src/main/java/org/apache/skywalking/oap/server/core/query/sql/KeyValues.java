@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.oap.server.core.query.sql;
 
-import java.util.LinkedList;
-import java.util.List;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.util.LinkedList;
+import java.util.List;
 
 public class KeyValues {
     @Getter

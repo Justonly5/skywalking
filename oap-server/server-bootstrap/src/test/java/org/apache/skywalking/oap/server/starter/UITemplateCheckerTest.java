@@ -18,17 +18,18 @@
 
 package org.apache.skywalking.oap.server.starter;
 
+import org.apache.skywalking.oap.server.core.management.ui.template.UITemplate;
+import org.apache.skywalking.oap.server.core.management.ui.template.UITemplateInitializer;
+import org.apache.skywalking.oap.server.library.util.ResourceUtils;
+import org.junit.Assert;
+import org.junit.Test;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-import org.apache.skywalking.oap.server.core.management.ui.template.UITemplate;
-import org.apache.skywalking.oap.server.core.management.ui.template.UITemplateInitializer;
-import org.apache.skywalking.oap.server.library.util.ResourceUtils;
-import org.junit.Assert;
-import org.junit.Test;
 
 /**
  * @since 8.2.0 SkyWalking supports multiple UI initialized templates, this check is avoiding the duplicated definitions

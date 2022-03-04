@@ -18,18 +18,15 @@
 
 package org.apache.skywalking.oap.server.library.util.prometheus.parser;
 
+import org.apache.skywalking.oap.server.library.util.ResourceUtils;
+import org.apache.skywalking.oap.server.library.util.prometheus.metrics.*;
+import org.junit.Before;
+import org.junit.Test;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.LinkedList;
 import java.util.Queue;
-import org.apache.skywalking.oap.server.library.util.prometheus.metrics.Counter;
-import org.apache.skywalking.oap.server.library.util.prometheus.metrics.Histogram;
-import org.apache.skywalking.oap.server.library.util.prometheus.metrics.MetricFamily;
-import org.apache.skywalking.oap.server.library.util.prometheus.metrics.MetricType;
-import org.apache.skywalking.oap.server.library.util.prometheus.metrics.Summary;
-import org.apache.skywalking.oap.server.library.util.ResourceUtils;
-import org.junit.Before;
-import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertNotNull;

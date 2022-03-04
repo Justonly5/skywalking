@@ -18,12 +18,13 @@
 
 package org.apache.skywalking.oap.server.core.storage;
 
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 public class BlockingBatchQueueWithLinkedBlockingQueue<E> implements BlockingBatchQueue<E> {

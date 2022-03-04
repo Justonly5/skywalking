@@ -18,9 +18,10 @@
 
 package org.apache.skywalking.oap.server.core.analysis.metrics.expression;
 
-import java.util.Arrays;
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.util.Arrays;
 
 public class ContainMatchTest {
     @Test

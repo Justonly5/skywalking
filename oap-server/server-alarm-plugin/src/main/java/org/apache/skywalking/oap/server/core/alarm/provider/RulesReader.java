@@ -18,15 +18,6 @@
 
 package org.apache.skywalking.oap.server.core.alarm.provider;
 
-import java.io.InputStream;
-import java.io.Reader;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
-import java.util.stream.Collectors;
 import org.apache.skywalking.apm.util.StringUtil;
 import org.apache.skywalking.oap.server.core.alarm.provider.dingtalk.DingtalkSettings;
 import org.apache.skywalking.oap.server.core.alarm.provider.feishu.FeishuSettings;
@@ -37,6 +28,11 @@ import org.apache.skywalking.oap.server.core.alarm.provider.welink.WeLinkSetting
 import org.apache.skywalking.oap.server.library.util.CollectionUtils;
 import org.yaml.snakeyaml.Yaml;
 import org.yaml.snakeyaml.constructor.SafeConstructor;
+
+import java.io.InputStream;
+import java.io.Reader;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * Rule Reader parses the given `alarm-settings.yml` config file, to the target {@link Rules}.

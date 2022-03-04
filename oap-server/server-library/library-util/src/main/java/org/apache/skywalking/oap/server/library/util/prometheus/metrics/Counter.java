@@ -18,11 +18,12 @@
 
 package org.apache.skywalking.oap.server.library.util.prometheus.metrics;
 
-import java.util.Map;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Singular;
 import lombok.ToString;
+
+import java.util.Map;
 
 @EqualsAndHashCode(callSuper = true)
 @ToString(callSuper = true)

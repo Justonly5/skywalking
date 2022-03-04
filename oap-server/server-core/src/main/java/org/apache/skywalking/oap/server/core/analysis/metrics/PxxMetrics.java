@@ -18,8 +18,6 @@
 
 package org.apache.skywalking.oap.server.core.analysis.metrics;
 
-import java.util.Comparator;
-import java.util.List;
 import lombok.Getter;
 import lombok.Setter;
 import org.apache.skywalking.oap.server.core.analysis.metrics.annotation.Arg;
@@ -27,6 +25,9 @@ import org.apache.skywalking.oap.server.core.analysis.metrics.annotation.Entranc
 import org.apache.skywalking.oap.server.core.analysis.metrics.annotation.SourceFrom;
 import org.apache.skywalking.oap.server.core.query.sql.Function;
 import org.apache.skywalking.oap.server.core.storage.annotation.Column;
+
+import java.util.Comparator;
+import java.util.List;
 
 /**
  * PxxMetrics is a parent metrics for p99/p95/p90/p75/p50 metrics. P(xx) metrics is also for P(xx) percentile.

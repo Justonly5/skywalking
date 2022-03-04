@@ -19,9 +19,6 @@
 package org.apache.skywalking.oap.server.core.analysis.meter.function.avg;
 
 import io.vavr.collection.Stream;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
 import org.apache.skywalking.oap.server.core.analysis.meter.MeterEntity;
 import org.apache.skywalking.oap.server.core.analysis.metrics.DataTable;
 import org.apache.skywalking.oap.server.core.storage.StorageHashMapBuilder;
@@ -31,11 +28,13 @@ import org.mockito.Mockito;
 import org.mockito.Spy;
 import org.mockito.junit.MockitoJUnitRunner;
 
-import static org.apache.skywalking.oap.server.core.analysis.meter.function.avg.AvgLabeledFunction.COUNT;
-import static org.apache.skywalking.oap.server.core.analysis.meter.function.avg.AvgLabeledFunction.SUMMATION;
-import static org.apache.skywalking.oap.server.core.analysis.meter.function.avg.AvgLabeledFunction.VALUE;
-import static org.hamcrest.core.Is.is;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Map;
+
 import static java.util.Arrays.asList;
+import static org.apache.skywalking.oap.server.core.analysis.meter.function.avg.AvgLabeledFunction.*;
+import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
 @RunWith(MockitoJUnitRunner.class)

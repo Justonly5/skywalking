@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.apm.agent.core.jvm.gc;
 
+import org.apache.skywalking.apm.network.language.agent.v3.GC;
+
 import java.lang.management.GarbageCollectorMXBean;
 import java.lang.management.ManagementFactory;
 import java.util.List;
-import org.apache.skywalking.apm.network.language.agent.v3.GC;
 
 public enum GCProvider {
     INSTANCE;

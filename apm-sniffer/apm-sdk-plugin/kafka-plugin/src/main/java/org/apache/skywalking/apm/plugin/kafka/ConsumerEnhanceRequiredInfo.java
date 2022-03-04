@@ -18,9 +18,10 @@
 
 package org.apache.skywalking.apm.plugin.kafka;
 
+import org.apache.skywalking.apm.util.StringUtil;
+
 import java.util.Collection;
 import java.util.List;
-import org.apache.skywalking.apm.util.StringUtil;
 
 public class ConsumerEnhanceRequiredInfo {
     private String brokerServers;

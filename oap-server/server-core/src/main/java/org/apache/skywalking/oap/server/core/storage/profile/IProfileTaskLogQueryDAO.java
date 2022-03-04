@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.oap.server.core.storage.profile;
 
-import java.io.IOException;
-import java.util.List;
 import org.apache.skywalking.oap.server.core.query.type.ProfileTaskLog;
 import org.apache.skywalking.oap.server.core.storage.DAO;
+
+import java.io.IOException;
+import java.util.List;
 
 /**
  * process all profile task log query

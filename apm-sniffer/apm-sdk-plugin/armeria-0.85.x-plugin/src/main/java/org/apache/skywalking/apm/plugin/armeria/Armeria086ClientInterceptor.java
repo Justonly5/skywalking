@@ -20,10 +20,11 @@ package org.apache.skywalking.apm.plugin.armeria;
 import com.linecorp.armeria.client.UserClient;
 import com.linecorp.armeria.common.HttpMethod;
 import com.linecorp.armeria.common.HttpRequest;
-import java.lang.reflect.Method;
-import java.net.URI;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
+
+import java.lang.reflect.Method;
+import java.net.URI;
 
 @SuppressWarnings({
     "rawtypes",

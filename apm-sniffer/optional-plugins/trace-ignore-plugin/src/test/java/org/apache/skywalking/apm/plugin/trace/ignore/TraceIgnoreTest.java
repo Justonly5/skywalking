@@ -18,7 +18,6 @@
 
 package org.apache.skywalking.apm.plugin.trace.ignore;
 
-import java.util.Properties;
 import org.apache.skywalking.apm.agent.core.boot.ServiceManager;
 import org.apache.skywalking.apm.agent.core.sampling.SamplingService;
 import org.apache.skywalking.apm.agent.test.tools.AgentServiceRule;
@@ -30,6 +29,8 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.contrib.java.lang.system.EnvironmentVariables;
 import org.powermock.reflect.Whitebox;
+
+import java.util.Properties;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;

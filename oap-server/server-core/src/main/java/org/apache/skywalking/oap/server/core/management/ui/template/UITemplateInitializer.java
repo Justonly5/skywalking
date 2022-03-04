@@ -18,17 +18,18 @@
 
 package org.apache.skywalking.oap.server.core.management.ui.template;
 
+import lombok.extern.slf4j.Slf4j;
+import org.apache.skywalking.apm.util.StringUtil;
+import org.apache.skywalking.oap.server.core.query.enumeration.TemplateType;
+import org.apache.skywalking.oap.server.library.util.BooleanUtils;
+import org.yaml.snakeyaml.Yaml;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
-import lombok.extern.slf4j.Slf4j;
-import org.apache.skywalking.apm.util.StringUtil;
-import org.apache.skywalking.oap.server.core.query.enumeration.TemplateType;
-import org.apache.skywalking.oap.server.library.util.BooleanUtils;
-import org.yaml.snakeyaml.Yaml;
 
 /**
  * UITemplateInitializer load the template from the config file in YAML format. The template definition is by JSON

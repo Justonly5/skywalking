@@ -18,9 +18,10 @@
 
 package org.apache.skywalking.oal.rt.parser;
 
+import lombok.Getter;
+
 import java.util.LinkedList;
 import java.util.List;
-import lombok.Getter;
 
 @Getter
 public class OALScripts {

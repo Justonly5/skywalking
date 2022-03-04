@@ -18,11 +18,7 @@
 
 package org.apache.skywalking.apm.toolkit.trace;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Repeatable;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
 /**
  * Tag the current active span with key {@link #key()} and value {@link #value()}, if there is no active span, this

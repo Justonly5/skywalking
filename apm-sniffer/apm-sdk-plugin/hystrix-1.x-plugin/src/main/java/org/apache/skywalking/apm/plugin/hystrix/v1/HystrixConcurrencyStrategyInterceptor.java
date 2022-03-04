@@ -21,8 +21,6 @@ package org.apache.skywalking.apm.plugin.hystrix.v1;
 
 import com.netflix.hystrix.strategy.HystrixPlugins;
 import com.netflix.hystrix.strategy.concurrency.HystrixConcurrencyStrategy;
-import java.lang.reflect.Method;
-
 import com.netflix.hystrix.strategy.eventnotifier.HystrixEventNotifier;
 import com.netflix.hystrix.strategy.executionhook.HystrixCommandExecutionHook;
 import com.netflix.hystrix.strategy.metrics.HystrixMetricsPublisher;
@@ -30,6 +28,8 @@ import com.netflix.hystrix.strategy.properties.HystrixPropertiesStrategy;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceMethodsAroundInterceptor;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
+
+import java.lang.reflect.Method;
 
 public class HystrixConcurrencyStrategyInterceptor implements InstanceMethodsAroundInterceptor {
     @Override

@@ -18,8 +18,6 @@
 
 package org.apache.skywalking.oap.server.core.alarm.provider;
 
-import java.util.ArrayList;
-import java.util.List;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -29,6 +27,9 @@ import org.apache.skywalking.oap.server.core.alarm.provider.grpc.GRPCAlarmSettin
 import org.apache.skywalking.oap.server.core.alarm.provider.slack.SlackSettings;
 import org.apache.skywalking.oap.server.core.alarm.provider.wechat.WechatSettings;
 import org.apache.skywalking.oap.server.core.alarm.provider.welink.WeLinkSettings;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Setter
 @Getter

@@ -18,12 +18,13 @@
 
 package org.apache.skywalking.oap.server.core.worker;
 
-import java.util.HashMap;
-import java.util.Map;
 import org.apache.skywalking.oap.server.core.UnexpectedException;
 import org.apache.skywalking.oap.server.core.remote.data.StreamData;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Worker Instance Service hosts all remote handler workers with the stream data type.

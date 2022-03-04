@@ -21,13 +21,14 @@ package org.apache.skywalking.oap.log.analyzer.dsl.spec.sink;
 import groovy.lang.Closure;
 import groovy.lang.DelegatesTo;
 import groovy.lang.GString;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 import org.apache.skywalking.oap.log.analyzer.dsl.spec.AbstractSpec;
 import org.apache.skywalking.oap.log.analyzer.dsl.spec.sink.sampler.RateLimitingSampler;
 import org.apache.skywalking.oap.log.analyzer.dsl.spec.sink.sampler.Sampler;
 import org.apache.skywalking.oap.log.analyzer.provider.LogAnalyzerModuleConfig;
 import org.apache.skywalking.oap.server.library.module.ModuleManager;
+
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class SamplerSpec extends AbstractSpec {
     private final Map<GString, Sampler> samplers;

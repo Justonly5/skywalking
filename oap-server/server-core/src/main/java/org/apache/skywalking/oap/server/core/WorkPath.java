@@ -18,12 +18,13 @@
 
 package org.apache.skywalking.oap.server.core;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import java.net.URL;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * Locate the base work path of OAP backend.

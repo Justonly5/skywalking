@@ -18,14 +18,15 @@
 
 package org.apache.skywalking.oap.server.core.analysis;
 
-import java.nio.charset.StandardCharsets;
-import java.util.Base64;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.apache.skywalking.oap.server.core.Const;
 import org.apache.skywalking.oap.server.core.UnexpectedException;
 import org.apache.skywalking.oap.server.library.util.BooleanUtils;
+
+import java.nio.charset.StandardCharsets;
+import java.util.Base64;
 
 /**
  * IDManager includes all ID encode/decode functions for service, service instance and endpoint.

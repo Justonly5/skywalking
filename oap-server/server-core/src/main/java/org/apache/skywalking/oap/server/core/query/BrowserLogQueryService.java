@@ -17,8 +17,6 @@
 
 package org.apache.skywalking.oap.server.core.query;
 
-import java.io.IOException;
-import java.util.Optional;
 import lombok.RequiredArgsConstructor;
 import org.apache.skywalking.oap.server.core.browser.source.BrowserErrorCategory;
 import org.apache.skywalking.oap.server.core.query.type.BrowserErrorLogs;
@@ -28,6 +26,9 @@ import org.apache.skywalking.oap.server.core.storage.StorageModule;
 import org.apache.skywalking.oap.server.core.storage.query.IBrowserLogQueryDAO;
 import org.apache.skywalking.oap.server.library.module.ModuleManager;
 import org.apache.skywalking.oap.server.library.module.Service;
+
+import java.io.IOException;
+import java.util.Optional;
 
 @RequiredArgsConstructor
 public class BrowserLogQueryService implements Service {

@@ -18,12 +18,12 @@
 
 package org.apache.skywalking.apm.toolkit.activation.util;
 
-import java.util.Map;
-
 import org.apache.skywalking.apm.agent.core.context.tag.StringTag;
 import org.apache.skywalking.apm.agent.core.context.trace.AbstractSpan;
 import org.apache.skywalking.apm.agent.core.util.CustomizeExpression;
 import org.apache.skywalking.apm.toolkit.trace.Tag;
+
+import java.util.Map;
 
 public class TagUtil {
     public static void tagParamsSpan(final AbstractSpan span, final Map<String, Object> context,

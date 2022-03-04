@@ -19,10 +19,11 @@
 package org.apache.skywalking.apm.agent.core.profile;
 
 import com.google.common.base.Objects;
-import java.util.ArrayList;
-import java.util.concurrent.TimeUnit;
 import org.apache.skywalking.apm.agent.core.conf.Config;
 import org.apache.skywalking.apm.agent.core.context.TracingContext;
+
+import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
 public class ThreadProfiler {
 

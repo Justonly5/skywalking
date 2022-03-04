@@ -20,22 +20,17 @@ package org.apache.skywalking.apm.agent.core.jvm;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import org.apache.skywalking.apm.agent.core.logging.api.ILog;
+import org.apache.skywalking.apm.agent.core.logging.api.LogManager;
+import org.apache.skywalking.apm.agent.core.util.CollectionUtil;
+import org.apache.skywalking.apm.network.common.v3.KeyStringValuePair;
+
 import java.io.File;
 import java.lang.management.ManagementFactory;
 import java.net.URL;
 import java.net.URLClassLoader;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import org.apache.skywalking.apm.agent.core.logging.api.ILog;
-import org.apache.skywalking.apm.agent.core.logging.api.LogManager;
-import org.apache.skywalking.apm.agent.core.util.CollectionUtil;
-import org.apache.skywalking.apm.network.common.v3.KeyStringValuePair;
+import java.util.*;
 
 public class LoadedLibraryCollector {
 

@@ -18,9 +18,10 @@
 
 package org.apache.skywalking.oap.server.cluster.plugin.etcd;
 
-import java.io.Serializable;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.io.Serializable;
 
 /**
  * an instance json to register to etcd.

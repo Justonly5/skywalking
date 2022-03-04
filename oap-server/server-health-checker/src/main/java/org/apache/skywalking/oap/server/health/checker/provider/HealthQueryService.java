@@ -19,10 +19,11 @@
 package org.apache.skywalking.oap.server.health.checker.provider;
 
 import com.google.common.util.concurrent.AtomicDouble;
-import java.util.concurrent.atomic.AtomicReference;
 import lombok.RequiredArgsConstructor;
 import org.apache.skywalking.oap.server.core.query.type.HealthStatus;
 import org.apache.skywalking.oap.server.library.module.Service;
+
+import java.util.concurrent.atomic.AtomicReference;
 
 @RequiredArgsConstructor
 public class HealthQueryService implements Service {

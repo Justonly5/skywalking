@@ -22,10 +22,11 @@ import io.grpc.BindableService;
 import io.grpc.ServerInterceptor;
 import io.grpc.ServerInterceptors;
 import io.grpc.ServerServiceDefinition;
-import java.util.LinkedList;
-import java.util.List;
 import lombok.Setter;
 import org.apache.skywalking.oap.server.core.server.GRPCHandlerRegister;
+
+import java.util.LinkedList;
+import java.util.List;
 
 public class ReceiverGRPCHandlerRegister implements GRPCHandlerRegister {
 

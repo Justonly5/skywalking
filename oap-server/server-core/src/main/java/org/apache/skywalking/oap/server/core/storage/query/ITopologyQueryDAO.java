@@ -18,14 +18,15 @@
 
 package org.apache.skywalking.oap.server.core.storage.query;
 
-import java.io.IOException;
-import java.util.List;
 import org.apache.skywalking.oap.server.core.analysis.manual.relation.instance.ServiceInstanceRelationClientSideMetrics;
 import org.apache.skywalking.oap.server.core.analysis.manual.relation.instance.ServiceInstanceRelationServerSideMetrics;
 import org.apache.skywalking.oap.server.core.analysis.manual.relation.service.ServiceRelationClientSideMetrics;
 import org.apache.skywalking.oap.server.core.analysis.manual.relation.service.ServiceRelationServerSideMetrics;
 import org.apache.skywalking.oap.server.core.query.type.Call;
 import org.apache.skywalking.oap.server.library.module.Service;
+
+import java.io.IOException;
+import java.util.List;
 
 public interface ITopologyQueryDAO extends Service {
     /**

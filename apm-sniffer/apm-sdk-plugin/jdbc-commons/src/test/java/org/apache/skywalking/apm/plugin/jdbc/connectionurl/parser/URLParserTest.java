@@ -18,8 +18,8 @@
 
 package org.apache.skywalking.apm.plugin.jdbc.connectionurl.parser;
 
-import org.junit.Test;
 import org.apache.skywalking.apm.plugin.jdbc.trace.ConnectionInfo;
+import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;

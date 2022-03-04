@@ -18,9 +18,10 @@
 
 package org.apache.skywalking.oap.server.library.util;
 
-import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.util.List;
 
 public class ConnectUtilTestCase {
 

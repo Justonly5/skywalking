@@ -18,11 +18,12 @@
 
 package org.apache.skywalking.oap.server.configuration.api;
 
-import java.util.ArrayList;
-import java.util.List;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * ConfigTable contains all config.

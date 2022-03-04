@@ -22,6 +22,7 @@ import org.apache.skywalking.apm.agent.core.boot.ServiceManager;
 import org.apache.skywalking.apm.agent.core.conf.Config;
 import org.apache.skywalking.apm.util.StringUtil;
 import org.junit.Test;
+
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 

@@ -18,11 +18,12 @@
 
 package org.apache.skywalking.apm.plugin.trace.ignore;
 
-import java.util.concurrent.atomic.AtomicReference;
 import org.apache.skywalking.apm.agent.core.conf.dynamic.AgentConfigChangeWatcher;
 import org.apache.skywalking.apm.agent.core.logging.api.ILog;
 import org.apache.skywalking.apm.agent.core.logging.api.LogManager;
 import org.apache.skywalking.apm.plugin.trace.ignore.conf.IgnoreConfig;
+
+import java.util.concurrent.atomic.AtomicReference;
 
 public class TraceIgnorePatternWatcher extends AgentConfigChangeWatcher {
     private static final ILog LOGGER = LogManager.getLogger(TraceIgnorePatternWatcher.class);

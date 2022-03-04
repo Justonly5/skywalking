@@ -19,8 +19,6 @@
 package org.apache.skywalking.oap.server.core.alarm.provider.grpc;
 
 import io.grpc.stub.StreamObserver;
-import java.util.List;
-import java.util.concurrent.TimeUnit;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.skywalking.oap.server.core.alarm.AlarmCallback;
 import org.apache.skywalking.oap.server.core.alarm.AlarmMessage;
@@ -31,6 +29,9 @@ import org.apache.skywalking.oap.server.core.alarm.grpc.Response;
 import org.apache.skywalking.oap.server.core.alarm.provider.AlarmRulesWatcher;
 import org.apache.skywalking.oap.server.library.client.grpc.GRPCClient;
 import org.apache.skywalking.oap.server.library.util.GRPCStreamStatus;
+
+import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Use SkyWalking alarm grpc API call a remote methods.

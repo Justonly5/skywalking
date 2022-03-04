@@ -18,10 +18,10 @@
 
 package org.apache.skywalking.apm.plugin.xmemcached.v2;
 
-import java.net.InetSocketAddress;
-
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceConstructorInterceptor;
+
+import java.net.InetSocketAddress;
 
 public class XMemcachedConstructorWithInetSocketAddressArgInterceptor implements InstanceConstructorInterceptor {
 

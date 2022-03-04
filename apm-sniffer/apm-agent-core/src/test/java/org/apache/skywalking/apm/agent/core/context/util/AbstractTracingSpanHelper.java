@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.apm.agent.core.context.util;
 
-import java.util.Collections;
-import java.util.List;
 import org.apache.skywalking.apm.agent.core.context.trace.AbstractTracingSpan;
 import org.apache.skywalking.apm.agent.core.context.trace.LogDataEntity;
+
+import java.util.Collections;
+import java.util.List;
 
 public class AbstractTracingSpanHelper {
     public static int getParentSpanId(AbstractTracingSpan tracingSpan) {

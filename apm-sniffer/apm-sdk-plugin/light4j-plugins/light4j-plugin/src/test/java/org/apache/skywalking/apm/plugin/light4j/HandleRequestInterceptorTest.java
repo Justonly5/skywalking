@@ -20,7 +20,6 @@ package org.apache.skywalking.apm.plugin.light4j;
 
 import com.networknt.exception.ExceptionHandler;
 import io.undertow.server.HttpServerExchange;
-import java.lang.reflect.Method;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
 import org.apache.skywalking.apm.agent.test.tools.AgentServiceRule;
@@ -34,6 +33,8 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.powermock.modules.junit4.PowerMockRunner;
 import org.powermock.modules.junit4.PowerMockRunnerDelegate;
+
+import java.lang.reflect.Method;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;

@@ -18,7 +18,6 @@
 
 package org.apache.skywalking.apm.agent.core.plugin.bootstrap.template.v2;
 
-import java.lang.reflect.Method;
 import net.bytebuddy.implementation.bind.annotation.AllArguments;
 import net.bytebuddy.implementation.bind.annotation.Morph;
 import net.bytebuddy.implementation.bind.annotation.Origin;
@@ -28,6 +27,8 @@ import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.Bootstrap
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.OverrideCallable;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.v2.MethodInvocationContext;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.v2.StaticMethodsAroundInterceptorV2;
+
+import java.lang.reflect.Method;
 
 /**
  * This class wouldn't be loaded in real env. This is a class template for dynamic class generation.

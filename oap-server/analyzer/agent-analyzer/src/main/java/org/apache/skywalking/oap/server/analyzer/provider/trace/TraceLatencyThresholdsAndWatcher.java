@@ -18,12 +18,13 @@
 
 package org.apache.skywalking.oap.server.analyzer.provider.trace;
 
-import java.util.concurrent.atomic.AtomicInteger;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.skywalking.oap.server.analyzer.module.AnalyzerModule;
 import org.apache.skywalking.oap.server.analyzer.provider.AnalyzerModuleConfig;
 import org.apache.skywalking.oap.server.configuration.api.ConfigChangeWatcher;
 import org.apache.skywalking.oap.server.library.module.ModuleProvider;
+
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * This threshold watcher about the latency would make the slow trace segments sampled if they cost more time,

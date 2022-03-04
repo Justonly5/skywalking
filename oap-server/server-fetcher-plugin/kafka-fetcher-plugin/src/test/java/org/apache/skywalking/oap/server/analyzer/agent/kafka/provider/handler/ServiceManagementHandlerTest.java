@@ -18,7 +18,6 @@
 
 package org.apache.skywalking.oap.server.analyzer.agent.kafka.provider.handler;
 
-import java.util.List;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.common.utils.Bytes;
 import org.apache.skywalking.apm.network.management.v3.InstancePingPkg;
@@ -37,6 +36,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.ClassRule;
 import org.junit.Test;
+
+import java.util.List;
 
 public class ServiceManagementHandlerTest {
     private static final String TOPIC_NAME = "skywalking-managements";

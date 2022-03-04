@@ -18,11 +18,6 @@
 package org.apache.skywalking.oap.log.analyzer.provider.log.listener;
 
 import com.google.protobuf.Message;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.List;
-import java.util.UUID;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.apache.skywalking.apm.network.logging.v3.LogData;
@@ -42,6 +37,8 @@ import org.apache.skywalking.oap.server.core.query.type.ContentType;
 import org.apache.skywalking.oap.server.core.source.Log;
 import org.apache.skywalking.oap.server.core.source.SourceReceiver;
 import org.apache.skywalking.oap.server.library.module.ModuleManager;
+
+import java.util.*;
 
 import static org.apache.skywalking.oap.server.library.util.ProtoBufJsonUtils.toJSON;
 

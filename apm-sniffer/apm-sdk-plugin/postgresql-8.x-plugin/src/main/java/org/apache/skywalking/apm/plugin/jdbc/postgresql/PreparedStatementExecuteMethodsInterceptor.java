@@ -18,7 +18,6 @@
 
 package org.apache.skywalking.apm.plugin.jdbc.postgresql;
 
-import java.lang.reflect.Method;
 import org.apache.skywalking.apm.agent.core.context.ContextManager;
 import org.apache.skywalking.apm.agent.core.context.tag.StringTag;
 import org.apache.skywalking.apm.agent.core.context.tag.Tags;
@@ -32,6 +31,8 @@ import org.apache.skywalking.apm.plugin.jdbc.PreparedStatementParameterBuilder;
 import org.apache.skywalking.apm.plugin.jdbc.SqlBodyUtil;
 import org.apache.skywalking.apm.plugin.jdbc.define.StatementEnhanceInfos;
 import org.apache.skywalking.apm.plugin.jdbc.trace.ConnectionInfo;
+
+import java.lang.reflect.Method;
 
 /**
  * {@link PreparedStatementExecuteMethodsInterceptor} create the exit span when the client call the interceptor

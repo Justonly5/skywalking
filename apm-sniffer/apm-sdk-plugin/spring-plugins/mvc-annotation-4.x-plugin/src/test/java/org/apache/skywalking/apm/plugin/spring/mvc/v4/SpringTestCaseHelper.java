@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.apm.plugin.spring.mvc.v4;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import org.apache.skywalking.apm.agent.core.context.ContextManager;
 import org.apache.skywalking.apm.plugin.spring.mvc.commons.Constants;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 public final class SpringTestCaseHelper {
 

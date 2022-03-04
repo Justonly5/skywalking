@@ -18,7 +18,6 @@
 
 package org.apache.skywalking.apm.plugin.influxdb.interceptor;
 
-import java.lang.reflect.Method;
 import org.apache.skywalking.apm.agent.core.context.ContextManager;
 import org.apache.skywalking.apm.agent.core.context.tag.Tags;
 import org.apache.skywalking.apm.agent.core.context.trace.AbstractSpan;
@@ -32,6 +31,8 @@ import org.apache.skywalking.apm.plugin.influxdb.define.Constants;
 import org.influxdb.dto.BatchPoints;
 import org.influxdb.dto.Point;
 import org.influxdb.dto.Query;
+
+import java.lang.reflect.Method;
 
 import static org.apache.skywalking.apm.plugin.influxdb.define.Constants.DB_TYPE;
 

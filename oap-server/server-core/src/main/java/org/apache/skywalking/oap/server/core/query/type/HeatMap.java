@@ -18,14 +18,15 @@
 
 package org.apache.skywalking.oap.server.core.query.type;
 
-import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import org.apache.skywalking.oap.server.core.analysis.metrics.DataTable;
+
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 
 /**
  * HeatMap represents the value distribution in the defined buckets.

@@ -18,8 +18,8 @@
 
 package org.apache.skywalking.apm.plugin.nutz.http.sync.define;
 
-import org.apache.skywalking.apm.agent.core.plugin.match.NameMatch;
 import org.apache.skywalking.apm.agent.core.plugin.match.ClassMatch;
+import org.apache.skywalking.apm.agent.core.plugin.match.NameMatch;
 
 public class NutzHttpGetSenderInstrumentation extends AbstractNutzHttpInstrumentation {
 

@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.oap.server.core.analysis;
 
+import org.apache.skywalking.oap.server.core.annotation.AnnotationListener;
+
 import java.lang.annotation.Annotation;
 import java.util.HashSet;
 import java.util.Set;
-import org.apache.skywalking.oap.server.core.annotation.AnnotationListener;
 
 /**
  * Disable definition scanner and register.

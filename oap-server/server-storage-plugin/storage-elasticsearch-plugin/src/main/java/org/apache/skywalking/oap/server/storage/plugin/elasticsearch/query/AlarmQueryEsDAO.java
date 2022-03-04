@@ -19,11 +19,6 @@
 package org.apache.skywalking.oap.server.storage.plugin.elasticsearch.query;
 
 import com.google.common.base.Strings;
-
-import java.io.IOException;
-import java.util.List;
-import java.util.Objects;
-
 import org.apache.skywalking.oap.server.core.alarm.AlarmRecord;
 import org.apache.skywalking.oap.server.core.analysis.manual.searchtag.Tag;
 import org.apache.skywalking.oap.server.core.query.enumeration.Scope;
@@ -42,6 +37,10 @@ import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
 import org.elasticsearch.search.sort.SortOrder;
+
+import java.io.IOException;
+import java.util.List;
+import java.util.Objects;
 
 public class AlarmQueryEsDAO extends EsDAO implements IAlarmQueryDAO {
 

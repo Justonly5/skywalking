@@ -18,15 +18,16 @@
 
 package org.apache.skywalking.apm.commons.datacarrier.consumer;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.concurrent.LinkedBlockingQueue;
 import org.apache.skywalking.apm.commons.datacarrier.DataCarrier;
 import org.apache.skywalking.apm.commons.datacarrier.SampleData;
 import org.junit.Assert;
 import org.junit.Test;
 import org.powermock.api.support.membermodification.MemberModifier;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.concurrent.LinkedBlockingQueue;
 
 public class ConsumerTest {
     public static LinkedBlockingQueue<SampleData> BUFFER = new LinkedBlockingQueue<SampleData>();

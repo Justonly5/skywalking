@@ -18,7 +18,6 @@
 
 package org.apache.skywalking.oap.server.core.remote;
 
-import java.util.List;
 import org.apache.skywalking.oap.server.core.CoreModule;
 import org.apache.skywalking.oap.server.core.remote.client.RemoteClient;
 import org.apache.skywalking.oap.server.core.remote.client.RemoteClientManager;
@@ -31,6 +30,8 @@ import org.apache.skywalking.oap.server.library.module.ModuleManager;
 import org.apache.skywalking.oap.server.library.module.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.List;
 
 /**
  * RemoteSenderService represents a gRPC client to send metrics from one OAP node to another through network. It

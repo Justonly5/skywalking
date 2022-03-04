@@ -18,9 +18,10 @@
 
 package org.apache.skywalking.apm.plugin.thrift.transport;
 
-import java.io.IOException;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceConstructorInterceptor;
+
+import java.io.IOException;
 
 /**
  * For getting remote peer.

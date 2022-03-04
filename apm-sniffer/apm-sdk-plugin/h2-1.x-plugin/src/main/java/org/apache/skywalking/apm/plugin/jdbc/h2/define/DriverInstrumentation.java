@@ -18,8 +18,8 @@
 
 package org.apache.skywalking.apm.plugin.jdbc.h2.define;
 
-import org.apache.skywalking.apm.plugin.jdbc.define.AbstractDriverInstrumentation;
 import org.apache.skywalking.apm.agent.core.plugin.match.ClassMatch;
+import org.apache.skywalking.apm.plugin.jdbc.define.AbstractDriverInstrumentation;
 
 import static org.apache.skywalking.apm.agent.core.plugin.match.NameMatch.byName;
 

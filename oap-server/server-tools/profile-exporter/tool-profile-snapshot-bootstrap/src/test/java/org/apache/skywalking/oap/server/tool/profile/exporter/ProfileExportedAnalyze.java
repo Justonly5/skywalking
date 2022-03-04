@@ -22,21 +22,13 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.skywalking.apm.network.language.profile.v3.ThreadSnapshot;
 import org.apache.skywalking.oap.server.core.CoreModuleConfig;
 import org.apache.skywalking.oap.server.core.profile.analyze.ProfileAnalyzer;
-import org.apache.skywalking.oap.server.core.query.type.ProfileAnalyzation;
-import org.apache.skywalking.oap.server.core.query.type.ProfileAnalyzeTimeRange;
-import org.apache.skywalking.oap.server.core.query.type.ProfileStackElement;
-import org.apache.skywalking.oap.server.core.query.type.ProfileStackTree;
-import org.apache.skywalking.oap.server.core.query.type.Span;
+import org.apache.skywalking.oap.server.core.query.type.*;
 import org.apache.skywalking.oap.server.core.storage.profile.IProfileThreadSnapshotQueryDAO;
 import org.apache.skywalking.oap.server.library.util.CollectionUtils;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Slf4j

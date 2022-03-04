@@ -20,15 +20,7 @@ package org.apache.skywalking.oap.server.receiver.browser.provider.parser.perfor
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
-import org.apache.skywalking.oap.server.core.browser.source.BrowserAppPagePerf;
-import org.apache.skywalking.oap.server.core.browser.source.BrowserAppPageTraffic;
-import org.apache.skywalking.oap.server.core.browser.source.BrowserAppPerf;
-import org.apache.skywalking.oap.server.core.browser.source.BrowserAppPerfSource;
-import org.apache.skywalking.oap.server.core.browser.source.BrowserAppSingleVersionPerf;
-import org.apache.skywalking.oap.server.core.browser.source.BrowserAppSingleVersionTraffic;
-import org.apache.skywalking.oap.server.core.browser.source.BrowserAppTraffic;
-import org.apache.skywalking.oap.server.core.browser.source.BrowserAppTrafficCategory;
-import org.apache.skywalking.oap.server.core.browser.source.BrowserAppTrafficSource;
+import org.apache.skywalking.oap.server.core.browser.source.*;
 import org.apache.skywalking.oap.server.core.config.NamingControl;
 import org.apache.skywalking.oap.server.core.source.Source;
 

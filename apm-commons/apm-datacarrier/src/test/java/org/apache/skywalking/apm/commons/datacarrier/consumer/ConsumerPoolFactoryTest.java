@@ -21,9 +21,7 @@ package org.apache.skywalking.apm.commons.datacarrier.consumer;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class ConsumerPoolFactoryTest {
 

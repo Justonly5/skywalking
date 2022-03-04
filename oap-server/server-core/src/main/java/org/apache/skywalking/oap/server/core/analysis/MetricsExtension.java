@@ -18,11 +18,12 @@
 
 package org.apache.skywalking.oap.server.core.analysis;
 
+import org.apache.skywalking.oap.server.core.analysis.worker.MetricsStreamProcessor;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-import org.apache.skywalking.oap.server.core.analysis.worker.MetricsStreamProcessor;
 
 /**
  * MetricsExtension annotation defines extension attributes of the {@link Stream} with {@link MetricsStreamProcessor}.

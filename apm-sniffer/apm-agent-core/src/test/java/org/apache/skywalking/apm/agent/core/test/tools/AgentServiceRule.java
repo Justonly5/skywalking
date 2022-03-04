@@ -18,17 +18,17 @@
 
 package org.apache.skywalking.apm.agent.core.test.tools;
 
-import java.util.HashMap;
-import java.util.LinkedList;
-
-import org.apache.skywalking.apm.agent.core.context.TracingThreadListener;
-import org.junit.rules.ExternalResource;
-import org.powermock.reflect.Whitebox;
 import org.apache.skywalking.apm.agent.core.boot.BootService;
 import org.apache.skywalking.apm.agent.core.boot.ServiceManager;
 import org.apache.skywalking.apm.agent.core.context.IgnoredTracerContext;
 import org.apache.skywalking.apm.agent.core.context.TracingContext;
 import org.apache.skywalking.apm.agent.core.context.TracingContextListener;
+import org.apache.skywalking.apm.agent.core.context.TracingThreadListener;
+import org.junit.rules.ExternalResource;
+import org.powermock.reflect.Whitebox;
+
+import java.util.HashMap;
+import java.util.LinkedList;
 
 public class AgentServiceRule extends ExternalResource {
 

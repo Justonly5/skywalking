@@ -18,12 +18,7 @@
 
 package org.apache.skywalking.oap.server.core.alarm.provider.dingtalk;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -17,18 +17,6 @@
 
 package org.apache.skywalking.oap.server.analyzer.provider.trace;
 
-import java.io.FileNotFoundException;
-import java.io.Reader;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.atomic.AtomicReference;
-import java.util.function.Function;
-import java.util.stream.Collectors;
-import java.util.stream.StreamSupport;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -40,6 +28,14 @@ import org.apache.skywalking.oap.server.library.module.ModuleProvider;
 import org.apache.skywalking.oap.server.library.util.ResourceUtils;
 import org.apache.skywalking.oap.server.library.util.yaml.ClassFilterConstructor;
 import org.yaml.snakeyaml.Yaml;
+
+import java.io.FileNotFoundException;
+import java.io.Reader;
+import java.util.*;
+import java.util.concurrent.atomic.AtomicReference;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
 import static java.util.Objects.isNull;
 

@@ -18,9 +18,6 @@
 
 package org.apache.skywalking.apm.plugin.avro;
 
-import java.nio.ByteBuffer;
-import java.nio.charset.StandardCharsets;
-import java.util.Map;
 import org.apache.avro.ipc.RPCContext;
 import org.apache.avro.ipc.RPCPlugin;
 import org.apache.avro.util.Utf8;
@@ -30,6 +27,10 @@ import org.apache.skywalking.apm.agent.core.context.ContextManager;
 import org.apache.skywalking.apm.agent.core.context.trace.AbstractSpan;
 import org.apache.skywalking.apm.agent.core.context.trace.SpanLayer;
 import org.apache.skywalking.apm.network.trace.component.ComponentsDefine;
+
+import java.nio.ByteBuffer;
+import java.nio.charset.StandardCharsets;
+import java.util.Map;
 
 /**
  * A SkyWalking tracing plugin for Avro Server. Extract the CarrierItems from RPC's metadata and inject them into

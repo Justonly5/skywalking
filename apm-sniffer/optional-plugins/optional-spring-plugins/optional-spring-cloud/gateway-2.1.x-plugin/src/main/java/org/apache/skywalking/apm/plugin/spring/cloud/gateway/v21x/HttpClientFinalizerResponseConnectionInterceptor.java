@@ -17,8 +17,6 @@
 
 package org.apache.skywalking.apm.plugin.spring.cloud.gateway.v21x;
 
-import java.lang.reflect.Method;
-import java.util.function.BiFunction;
 import org.apache.skywalking.apm.agent.core.context.tag.Tags;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceMethodsAroundInterceptor;
@@ -27,6 +25,9 @@ import org.apache.skywalking.apm.plugin.spring.cloud.gateway.v21x.define.Enhance
 import org.reactivestreams.Publisher;
 import reactor.netty.Connection;
 import reactor.netty.http.client.HttpClientResponse;
+
+import java.lang.reflect.Method;
+import java.util.function.BiFunction;
 
 public class HttpClientFinalizerResponseConnectionInterceptor implements InstanceMethodsAroundInterceptor {
     @Override

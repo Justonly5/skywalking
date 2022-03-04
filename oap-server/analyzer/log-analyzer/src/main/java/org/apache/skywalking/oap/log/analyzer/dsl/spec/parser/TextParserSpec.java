@@ -18,11 +18,12 @@
 
 package org.apache.skywalking.oap.log.analyzer.dsl.spec.parser;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 import org.apache.skywalking.apm.network.logging.v3.LogData;
 import org.apache.skywalking.oap.log.analyzer.provider.LogAnalyzerModuleConfig;
 import org.apache.skywalking.oap.server.library.module.ModuleManager;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class TextParserSpec extends AbstractParserSpec {
     public TextParserSpec(final ModuleManager moduleManager,

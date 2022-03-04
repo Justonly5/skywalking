@@ -18,11 +18,6 @@
 
 package org.apache.skywalking.oal.rt.parser;
 
-import java.lang.annotation.Annotation;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-import java.lang.reflect.Parameter;
-import java.util.List;
 import org.apache.skywalking.oal.rt.util.ClassMethodUtil;
 import org.apache.skywalking.oap.server.core.analysis.metrics.Metrics;
 import org.apache.skywalking.oap.server.core.analysis.metrics.annotation.Arg;
@@ -30,6 +25,12 @@ import org.apache.skywalking.oap.server.core.analysis.metrics.annotation.ConstOn
 import org.apache.skywalking.oap.server.core.analysis.metrics.annotation.Entrance;
 import org.apache.skywalking.oap.server.core.analysis.metrics.annotation.SourceFrom;
 import org.apache.skywalking.oap.server.core.storage.annotation.Column;
+
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.lang.reflect.Parameter;
+import java.util.List;
 
 import static java.util.Objects.isNull;
 

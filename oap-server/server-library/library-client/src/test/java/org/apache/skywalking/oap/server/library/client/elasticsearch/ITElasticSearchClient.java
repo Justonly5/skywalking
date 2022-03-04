@@ -20,13 +20,6 @@ package org.apache.skywalking.oap.server.library.client.elasticsearch;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.TimeUnit;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.skywalking.apm.util.StringUtil;
 import org.elasticsearch.action.admin.indices.get.GetIndexRequest;
@@ -47,6 +40,14 @@ import org.junit.Test;
 import org.powermock.reflect.Whitebox;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 public class ITElasticSearchClient {
 

@@ -18,15 +18,16 @@
 
 package org.apache.skywalking.oap.server.starter;
 
-import java.io.Reader;
-import java.lang.reflect.Field;
-import java.util.Map;
 import org.apache.commons.collections4.map.CaseInsensitiveMap;
 import org.apache.skywalking.apm.network.trace.component.ComponentsDefine;
 import org.apache.skywalking.apm.network.trace.component.OfficialComponent;
 import org.apache.skywalking.oap.server.library.util.ResourceUtils;
 import org.junit.Test;
 import org.yaml.snakeyaml.Yaml;
+
+import java.io.Reader;
+import java.lang.reflect.Field;
+import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;

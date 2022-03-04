@@ -22,12 +22,13 @@ import io.grpc.netty.GrpcSslContexts;
 import io.grpc.netty.NegotiationType;
 import io.grpc.netty.NettyChannelBuilder;
 import io.netty.handler.ssl.SslContextBuilder;
-import java.io.File;
-import javax.net.ssl.SSLException;
 import org.apache.skywalking.apm.agent.core.boot.AgentPackageNotFoundException;
 import org.apache.skywalking.apm.agent.core.boot.AgentPackagePath;
 import org.apache.skywalking.apm.agent.core.conf.Config;
 import org.apache.skywalking.apm.agent.core.conf.Constants;
+
+import javax.net.ssl.SSLException;
+import java.io.File;
 
 /**
  * Detect the `/ca` folder in agent package, if `ca.crt` exists, start TLS (no mutual auth).

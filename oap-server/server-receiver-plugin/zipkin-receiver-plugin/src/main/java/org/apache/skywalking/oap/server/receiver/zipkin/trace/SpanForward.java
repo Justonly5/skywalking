@@ -18,8 +18,6 @@
 
 package org.apache.skywalking.oap.server.receiver.zipkin.trace;
 
-import java.util.List;
-
 import lombok.RequiredArgsConstructor;
 import org.apache.skywalking.apm.util.StringUtil;
 import org.apache.skywalking.oap.server.core.analysis.IDManager;
@@ -35,6 +33,8 @@ import org.apache.skywalking.oap.server.receiver.zipkin.handler.SpanEncode;
 import org.apache.skywalking.oap.server.storage.plugin.zipkin.ZipkinSpan;
 import zipkin2.Span;
 import zipkin2.codec.SpanBytesEncoder;
+
+import java.util.List;
 
 @RequiredArgsConstructor
 public class SpanForward {

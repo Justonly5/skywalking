@@ -17,10 +17,6 @@
 
 package org.apache.skywalking.apm.plugin.spring.cloud.gateway.v20x;
 
-import java.lang.reflect.Method;
-import java.net.URL;
-import java.util.function.BiConsumer;
-import java.util.function.Function;
 import org.apache.skywalking.apm.agent.core.context.CarrierItem;
 import org.apache.skywalking.apm.agent.core.context.ContextCarrier;
 import org.apache.skywalking.apm.agent.core.context.ContextManager;
@@ -35,6 +31,11 @@ import org.reactivestreams.Publisher;
 import reactor.core.publisher.Mono;
 import reactor.ipc.netty.http.client.HttpClientRequest;
 import reactor.ipc.netty.http.client.HttpClientResponse;
+
+import java.lang.reflect.Method;
+import java.net.URL;
+import java.util.function.BiConsumer;
+import java.util.function.Function;
 
 import static org.apache.skywalking.apm.network.trace.component.ComponentsDefine.SPRING_CLOUD_GATEWAY;
 

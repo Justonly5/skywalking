@@ -19,11 +19,7 @@
 package org.apache.skywalking.oap.server.tool.profile.core.mock;
 
 import org.apache.skywalking.oap.server.core.remote.data.StreamData;
-import org.apache.skywalking.oap.server.core.worker.AbstractWorker;
-import org.apache.skywalking.oap.server.core.worker.IWorkerInstanceGetter;
-import org.apache.skywalking.oap.server.core.worker.IWorkerInstanceSetter;
-import org.apache.skywalking.oap.server.core.worker.RemoteHandleWorker;
-import org.apache.skywalking.oap.server.core.worker.WorkerInstancesService;
+import org.apache.skywalking.oap.server.core.worker.*;
 
 /**
  * Mock from {@link WorkerInstancesService}

@@ -18,12 +18,13 @@
 
 package org.apache.skywalking.oap.server.storage.plugin.elasticsearch.base;
 
+import lombok.Getter;
+import org.apache.skywalking.oap.server.library.client.elasticsearch.ElasticSearchClient;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 import java.util.stream.Collectors;
-import lombok.Getter;
-import org.apache.skywalking.oap.server.library.client.elasticsearch.ElasticSearchClient;
 
 public class IndexStructures {
     private final Map<String, Fields> structures;

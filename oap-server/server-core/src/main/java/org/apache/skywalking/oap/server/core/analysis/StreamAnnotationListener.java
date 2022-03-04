@@ -18,16 +18,13 @@
 
 package org.apache.skywalking.oap.server.core.analysis;
 
-import java.lang.annotation.Annotation;
 import org.apache.skywalking.oap.server.core.UnexpectedException;
-import org.apache.skywalking.oap.server.core.analysis.worker.ManagementStreamProcessor;
-import org.apache.skywalking.oap.server.core.analysis.worker.MetricsStreamProcessor;
-import org.apache.skywalking.oap.server.core.analysis.worker.NoneStreamProcessor;
-import org.apache.skywalking.oap.server.core.analysis.worker.RecordStreamProcessor;
-import org.apache.skywalking.oap.server.core.analysis.worker.TopNStreamProcessor;
+import org.apache.skywalking.oap.server.core.analysis.worker.*;
 import org.apache.skywalking.oap.server.core.annotation.AnnotationListener;
 import org.apache.skywalking.oap.server.core.storage.StorageException;
 import org.apache.skywalking.oap.server.library.module.ModuleDefineHolder;
+
+import java.lang.annotation.Annotation;
 
 /**
  * Stream annotation listener, process the class with {@link Stream} annotation.

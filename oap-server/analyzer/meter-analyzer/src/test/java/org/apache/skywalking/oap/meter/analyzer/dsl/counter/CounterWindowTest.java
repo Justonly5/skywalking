@@ -20,10 +20,11 @@ package org.apache.skywalking.oap.meter.analyzer.dsl.counter;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Lists;
 import io.vavr.Tuple2;
-import java.time.Duration;
-import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.time.Duration;
+import java.util.List;
 
 import static java.time.Instant.parse;
 

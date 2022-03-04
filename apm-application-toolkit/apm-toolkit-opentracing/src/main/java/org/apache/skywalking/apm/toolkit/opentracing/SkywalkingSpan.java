@@ -20,6 +20,7 @@ package org.apache.skywalking.apm.toolkit.opentracing;
 
 import io.opentracing.Span;
 import io.opentracing.SpanContext;
+
 import java.util.HashMap;
 import java.util.Map;
 

@@ -18,16 +18,7 @@
 
 package org.apache.skywalking.apm.meter.micrometer;
 
-import io.micrometer.core.instrument.Clock;
-import io.micrometer.core.instrument.DistributionSummary;
-import io.micrometer.core.instrument.FunctionCounter;
-import io.micrometer.core.instrument.FunctionTimer;
-import io.micrometer.core.instrument.LongTaskTimer;
-import io.micrometer.core.instrument.Measurement;
-import io.micrometer.core.instrument.Meter;
-import io.micrometer.core.instrument.MeterRegistry;
-import io.micrometer.core.instrument.Statistic;
-import io.micrometer.core.instrument.Timer;
+import io.micrometer.core.instrument.*;
 import io.micrometer.core.instrument.config.NamingConvention;
 import io.micrometer.core.instrument.cumulative.CumulativeFunctionCounter;
 import io.micrometer.core.instrument.cumulative.CumulativeFunctionTimer;
@@ -35,8 +26,8 @@ import io.micrometer.core.instrument.distribution.DistributionStatisticConfig;
 import io.micrometer.core.instrument.distribution.pause.PauseDetector;
 import io.micrometer.core.instrument.internal.DefaultGauge;
 import io.micrometer.core.instrument.internal.DefaultMeter;
-import org.apache.skywalking.apm.toolkit.meter.MeterFactory;
 import org.apache.skywalking.apm.toolkit.meter.MeterCenter;
+import org.apache.skywalking.apm.toolkit.meter.MeterFactory;
 import org.apache.skywalking.apm.toolkit.meter.MeterId;
 
 import java.util.concurrent.TimeUnit;

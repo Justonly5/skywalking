@@ -19,9 +19,10 @@
 package org.apache.skywalking.oap.server.cluster.plugin.etcd;
 
 import com.google.common.base.Strings;
-import java.util.Arrays;
 import lombok.Data;
 import org.apache.skywalking.oap.server.library.module.ModuleConfig;
+
+import java.util.Arrays;
 
 @Data
 public class ClusterModuleEtcdConfig extends ModuleConfig {

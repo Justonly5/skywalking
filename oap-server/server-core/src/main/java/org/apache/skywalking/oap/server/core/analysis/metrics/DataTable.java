@@ -17,16 +17,13 @@
 
 package org.apache.skywalking.oap.server.core.analysis.metrics;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import org.apache.skywalking.oap.server.core.Const;
 import org.apache.skywalking.oap.server.core.storage.type.StorageDataComplexObject;
+
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * DataTable includes a hashmap to store string key and long value. It enhanced the serialization capability.

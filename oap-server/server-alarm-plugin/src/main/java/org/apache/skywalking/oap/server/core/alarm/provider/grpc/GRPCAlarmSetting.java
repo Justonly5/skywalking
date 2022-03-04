@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.oap.server.core.alarm.provider.grpc;
 
-import java.util.Objects;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.util.Objects;
 
 @Setter
 @Getter

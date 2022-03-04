@@ -18,9 +18,9 @@
 
 package org.apache.skywalking.apm.agent.core.context.ids;
 
-import java.util.UUID;
-
 import org.apache.skywalking.apm.util.StringUtil;
+
+import java.util.UUID;
 
 public final class GlobalIdGenerator {
     private static final String PROCESS_ID = UUID.randomUUID().toString().replaceAll("-", "");

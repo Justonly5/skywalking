@@ -23,9 +23,6 @@ import com.google.protobuf.Message;
 import com.google.protobuf.TextFormat;
 import groovy.lang.Closure;
 import groovy.lang.DelegatesTo;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
 import org.apache.skywalking.apm.network.logging.v3.LogData;
 import org.apache.skywalking.oap.log.analyzer.dsl.Binding;
 import org.apache.skywalking.oap.log.analyzer.dsl.spec.AbstractSpec;
@@ -42,6 +39,10 @@ import org.apache.skywalking.oap.server.library.module.ModuleManager;
 import org.apache.skywalking.oap.server.library.module.ModuleStartException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
 
 public class FilterSpec extends AbstractSpec {
     private static final Logger LOGGER = LoggerFactory.getLogger(FilterSpec.class);

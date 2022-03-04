@@ -18,14 +18,14 @@
 
 package org.apache.skywalking.apm.plugin.xmemcached.v2;
 
-import static org.mockito.Mockito.verify;
-
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
+
+import static org.mockito.Mockito.verify;
 
 @RunWith(MockitoJUnitRunner.class)
 public class XMemcachedConstructorWithHostPortArgInterceptorTest {

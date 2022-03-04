@@ -19,9 +19,6 @@
 package org.apache.skywalking.oap.server.configuration.grpc;
 
 import io.grpc.netty.NettyChannelBuilder;
-import java.util.Objects;
-import java.util.Optional;
-import java.util.Set;
 import org.apache.skywalking.oap.server.configuration.api.ConfigTable;
 import org.apache.skywalking.oap.server.configuration.api.ConfigWatcherRegister;
 import org.apache.skywalking.oap.server.configuration.service.ConfigurationRequest;
@@ -29,6 +26,10 @@ import org.apache.skywalking.oap.server.configuration.service.ConfigurationRespo
 import org.apache.skywalking.oap.server.configuration.service.ConfigurationServiceGrpc;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.Objects;
+import java.util.Optional;
+import java.util.Set;
 
 public class GRPCConfigWatcherRegister extends ConfigWatcherRegister {
     private static final Logger LOGGER = LoggerFactory.getLogger(GRPCConfigWatcherRegister.class);

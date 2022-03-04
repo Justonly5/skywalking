@@ -17,28 +17,19 @@
 
 package org.apache.skywalking.oap.server.storage.plugin.jdbc.h2.dao;
 
-import java.util.Base64;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import org.apache.skywalking.apm.util.StringUtil;
 import org.apache.skywalking.oap.server.core.Const;
 import org.apache.skywalking.oap.server.core.analysis.manual.log.LogRecord;
 import org.apache.skywalking.oap.server.core.analysis.record.Record;
 import org.apache.skywalking.oap.server.library.util.CollectionUtils;
 
+import java.util.Base64;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import static org.apache.skywalking.oap.server.core.analysis.manual.log.AbstractLogRecord.TAGS_RAW_DATA;
-import static org.apache.skywalking.oap.server.core.analysis.manual.log.LogRecord.CONTENT;
-import static org.apache.skywalking.oap.server.core.analysis.manual.log.LogRecord.CONTENT_TYPE;
-import static org.apache.skywalking.oap.server.core.analysis.manual.log.LogRecord.ENDPOINT_ID;
-import static org.apache.skywalking.oap.server.core.analysis.manual.log.LogRecord.ENDPOINT_NAME;
-import static org.apache.skywalking.oap.server.core.analysis.manual.log.LogRecord.SERVICE_ID;
-import static org.apache.skywalking.oap.server.core.analysis.manual.log.LogRecord.SERVICE_INSTANCE_ID;
-import static org.apache.skywalking.oap.server.core.analysis.manual.log.LogRecord.SPAN_ID;
-import static org.apache.skywalking.oap.server.core.analysis.manual.log.LogRecord.TIMESTAMP;
-import static org.apache.skywalking.oap.server.core.analysis.manual.log.LogRecord.TRACE_ID;
-import static org.apache.skywalking.oap.server.core.analysis.manual.log.LogRecord.TRACE_SEGMENT_ID;
-import static org.apache.skywalking.oap.server.core.analysis.manual.log.LogRecord.UNIQUE_ID;
+import static org.apache.skywalking.oap.server.core.analysis.manual.log.LogRecord.*;
 import static org.apache.skywalking.oap.server.core.analysis.record.Record.TIME_BUCKET;
 
 public class H2LogRecordBuilder extends AbstractSearchTagBuilder<Record> {

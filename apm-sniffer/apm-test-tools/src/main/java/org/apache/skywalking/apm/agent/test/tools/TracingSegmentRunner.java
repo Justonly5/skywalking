@@ -18,16 +18,17 @@
 
 package org.apache.skywalking.apm.agent.test.tools;
 
-import java.lang.reflect.Field;
 import org.apache.skywalking.apm.agent.core.context.IgnoreTracerContextListener;
+import org.apache.skywalking.apm.agent.core.context.IgnoredTracerContext;
 import org.apache.skywalking.apm.agent.core.context.TracingContext;
+import org.apache.skywalking.apm.agent.core.context.TracingContextListener;
 import org.apache.skywalking.apm.agent.core.context.trace.TraceSegment;
 import org.junit.runners.BlockJUnit4ClassRunner;
 import org.junit.runners.model.FrameworkMethod;
 import org.junit.runners.model.InitializationError;
 import org.junit.runners.model.Statement;
-import org.apache.skywalking.apm.agent.core.context.IgnoredTracerContext;
-import org.apache.skywalking.apm.agent.core.context.TracingContextListener;
+
+import java.lang.reflect.Field;
 
 public class TracingSegmentRunner extends BlockJUnit4ClassRunner {
     private TracingContextListener tracingContextListener;

@@ -18,9 +18,10 @@
 
 package org.apache.skywalking.oap.server.storage.plugin.jdbc;
 
+import org.apache.skywalking.oap.server.core.storage.model.Model;
+
 import java.util.HashMap;
 import java.util.Map;
-import org.apache.skywalking.oap.server.core.storage.model.Model;
 
 public class TableMetaInfo {
     private static Map<String, Model> TABLES = new HashMap<>();

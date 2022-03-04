@@ -17,9 +17,10 @@
 
 package org.apache.skywalking.oap.log.analyzer.provider.log;
 
-import java.util.List;
 import org.apache.skywalking.oap.log.analyzer.provider.log.listener.LogAnalysisListenerFactory;
 import org.apache.skywalking.oap.server.library.module.Service;
+
+import java.util.List;
 
 public interface ILogAnalysisListenerFactoryManager extends Service {
 

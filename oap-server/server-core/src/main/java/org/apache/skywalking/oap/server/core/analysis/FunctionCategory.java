@@ -18,12 +18,13 @@
 
 package org.apache.skywalking.oap.server.core.analysis;
 
-import java.lang.annotation.Annotation;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.apache.skywalking.oap.server.core.Const;
 import org.apache.skywalking.oap.server.core.analysis.meter.function.MeterFunction;
 import org.apache.skywalking.oap.server.core.analysis.metrics.annotation.MetricsFunction;
+
+import java.lang.annotation.Annotation;
 
 @AllArgsConstructor
 @Getter

@@ -18,8 +18,6 @@
 
 package org.apache.skywalking.apm.plugin.elasticsearch.v6.define;
 
-import java.util.Collections;
-import java.util.List;
 import net.bytebuddy.description.method.MethodDescription;
 import net.bytebuddy.matcher.ElementMatcher;
 import org.apache.skywalking.apm.agent.core.plugin.WitnessMethod;
@@ -30,9 +28,10 @@ import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.ClassEnha
 import org.apache.skywalking.apm.agent.core.plugin.match.ClassMatch;
 import org.apache.skywalking.apm.plugin.elasticsearch.v6.interceptor.Constants;
 
-import static net.bytebuddy.matcher.ElementMatchers.named;
-import static net.bytebuddy.matcher.ElementMatchers.returns;
-import static net.bytebuddy.matcher.ElementMatchers.takesArguments;
+import java.util.Collections;
+import java.util.List;
+
+import static net.bytebuddy.matcher.ElementMatchers.*;
 import static org.apache.skywalking.apm.agent.core.plugin.match.NameMatch.byName;
 
 public class AdapterActionFutureInstrumentation extends ClassEnhancePluginDefine {

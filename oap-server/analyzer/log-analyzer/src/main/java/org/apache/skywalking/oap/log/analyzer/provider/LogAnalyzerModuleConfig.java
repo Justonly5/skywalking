@@ -19,7 +19,6 @@ package org.apache.skywalking.oap.log.analyzer.provider;
 
 import com.google.common.base.Splitter;
 import com.google.common.base.Strings;
-import java.util.List;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -27,6 +26,8 @@ import org.apache.skywalking.oap.meter.analyzer.prometheus.rule.Rule;
 import org.apache.skywalking.oap.meter.analyzer.prometheus.rule.Rules;
 import org.apache.skywalking.oap.server.library.module.ModuleConfig;
 import org.apache.skywalking.oap.server.library.module.ModuleStartException;
+
+import java.util.List;
 
 import static java.util.Objects.nonNull;
 

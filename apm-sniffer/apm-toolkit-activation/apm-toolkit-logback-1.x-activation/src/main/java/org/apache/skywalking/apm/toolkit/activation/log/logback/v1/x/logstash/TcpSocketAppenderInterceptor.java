@@ -19,14 +19,14 @@
 package org.apache.skywalking.apm.toolkit.activation.log.logback.v1.x.logstash;
 
 import ch.qos.logback.classic.spi.ILoggingEvent;
-import java.lang.reflect.Method;
-import java.util.Map;
-
 import org.apache.skywalking.apm.agent.core.context.ContextManager;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceMethodsAroundInterceptor;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
 import org.apache.skywalking.apm.toolkit.logging.common.log.SkyWalkingContext;
+
+import java.lang.reflect.Method;
+import java.util.Map;
 
 public class TcpSocketAppenderInterceptor implements InstanceMethodsAroundInterceptor {
 

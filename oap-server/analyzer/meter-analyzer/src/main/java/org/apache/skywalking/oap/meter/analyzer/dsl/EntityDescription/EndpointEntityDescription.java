@@ -18,13 +18,14 @@
 
 package org.apache.skywalking.oap.meter.analyzer.dsl.EntityDescription;
 
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.ToString;
 import org.apache.skywalking.oap.server.core.analysis.meter.ScopeType;
+
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 @Getter
 @RequiredArgsConstructor

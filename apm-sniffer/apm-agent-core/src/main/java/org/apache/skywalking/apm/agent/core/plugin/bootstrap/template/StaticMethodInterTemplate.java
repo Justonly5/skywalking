@@ -18,8 +18,6 @@
 
 package org.apache.skywalking.apm.agent.core.plugin.bootstrap.template;
 
-import java.lang.reflect.Method;
-import java.util.concurrent.Callable;
 import net.bytebuddy.implementation.bind.annotation.AllArguments;
 import net.bytebuddy.implementation.bind.annotation.Origin;
 import net.bytebuddy.implementation.bind.annotation.RuntimeType;
@@ -28,6 +26,9 @@ import org.apache.skywalking.apm.agent.core.plugin.bootstrap.IBootstrapLog;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.BootstrapInterRuntimeAssist;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.StaticMethodsAroundInterceptor;
+
+import java.lang.reflect.Method;
+import java.util.concurrent.Callable;
 
 /**
  * --------CLASS TEMPLATE---------

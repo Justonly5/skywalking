@@ -18,8 +18,9 @@
 
 package org.apache.skywalking.apm.commons.datacarrier.consumer;
 
-import java.util.List;
 import org.apache.skywalking.apm.commons.datacarrier.SampleData;
+
+import java.util.List;
 
 public class SampleConsumer implements IConsumer<SampleData> {
     public int i = 1;

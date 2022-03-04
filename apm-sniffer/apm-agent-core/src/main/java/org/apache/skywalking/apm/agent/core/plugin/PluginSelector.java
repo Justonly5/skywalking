@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.apm.agent.core.plugin;
 
+import org.apache.skywalking.apm.agent.core.conf.Config;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
-import org.apache.skywalking.apm.agent.core.conf.Config;
 
 import static org.apache.skywalking.apm.agent.core.conf.Config.Plugin.EXCLUDE_PLUGINS;
 

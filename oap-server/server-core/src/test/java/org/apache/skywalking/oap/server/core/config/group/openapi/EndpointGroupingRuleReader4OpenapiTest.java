@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.oap.server.core.config.group.openapi;
 
-import java.io.IOException;
 import org.apache.skywalking.oap.server.core.config.group.EndpointNameGrouping;
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.io.IOException;
 
 public class EndpointGroupingRuleReader4OpenapiTest {
 

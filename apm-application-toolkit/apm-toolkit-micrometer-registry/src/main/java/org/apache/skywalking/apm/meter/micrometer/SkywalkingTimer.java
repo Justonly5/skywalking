@@ -22,11 +22,7 @@ import io.micrometer.core.instrument.AbstractTimer;
 import io.micrometer.core.instrument.Clock;
 import io.micrometer.core.instrument.distribution.DistributionStatisticConfig;
 import io.micrometer.core.instrument.distribution.pause.PauseDetector;
-import org.apache.skywalking.apm.toolkit.meter.Counter;
-import org.apache.skywalking.apm.toolkit.meter.Gauge;
-import org.apache.skywalking.apm.toolkit.meter.Histogram;
-import org.apache.skywalking.apm.toolkit.meter.MeterFactory;
-import org.apache.skywalking.apm.toolkit.meter.MeterId;
+import org.apache.skywalking.apm.toolkit.meter.*;
 
 import java.util.Optional;
 import java.util.concurrent.TimeUnit;

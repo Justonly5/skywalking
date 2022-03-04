@@ -18,12 +18,13 @@
 
 package org.apache.skywalking.oap.server.core.config.group;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.regex.Pattern;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.ToString;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Pattern;
 
 /**
  * Group patterns use {@link java.util.regex.Pattern} as core, could group the input strings to matched group or return

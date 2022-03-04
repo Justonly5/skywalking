@@ -24,6 +24,7 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.handler.codec.http.HttpClientCodec;
 import io.netty.handler.codec.http.HttpContentDecompressor;
 import io.netty.handler.ssl.SslContext;
+
 import java.util.concurrent.BlockingQueue;
 
 public class HttpClientInitializer extends ChannelInitializer<SocketChannel> {

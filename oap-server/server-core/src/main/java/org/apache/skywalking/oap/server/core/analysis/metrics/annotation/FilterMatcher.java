@@ -18,11 +18,12 @@
 
 package org.apache.skywalking.oap.server.core.analysis.metrics.annotation;
 
+import org.apache.skywalking.oap.server.core.analysis.metrics.expression.BooleanMatch;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-import org.apache.skywalking.oap.server.core.analysis.metrics.expression.BooleanMatch;
 
 /**
  * Classes annotated with {@code FilterMatcher} are processors of the expressions in {@code filter} of the OAL script.

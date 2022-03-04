@@ -18,9 +18,10 @@
 
 package org.apache.skywalking.oap.server.core.storage;
 
-import java.io.IOException;
 import org.apache.skywalking.oap.server.core.analysis.management.ManagementData;
 import org.apache.skywalking.oap.server.core.storage.model.Model;
+
+import java.io.IOException;
 
 /**
  * Use synchronize storage to insert storage data

@@ -18,9 +18,10 @@
 
 package org.apache.skywalking.oap.server.core.storage;
 
-import java.util.List;
 import org.apache.skywalking.oap.server.library.client.request.InsertRequest;
 import org.apache.skywalking.oap.server.library.client.request.PrepareRequest;
+
+import java.util.List;
 
 /**
  * IBatchDAO provides two modes of data persistence supported by most databases, including pure insert and batch hybrid

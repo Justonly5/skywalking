@@ -21,11 +21,7 @@ package org.apache.skywalking.oap.server.exporter.provider.grpc;
 import org.apache.skywalking.oap.server.core.CoreModule;
 import org.apache.skywalking.oap.server.core.exporter.ExporterModule;
 import org.apache.skywalking.oap.server.core.exporter.MetricValuesExportService;
-import org.apache.skywalking.oap.server.library.module.ModuleConfig;
-import org.apache.skywalking.oap.server.library.module.ModuleDefine;
-import org.apache.skywalking.oap.server.library.module.ModuleProvider;
-import org.apache.skywalking.oap.server.library.module.ModuleStartException;
-import org.apache.skywalking.oap.server.library.module.ServiceNotProvidedException;
+import org.apache.skywalking.oap.server.library.module.*;
 
 public class GRPCExporterProvider extends ModuleProvider {
     private GRPCExporterSetting setting;

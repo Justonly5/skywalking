@@ -22,13 +22,14 @@ import io.etcd.jetcd.Client;
 import io.etcd.jetcd.ClientBuilder;
 import io.etcd.jetcd.KV;
 import io.etcd.jetcd.kv.GetResponse;
-import java.nio.charset.Charset;
-import java.util.Optional;
-import java.util.Set;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.skywalking.apm.util.StringUtil;
 import org.apache.skywalking.oap.server.configuration.api.ConfigTable;
 import org.apache.skywalking.oap.server.configuration.api.ConfigWatcherRegister;
+
+import java.nio.charset.Charset;
+import java.util.Optional;
+import java.util.Set;
 
 @Slf4j
 public class EtcdConfigWatcherRegister extends ConfigWatcherRegister {

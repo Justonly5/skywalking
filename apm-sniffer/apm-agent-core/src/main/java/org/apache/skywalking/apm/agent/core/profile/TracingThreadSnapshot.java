@@ -18,9 +18,10 @@
 
 package org.apache.skywalking.apm.agent.core.profile;
 
-import java.util.List;
 import org.apache.skywalking.apm.network.language.profile.v3.ThreadSnapshot;
 import org.apache.skywalking.apm.network.language.profile.v3.ThreadStack;
+
+import java.util.List;
 
 public class TracingThreadSnapshot {
 

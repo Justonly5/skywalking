@@ -18,16 +18,17 @@
 
 package org.apache.skywalking.oap.server.configuration.api;
 
+import lombok.Getter;
+import org.apache.skywalking.apm.util.RunnableWithExceptionProtection;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
-import lombok.Getter;
-import org.apache.skywalking.apm.util.RunnableWithExceptionProtection;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * The default implementor of Config Watcher register.

@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.apm.agent.core.context.trace;
 
-import java.util.Map;
 import org.apache.skywalking.apm.agent.core.context.IgnoredTracerContext;
 import org.apache.skywalking.apm.agent.core.context.tag.AbstractTag;
 import org.apache.skywalking.apm.network.trace.component.Component;
+
+import java.util.Map;
 
 /**
  * The <code>NoopSpan</code> represents a span implementation without any actual operation. This span implementation is

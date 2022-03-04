@@ -18,9 +18,6 @@
 
 package org.apache.skywalking.oap.server.core.analysis.manual.database;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
 import lombok.Getter;
 import lombok.Setter;
 import org.apache.skywalking.oap.server.core.analysis.Stream;
@@ -29,6 +26,10 @@ import org.apache.skywalking.oap.server.core.analysis.worker.TopNStreamProcessor
 import org.apache.skywalking.oap.server.core.source.DefaultScopeDefine;
 import org.apache.skywalking.oap.server.core.storage.StorageHashMapBuilder;
 import org.apache.skywalking.oap.server.core.storage.annotation.Column;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
 
 /**
  * Database TopN statement, including Database SQL statement, mongoDB and Redis commands.

@@ -18,8 +18,9 @@
 
 package org.apache.skywalking.oap.server.core.storage.model;
 
-import java.util.List;
 import org.apache.skywalking.oap.server.library.module.Service;
+
+import java.util.List;
 
 /**
  * IModelManager implementation supports to read all existing models.

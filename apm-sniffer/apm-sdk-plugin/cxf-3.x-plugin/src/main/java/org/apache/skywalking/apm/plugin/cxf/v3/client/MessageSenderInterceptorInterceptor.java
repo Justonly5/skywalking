@@ -18,10 +18,6 @@
 
 package org.apache.skywalking.apm.plugin.cxf.v3.client;
 
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 import org.apache.cxf.message.Message;
 import org.apache.cxf.service.model.MessageInfo;
 import org.apache.cxf.transport.http.Address;
@@ -35,6 +31,11 @@ import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedI
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceMethodsAroundInterceptor;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
 import org.apache.skywalking.apm.network.trace.component.ComponentsDefine;
+
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Used to intercept client requests and transparently transmit trace header and other information

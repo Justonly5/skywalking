@@ -18,8 +18,9 @@
 
 package org.apache.skywalking.oap.meter.analyzer.dsl.EntityDescription;
 
-import java.util.List;
 import org.apache.skywalking.oap.server.core.analysis.meter.ScopeType;
+
+import java.util.List;
 
 public interface EntityDescription {
     ScopeType getScopeType();

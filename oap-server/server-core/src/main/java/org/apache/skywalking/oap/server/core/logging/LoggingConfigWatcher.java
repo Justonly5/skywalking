@@ -19,8 +19,6 @@
 package org.apache.skywalking.oap.server.core.logging;
 
 import com.google.common.base.Strings;
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.LoggerContext;
@@ -29,6 +27,9 @@ import org.apache.skywalking.oap.server.configuration.api.ConfigChangeWatcher;
 import org.apache.skywalking.oap.server.core.CoreModule;
 import org.apache.skywalking.oap.server.core.logging.log4j.OapConfiguration;
 import org.apache.skywalking.oap.server.library.module.ModuleProvider;
+
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
 
 /**
  * LoggingConfigWatcher watches the change of logging configuration. Once got the change content, it would apply them to

@@ -18,17 +18,14 @@
 
 package org.apache.skywalking.oap.server.library.util;
 
-import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.nio.charset.Charset;
-import java.util.List;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import java.io.*;
+import java.nio.charset.Charset;
+import java.util.List;
 
 public class MultipleFilesChangeMonitorTest {
     private static String FILE_NAME = "FileChangeMonitorTest.tmp";

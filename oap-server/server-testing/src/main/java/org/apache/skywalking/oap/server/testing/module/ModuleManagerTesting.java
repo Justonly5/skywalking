@@ -18,11 +18,12 @@
 
 package org.apache.skywalking.oap.server.testing.module;
 
-import java.util.HashMap;
-import java.util.Map;
 import org.apache.skywalking.oap.server.library.module.ModuleDefineHolder;
 import org.apache.skywalking.oap.server.library.module.ModuleNotFoundRuntimeException;
 import org.apache.skywalking.oap.server.library.module.ModuleProviderHolder;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class ModuleManagerTesting implements ModuleDefineHolder {
 

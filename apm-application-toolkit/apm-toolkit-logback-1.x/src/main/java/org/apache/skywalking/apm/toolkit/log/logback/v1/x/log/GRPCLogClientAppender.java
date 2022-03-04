@@ -19,6 +19,7 @@
 package org.apache.skywalking.apm.toolkit.log.logback.v1.x.log;
 
 import ch.qos.logback.core.OutputStreamAppender;
+
 import java.io.OutputStream;
 
 public class GRPCLogClientAppender<E> extends OutputStreamAppender<E> {

@@ -18,9 +18,10 @@
 
 package org.apache.skywalking.apm.agent.core.jvm.clazz;
 
+import org.apache.skywalking.apm.network.language.agent.v3.Class;
+
 import java.lang.management.ClassLoadingMXBean;
 import java.lang.management.ManagementFactory;
-import org.apache.skywalking.apm.network.language.agent.v3.Class;
 
 public enum ClassProvider {
     INSTANCE;

@@ -18,11 +18,12 @@
 
 package org.apache.skywalking.oap.server.core.source;
 
+import org.apache.skywalking.oap.server.core.profile.ProfileTaskRecord;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-import org.apache.skywalking.oap.server.core.profile.ProfileTaskRecord;
 
 /**
  * ScopeDeclaration includes

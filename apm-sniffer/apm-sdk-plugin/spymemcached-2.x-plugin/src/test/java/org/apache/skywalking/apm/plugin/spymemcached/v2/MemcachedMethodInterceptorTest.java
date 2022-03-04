@@ -18,8 +18,6 @@
 
 package org.apache.skywalking.apm.plugin.spymemcached.v2;
 
-import java.lang.reflect.Method;
-import java.util.List;
 import net.spy.memcached.MemcachedClient;
 import org.apache.skywalking.apm.agent.core.context.trace.AbstractTracingSpan;
 import org.apache.skywalking.apm.agent.core.context.trace.LogDataEntity;
@@ -43,6 +41,9 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.powermock.modules.junit4.PowerMockRunner;
 import org.powermock.modules.junit4.PowerMockRunnerDelegate;
+
+import java.lang.reflect.Method;
+import java.util.List;
 
 import static junit.framework.TestCase.assertNotNull;
 import static org.hamcrest.CoreMatchers.is;

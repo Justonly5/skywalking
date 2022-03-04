@@ -28,10 +28,7 @@ import org.apache.skywalking.apm.agent.core.plugin.match.ClassMatch;
 import org.apache.skywalking.apm.agent.core.plugin.match.logical.LogicalMatchOperation;
 import org.apache.skywalking.apm.util.StringUtil;
 
-import static net.bytebuddy.matcher.ElementMatchers.isDeclaredBy;
-import static net.bytebuddy.matcher.ElementMatchers.isPublic;
-import static net.bytebuddy.matcher.ElementMatchers.named;
-import static net.bytebuddy.matcher.ElementMatchers.not;
+import static net.bytebuddy.matcher.ElementMatchers.*;
 import static org.apache.skywalking.apm.agent.core.plugin.match.ClassAnnotationMatch.byClassAnnotationMatch;
 import static org.apache.skywalking.apm.agent.core.plugin.match.RegexMatch.byRegexMatch;
 import static org.apache.skywalking.apm.plugin.spring.annotations.SpringAnnotationConfig.Plugin.SpringAnnotation.CLASSNAME_MATCH_REGEX;

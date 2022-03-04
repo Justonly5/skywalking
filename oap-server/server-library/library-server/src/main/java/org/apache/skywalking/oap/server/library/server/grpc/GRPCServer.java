@@ -23,20 +23,17 @@ import io.grpc.BindableService;
 import io.grpc.ServerInterceptor;
 import io.grpc.ServerServiceDefinition;
 import io.grpc.netty.NettyServerBuilder;
-import java.io.IOException;
-import java.net.InetSocketAddress;
-import java.util.Objects;
-import java.util.Optional;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.RejectedExecutionHandler;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.skywalking.oap.server.library.server.Server;
 import org.apache.skywalking.oap.server.library.server.ServerException;
 import org.apache.skywalking.oap.server.library.server.grpc.ssl.DynamicSslContext;
 import org.apache.skywalking.oap.server.library.server.pool.CustomThreadFactory;
+
+import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.util.Objects;
+import java.util.Optional;
+import java.util.concurrent.*;
 
 @Slf4j
 public class GRPCServer implements Server {

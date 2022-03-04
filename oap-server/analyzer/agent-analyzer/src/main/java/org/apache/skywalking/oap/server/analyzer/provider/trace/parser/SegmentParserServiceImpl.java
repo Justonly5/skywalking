@@ -21,8 +21,8 @@ package org.apache.skywalking.oap.server.analyzer.provider.trace.parser;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import org.apache.skywalking.apm.network.language.agent.v3.SegmentObject;
-import org.apache.skywalking.oap.server.library.module.ModuleManager;
 import org.apache.skywalking.oap.server.analyzer.provider.AnalyzerModuleConfig;
+import org.apache.skywalking.oap.server.library.module.ModuleManager;
 
 /**
  * The open service to the receivers.

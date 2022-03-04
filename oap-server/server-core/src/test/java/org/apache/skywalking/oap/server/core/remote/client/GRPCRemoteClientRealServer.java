@@ -18,13 +18,14 @@
 
 package org.apache.skywalking.oap.server.core.remote.client;
 
-import java.util.concurrent.TimeUnit;
 import org.apache.skywalking.oap.server.core.CoreModule;
 import org.apache.skywalking.oap.server.core.remote.RemoteServiceHandler;
 import org.apache.skywalking.oap.server.library.server.ServerException;
 import org.apache.skywalking.oap.server.library.server.grpc.GRPCServer;
 import org.apache.skywalking.oap.server.testing.module.ModuleDefineTesting;
 import org.apache.skywalking.oap.server.testing.module.ModuleManagerTesting;
+
+import java.util.concurrent.TimeUnit;
 
 public class GRPCRemoteClientRealServer {
 

@@ -19,7 +19,6 @@
 package org.apache.skywalking.oap.server.receiver.envoy;
 
 import io.prometheus.client.Metrics;
-import java.util.HashMap;
 import lombok.SneakyThrows;
 import org.apache.skywalking.oap.server.receiver.envoy.als.mx.FieldsHelper;
 import org.apache.skywalking.oap.server.receiver.envoy.metrics.adapters.ClusterManagerMetricsAdapter;
@@ -27,6 +26,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.powermock.reflect.Whitebox;
+
+import java.util.HashMap;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 

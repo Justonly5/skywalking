@@ -18,11 +18,6 @@
 
 package org.apache.skywalking.apm.plugin.neo4j.v4x;
 
-import static org.apache.skywalking.apm.network.trace.component.ComponentsDefine.NEO4J;
-import static org.apache.skywalking.apm.plugin.neo4j.v4x.Neo4jPluginConstants.DB_TYPE;
-
-import java.lang.reflect.Method;
-import java.util.concurrent.CompletionStage;
 import org.apache.skywalking.apm.agent.core.context.ContextManager;
 import org.apache.skywalking.apm.agent.core.context.tag.Tags;
 import org.apache.skywalking.apm.agent.core.context.trace.AbstractSpan;
@@ -31,6 +26,12 @@ import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedI
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceMethodsAroundInterceptor;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
 import org.neo4j.driver.internal.spi.Connection;
+
+import java.lang.reflect.Method;
+import java.util.concurrent.CompletionStage;
+
+import static org.apache.skywalking.apm.network.trace.component.ComponentsDefine.NEO4J;
+import static org.apache.skywalking.apm.plugin.neo4j.v4x.Neo4jPluginConstants.DB_TYPE;
 
 /**
  * This interceptor is used to enhance {@link org.neo4j.driver.internal.async.NetworkSession#acquireConnection} method,

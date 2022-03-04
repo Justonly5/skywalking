@@ -21,11 +21,7 @@ package org.apache.skywalking.apm.agent.core.context;
 import org.apache.skywalking.apm.agent.core.boot.ServiceManager;
 import org.apache.skywalking.apm.agent.core.conf.Config;
 import org.apache.skywalking.apm.agent.core.test.tools.AgentServiceRule;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Rule;
-import org.junit.Test;
-import org.junit.Assert;
+import org.junit.*;
 
 public class ContextManagerExtendServiceTest {
 

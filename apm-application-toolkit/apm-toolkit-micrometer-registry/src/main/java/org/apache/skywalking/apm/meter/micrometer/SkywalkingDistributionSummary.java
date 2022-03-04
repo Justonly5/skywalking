@@ -21,11 +21,7 @@ package org.apache.skywalking.apm.meter.micrometer;
 import io.micrometer.core.instrument.AbstractDistributionSummary;
 import io.micrometer.core.instrument.Clock;
 import io.micrometer.core.instrument.distribution.DistributionStatisticConfig;
-import org.apache.skywalking.apm.toolkit.meter.Counter;
-import org.apache.skywalking.apm.toolkit.meter.Gauge;
-import org.apache.skywalking.apm.toolkit.meter.Histogram;
-import org.apache.skywalking.apm.toolkit.meter.MeterFactory;
-import org.apache.skywalking.apm.toolkit.meter.MeterId;
+import org.apache.skywalking.apm.toolkit.meter.*;
 
 import java.util.Optional;
 import java.util.concurrent.atomic.DoubleAccumulator;

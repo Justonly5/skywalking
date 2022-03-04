@@ -18,10 +18,10 @@
 
 package org.apache.skywalking.oap.server.analyzer.provider.trace.parser;
 
+import org.apache.skywalking.oap.server.analyzer.provider.trace.parser.listener.AnalysisListenerFactory;
+
 import java.util.LinkedList;
 import java.util.List;
-
-import org.apache.skywalking.oap.server.analyzer.provider.trace.parser.listener.AnalysisListenerFactory;
 
 public class SegmentParserListenerManager implements ISegmentParserListenerManager {
 

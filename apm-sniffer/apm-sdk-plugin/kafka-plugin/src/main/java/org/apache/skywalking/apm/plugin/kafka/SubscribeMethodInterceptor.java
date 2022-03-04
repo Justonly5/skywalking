@@ -18,15 +18,15 @@
 
 package org.apache.skywalking.apm.plugin.kafka;
 
-import java.lang.reflect.Method;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.regex.Pattern;
-
 import org.apache.skywalking.apm.agent.core.context.ContextManager;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceMethodsAroundInterceptor;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
+
+import java.lang.reflect.Method;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.regex.Pattern;
 
 public class SubscribeMethodInterceptor implements InstanceMethodsAroundInterceptor {
     @SuppressWarnings("unchecked")

@@ -18,8 +18,9 @@
 
 package org.apache.skywalking.oap.server.library.util.prometheus;
 
-import java.io.IOException;
 import org.apache.skywalking.oap.server.library.util.prometheus.metrics.MetricFamily;
+
+import java.io.IOException;
 
 public interface Parser {
     MetricFamily parse(long now) throws IOException;

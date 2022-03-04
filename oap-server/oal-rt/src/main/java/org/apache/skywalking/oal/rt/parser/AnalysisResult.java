@@ -18,12 +18,13 @@
 
 package org.apache.skywalking.oal.rt.parser;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
 import lombok.Getter;
 import lombok.Setter;
 import org.apache.skywalking.oap.server.core.storage.type.StorageDataComplexObject;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 @Getter
 @Setter

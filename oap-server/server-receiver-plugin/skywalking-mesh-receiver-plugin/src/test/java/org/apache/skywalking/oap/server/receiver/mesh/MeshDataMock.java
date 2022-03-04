@@ -21,12 +21,13 @@ package org.apache.skywalking.oap.server.receiver.mesh;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.stub.StreamObserver;
-import java.util.concurrent.TimeUnit;
 import org.apache.skywalking.apm.network.common.v3.DetectPoint;
 import org.apache.skywalking.apm.network.servicemesh.v3.MeshProbeDownstream;
 import org.apache.skywalking.apm.network.servicemesh.v3.Protocol;
 import org.apache.skywalking.apm.network.servicemesh.v3.ServiceMeshMetric;
 import org.apache.skywalking.apm.network.servicemesh.v3.ServiceMeshMetricServiceGrpc;
+
+import java.util.concurrent.TimeUnit;
 
 public class MeshDataMock {
     private static boolean IS_COMPLETED = false;

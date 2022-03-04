@@ -18,8 +18,6 @@
 
 package org.apache.skywalking.apm.plugin.httpclient.v3;
 
-import java.lang.reflect.Method;
-
 import org.apache.commons.httpclient.HttpMethod;
 import org.apache.commons.httpclient.URI;
 import org.apache.commons.httpclient.URIException;
@@ -35,6 +33,8 @@ import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInt
 import org.apache.skywalking.apm.network.trace.component.ComponentsDefine;
 import org.apache.skywalking.apm.plugin.httpclient.HttpClientPluginConfig;
 import org.apache.skywalking.apm.util.StringUtil;
+
+import java.lang.reflect.Method;
 
 public class HttpClientExecuteInterceptor implements InstanceMethodsAroundInterceptor {
 

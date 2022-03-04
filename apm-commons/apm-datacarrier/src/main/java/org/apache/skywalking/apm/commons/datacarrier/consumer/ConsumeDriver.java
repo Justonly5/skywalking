@@ -18,9 +18,10 @@
 
 package org.apache.skywalking.apm.commons.datacarrier.consumer;
 
+import org.apache.skywalking.apm.commons.datacarrier.buffer.Channels;
+
 import java.lang.reflect.InvocationTargetException;
 import java.util.concurrent.locks.ReentrantLock;
-import org.apache.skywalking.apm.commons.datacarrier.buffer.Channels;
 
 /**
  * Pool of consumers <p> Created by wusheng on 2016/10/25.

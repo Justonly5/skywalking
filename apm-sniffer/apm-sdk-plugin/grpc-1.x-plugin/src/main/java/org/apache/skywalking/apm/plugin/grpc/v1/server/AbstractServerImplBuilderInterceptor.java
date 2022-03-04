@@ -20,12 +20,11 @@ package org.apache.skywalking.apm.plugin.grpc.v1.server;
 
 import io.grpc.ServerInterceptors;
 import io.grpc.ServerServiceDefinition;
-
-import java.lang.reflect.Method;
-
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceMethodsAroundInterceptor;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
+
+import java.lang.reflect.Method;
 
 /**
  * {@link AbstractServerImplBuilderInterceptor} add the {@link ServerInterceptor} interceptor for every ServerService.

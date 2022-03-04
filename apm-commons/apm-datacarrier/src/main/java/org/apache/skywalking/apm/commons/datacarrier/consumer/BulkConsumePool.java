@@ -18,11 +18,12 @@
 
 package org.apache.skywalking.apm.commons.datacarrier.consumer;
 
+import org.apache.skywalking.apm.commons.datacarrier.EnvUtil;
+import org.apache.skywalking.apm.commons.datacarrier.buffer.Channels;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Callable;
-import org.apache.skywalking.apm.commons.datacarrier.EnvUtil;
-import org.apache.skywalking.apm.commons.datacarrier.buffer.Channels;
 
 /**
  * BulkConsumePool works for consuming data from multiple channels(DataCarrier instances), with multiple {@link

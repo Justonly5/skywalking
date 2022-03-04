@@ -18,11 +18,12 @@
 
 package org.apache.skywalking.oap.server.core.query.type;
 
-import java.util.ArrayList;
-import java.util.List;
 import lombok.Getter;
 import lombok.Setter;
 import org.apache.skywalking.oap.server.core.query.enumeration.Language;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Getter
 public class ServiceInstance {

@@ -19,13 +19,6 @@
 package org.apache.skywalking.oap.server.configuration.configmap;
 
 import io.kubernetes.client.openapi.models.V1ConfigMap;
-import java.io.Reader;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Optional;
-import java.util.stream.Collectors;
 import org.apache.skywalking.oap.server.configuration.api.ConfigTable;
 import org.apache.skywalking.oap.server.library.util.ResourceUtils;
 import org.junit.Assert;
@@ -37,6 +30,10 @@ import org.powermock.core.classloader.annotations.PowerMockIgnore;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 import org.yaml.snakeyaml.Yaml;
+
+import java.io.Reader;
+import java.util.*;
+import java.util.stream.Collectors;
 
 @RunWith(PowerMockRunner.class)
 @PowerMockIgnore({"com.sun.org.apache.xerces.*", "javax.xml.*", "org.xml.*", "javax.management.*", "org.w3c.*"})

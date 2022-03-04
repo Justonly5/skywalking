@@ -19,14 +19,11 @@
 package org.apache.skywalking.oap.server.core.profile.analyze;
 
 import com.google.common.base.Objects;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.function.Consumer;
 import org.apache.skywalking.oap.server.core.query.type.ProfileStackElement;
 import org.apache.skywalking.oap.server.core.query.type.ProfileStackTree;
+
+import java.util.*;
+import java.util.function.Consumer;
 
 /**
  * Work for profiling stacks, intermediate state of the {@link ProfileStackElement} and {@link ProfileStack}

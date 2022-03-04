@@ -18,11 +18,7 @@
 
 package org.apache.skywalking.oap.server.core.server.auth;
 
-import io.grpc.Metadata;
-import io.grpc.ServerCall;
-import io.grpc.ServerCallHandler;
-import io.grpc.ServerInterceptor;
-import io.grpc.Status;
+import io.grpc.*;
 
 /**
  * Active the authentication between agent and oap receiver. token checker if expected token exists in application.yml

@@ -18,17 +18,14 @@
 
 package org.apache.skywalking.apm.agent.core.os;
 
+import org.apache.skywalking.apm.network.common.v3.KeyStringValuePair;
+
 import java.lang.management.ManagementFactory;
-import java.net.Inet4Address;
-import java.net.InetAddress;
-import java.net.NetworkInterface;
-import java.net.SocketException;
-import java.net.UnknownHostException;
+import java.net.*;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.LinkedList;
 import java.util.List;
-import org.apache.skywalking.apm.network.common.v3.KeyStringValuePair;
 
 public class OSUtil {
     private static volatile String OS_NAME;

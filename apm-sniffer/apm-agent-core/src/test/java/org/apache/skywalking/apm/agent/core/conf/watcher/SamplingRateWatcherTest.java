@@ -23,11 +23,7 @@ import org.apache.skywalking.apm.agent.core.conf.dynamic.AgentConfigChangeWatche
 import org.apache.skywalking.apm.agent.core.conf.dynamic.watcher.SamplingRateWatcher;
 import org.apache.skywalking.apm.agent.core.sampling.SamplingService;
 import org.apache.skywalking.apm.agent.core.test.tools.AgentServiceRule;
-import org.junit.AfterClass;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.*;
 import org.powermock.reflect.Whitebox;
 
 public class SamplingRateWatcherTest {

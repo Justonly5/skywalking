@@ -18,9 +18,6 @@
 
 package org.apache.skywalking.apm.plugin.shardingsphere.v41;
 
-import java.lang.reflect.Method;
-import java.util.Map;
-
 import org.apache.shardingsphere.underlying.executor.engine.ExecutorDataMap;
 import org.apache.skywalking.apm.agent.core.context.ContextManager;
 import org.apache.skywalking.apm.agent.core.context.ContextSnapshot;
@@ -28,6 +25,9 @@ import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedI
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceMethodsAroundInterceptor;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
 import org.apache.skywalking.apm.network.trace.component.ComponentsDefine;
+
+import java.lang.reflect.Method;
+import java.util.Map;
 
 /**
  * {@link ExecuteInterceptor} enhances. {@link org.apache.shardingsphere.sharding.execute.sql.execute.SQLExecuteCallback}

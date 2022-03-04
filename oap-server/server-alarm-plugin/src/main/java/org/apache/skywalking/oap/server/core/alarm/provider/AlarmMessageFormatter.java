@@ -18,9 +18,10 @@
 
 package org.apache.skywalking.oap.server.core.alarm.provider;
 
+import org.apache.skywalking.oap.server.core.alarm.MetaInAlarm;
+
 import java.util.ArrayList;
 import java.util.List;
-import org.apache.skywalking.oap.server.core.alarm.MetaInAlarm;
 
 /**
  * This is a formatter especially for alarm message.

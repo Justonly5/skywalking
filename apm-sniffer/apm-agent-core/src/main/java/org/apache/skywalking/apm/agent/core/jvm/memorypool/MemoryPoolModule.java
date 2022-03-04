@@ -18,12 +18,13 @@
 
 package org.apache.skywalking.apm.agent.core.jvm.memorypool;
 
+import org.apache.skywalking.apm.network.language.agent.v3.MemoryPool;
+import org.apache.skywalking.apm.network.language.agent.v3.PoolType;
+
 import java.lang.management.MemoryPoolMXBean;
 import java.lang.management.MemoryUsage;
 import java.util.LinkedList;
 import java.util.List;
-import org.apache.skywalking.apm.network.language.agent.v3.MemoryPool;
-import org.apache.skywalking.apm.network.language.agent.v3.PoolType;
 
 public abstract class MemoryPoolModule implements MemoryPoolMetricsAccessor {
     private List<MemoryPoolMXBean> beans;

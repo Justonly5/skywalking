@@ -18,8 +18,6 @@
 
 package org.apache.skywalking.apm.toolkit.activation.meter;
 
-import java.util.Arrays;
-import java.util.Map;
 import org.apache.skywalking.apm.agent.core.boot.ServiceManager;
 import org.apache.skywalking.apm.agent.core.meter.BaseMeter;
 import org.apache.skywalking.apm.agent.core.meter.MeterService;
@@ -33,6 +31,9 @@ import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 import org.powermock.reflect.Whitebox;
+
+import java.util.Arrays;
+import java.util.Map;
 
 public class CounterConstructInterceptorTest {
 

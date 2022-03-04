@@ -22,13 +22,14 @@ import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Maps;
 import io.vavr.Tuple;
 import io.vavr.Tuple2;
-import java.util.Map;
-import java.util.PriorityQueue;
-import java.util.Queue;
 import lombok.AccessLevel;
 import lombok.EqualsAndHashCode;
 import lombok.RequiredArgsConstructor;
 import lombok.ToString;
+
+import java.util.Map;
+import java.util.PriorityQueue;
+import java.util.Queue;
 
 /**
  * CounterWindow stores a series of counter samples in order to calculate the increase

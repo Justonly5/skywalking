@@ -20,17 +20,18 @@ package org.apache.skywalking.oap.server.receiver.browser.provider.handler.rest;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import javax.servlet.http.HttpServletRequest;
 import org.apache.skywalking.apm.network.language.agent.v3.BrowserErrorLog;
 import org.apache.skywalking.oap.server.library.module.ModuleManager;
 import org.apache.skywalking.oap.server.library.util.ProtoBufJsonUtils;
 import org.apache.skywalking.oap.server.receiver.browser.provider.BrowserServiceModuleConfig;
 import org.apache.skywalking.oap.server.receiver.browser.provider.parser.errorlog.ErrorLogParserListenerManager;
+
+import javax.servlet.http.HttpServletRequest;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class BrowserErrorLogReportListServletHandler extends BrowserErrorLogReportBaseServletHandler {
     private final Gson gson = new Gson();

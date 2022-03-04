@@ -17,11 +17,12 @@
 
 package org.apache.skywalking.apm.plugin.elasticsearch.v5;
 
-import java.lang.reflect.Method;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceMethodsAroundInterceptor;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
 import org.elasticsearch.common.transport.TransportAddress;
+
+import java.lang.reflect.Method;
 
 public class AddTransportAddressesInterceptor implements InstanceMethodsAroundInterceptor {
     @Override

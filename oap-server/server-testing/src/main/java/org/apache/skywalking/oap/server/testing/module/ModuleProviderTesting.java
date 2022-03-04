@@ -18,11 +18,12 @@
 
 package org.apache.skywalking.oap.server.testing.module;
 
-import java.util.HashMap;
-import java.util.Map;
 import org.apache.skywalking.oap.server.library.module.ModuleServiceHolder;
 import org.apache.skywalking.oap.server.library.module.Service;
 import org.apache.skywalking.oap.server.library.module.ServiceNotProvidedException;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class ModuleProviderTesting implements ModuleServiceHolder {
 

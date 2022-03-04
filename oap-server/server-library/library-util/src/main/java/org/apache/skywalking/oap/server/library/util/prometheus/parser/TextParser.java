@@ -18,10 +18,6 @@
 
 package org.apache.skywalking.oap.server.library.util.prometheus.parser;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import org.apache.commons.text.StringEscapeUtils;
 import org.apache.skywalking.oap.server.library.util.prometheus.Parser;
 import org.apache.skywalking.oap.server.library.util.prometheus.metrics.MetricFamily;
@@ -29,6 +25,11 @@ import org.apache.skywalking.oap.server.library.util.prometheus.metrics.MetricTy
 import org.apache.skywalking.oap.server.library.util.prometheus.parser.sample.TextSample;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 public class TextParser implements Parser {
     private static final Logger LOG = LoggerFactory.getLogger(TextParser.class);

@@ -18,14 +18,15 @@
 
 package org.apache.skywalking.oap.server.core.config.group;
 
+import org.apache.skywalking.apm.util.StringUtil;
+import org.yaml.snakeyaml.Yaml;
+import org.yaml.snakeyaml.constructor.SafeConstructor;
+
 import java.io.InputStream;
 import java.io.Reader;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
-import org.apache.skywalking.apm.util.StringUtil;
-import org.yaml.snakeyaml.Yaml;
-import org.yaml.snakeyaml.constructor.SafeConstructor;
 
 /**
  * Read the input stream including the default endpoint grouping rules. And trans

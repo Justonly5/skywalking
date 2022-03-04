@@ -19,8 +19,6 @@
 package org.apache.skywalking.oap.server.cluster.plugin.zookeeper;
 
 import com.google.common.collect.Lists;
-import java.security.NoSuchAlgorithmException;
-import java.util.List;
 import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
@@ -44,6 +42,9 @@ import org.apache.zookeeper.data.Id;
 import org.apache.zookeeper.server.auth.DigestAuthenticationProvider;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.security.NoSuchAlgorithmException;
+import java.util.List;
 
 /**
  * Use Zookeeper to manage all instances in SkyWalking cluster.

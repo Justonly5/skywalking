@@ -18,7 +18,6 @@
 
 package org.apache.skywalking.apm.plugin.elasticsearch.v5;
 
-import java.lang.reflect.Method;
 import org.apache.skywalking.apm.agent.core.context.ContextManager;
 import org.apache.skywalking.apm.agent.core.context.tag.Tags;
 import org.apache.skywalking.apm.agent.core.context.trace.AbstractSpan;
@@ -30,12 +29,10 @@ import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInt
 import org.apache.skywalking.apm.network.trace.component.ComponentsDefine;
 import org.elasticsearch.cluster.node.DiscoveryNode;
 
+import java.lang.reflect.Method;
+
+import static org.apache.skywalking.apm.plugin.elasticsearch.v5.Constants.*;
 import static org.apache.skywalking.apm.plugin.elasticsearch.v5.ElasticsearchPluginConfig.Plugin.Elasticsearch.TRACE_DSL;
-import static org.apache.skywalking.apm.plugin.elasticsearch.v5.Constants.DB_TYPE;
-import static org.apache.skywalking.apm.plugin.elasticsearch.v5.Constants.ELASTICSEARCH_DB_OP_PREFIX;
-import static org.apache.skywalking.apm.plugin.elasticsearch.v5.Constants.ES_INDEX;
-import static org.apache.skywalking.apm.plugin.elasticsearch.v5.Constants.ES_NODE;
-import static org.apache.skywalking.apm.plugin.elasticsearch.v5.Constants.ES_TYPE;
 import static org.apache.skywalking.apm.plugin.elasticsearch.v5.Util.wrapperNullStringValue;
 
 public class TransportActionNodeProxyInterceptor implements InstanceConstructorInterceptor, InstanceMethodsAroundInterceptor {

@@ -18,8 +18,8 @@
 
 package org.apache.skywalking.oap.server.analyzer.provider.trace.parser.listener;
 
-import org.apache.skywalking.oap.server.library.module.ModuleManager;
 import org.apache.skywalking.oap.server.analyzer.provider.AnalyzerModuleConfig;
+import org.apache.skywalking.oap.server.library.module.ModuleManager;
 
 /**
  * AnalysisListenerFactory implementation creates the listener instances when required. Every AnalysisListener could

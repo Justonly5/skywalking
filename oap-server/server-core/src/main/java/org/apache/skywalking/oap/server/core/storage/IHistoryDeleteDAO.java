@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.oap.server.core.storage;
 
-import java.io.IOException;
-import java.util.List;
 import org.apache.skywalking.oap.server.core.analysis.metrics.Metrics;
 import org.apache.skywalking.oap.server.core.storage.model.Model;
+
+import java.io.IOException;
+import java.util.List;
 
 /**
  * Remove all expired data based on TTL configurations.

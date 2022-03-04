@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.oap.server.core.source;
 
-import java.io.IOException;
 import lombok.Getter;
 import org.apache.skywalking.oap.server.core.analysis.DispatcherDetectorListener;
 import org.apache.skywalking.oap.server.core.analysis.DispatcherManager;
+
+import java.io.IOException;
 
 public class SourceReceiverImpl implements SourceReceiver {
     @Getter

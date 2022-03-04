@@ -20,12 +20,12 @@ package org.apache.skywalking.oap.server.core.profile.analyze;
 
 import com.google.common.primitives.Ints;
 import com.google.protobuf.InvalidProtocolBufferException;
-import java.util.List;
-import java.util.Objects;
-
 import lombok.Data;
 import org.apache.skywalking.apm.network.language.profile.v3.ThreadStack;
 import org.apache.skywalking.oap.server.core.profile.ProfileThreadSnapshotRecord;
+
+import java.util.List;
+import java.util.Objects;
 
 /**
  * Deserialize from {@link ProfileThreadSnapshotRecord}

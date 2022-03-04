@@ -19,23 +19,19 @@
 package org.apache.skywalking.oap.query.graphql.resolver;
 
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
-import java.io.IOException;
-import java.text.ParseException;
-import java.util.ArrayList;
-import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.apache.skywalking.oap.query.graphql.type.BatchMetricConditions;
 import org.apache.skywalking.oap.server.core.query.input.Duration;
 import org.apache.skywalking.oap.server.core.query.input.Entity;
 import org.apache.skywalking.oap.server.core.query.input.MetricCondition;
 import org.apache.skywalking.oap.server.core.query.input.MetricsCondition;
-import org.apache.skywalking.oap.server.core.query.type.Bucket;
-import org.apache.skywalking.oap.server.core.query.type.HeatMap;
-import org.apache.skywalking.oap.server.core.query.type.IntValues;
-import org.apache.skywalking.oap.server.core.query.type.KVInt;
-import org.apache.skywalking.oap.server.core.query.type.MetricsValues;
-import org.apache.skywalking.oap.server.core.query.type.Thermodynamic;
+import org.apache.skywalking.oap.server.core.query.type.*;
 import org.apache.skywalking.oap.server.library.module.ModuleManager;
+
+import java.io.IOException;
+import java.text.ParseException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @since 8.0.0 This query is replaced by {@link MetricsQuery}

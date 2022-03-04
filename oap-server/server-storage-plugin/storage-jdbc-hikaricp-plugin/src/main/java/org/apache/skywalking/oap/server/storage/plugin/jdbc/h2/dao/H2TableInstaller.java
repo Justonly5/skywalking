@@ -19,11 +19,6 @@
 package org.apache.skywalking.oap.server.storage.plugin.jdbc.h2.dao;
 
 import com.google.gson.JsonObject;
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.util.List;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.skywalking.oap.server.core.analysis.NodeType;
 import org.apache.skywalking.oap.server.core.storage.StorageException;
@@ -37,6 +32,12 @@ import org.apache.skywalking.oap.server.library.client.jdbc.hikaricp.JDBCHikariC
 import org.apache.skywalking.oap.server.library.module.ModuleManager;
 import org.apache.skywalking.oap.server.storage.plugin.jdbc.SQLBuilder;
 import org.apache.skywalking.oap.server.storage.plugin.jdbc.TableMetaInfo;
+
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.List;
 
 /**
  * H2 table initialization. Create tables without Indexes. H2 is for the demonstration only, so, keep the logic as

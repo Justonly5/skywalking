@@ -18,12 +18,13 @@
 
 package org.apache.skywalking.apm.agent.core.plugin;
 
-import java.util.ArrayList;
-import java.util.List;
 import org.apache.skywalking.apm.agent.core.plugin.exception.IllegalPluginDefineException;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.apache.skywalking.apm.agent.core.conf.Config.Plugin.EXCLUDE_PLUGINS;
 

@@ -18,9 +18,9 @@
 
 package org.apache.skywalking.apm.agent.core.plugin;
 
-import org.apache.skywalking.apm.agent.core.plugin.exception.IllegalPluginDefineException;
 import org.apache.skywalking.apm.agent.core.logging.api.ILog;
 import org.apache.skywalking.apm.agent.core.logging.api.LogManager;
+import org.apache.skywalking.apm.agent.core.plugin.exception.IllegalPluginDefineException;
 
 import java.io.BufferedReader;
 import java.io.IOException;

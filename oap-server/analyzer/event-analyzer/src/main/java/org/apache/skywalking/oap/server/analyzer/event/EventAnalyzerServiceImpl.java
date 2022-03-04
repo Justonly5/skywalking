@@ -18,13 +18,14 @@
 
 package org.apache.skywalking.oap.server.analyzer.event;
 
-import java.util.ArrayList;
-import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.apache.skywalking.apm.network.event.v3.Event;
 import org.apache.skywalking.oap.server.analyzer.event.listener.EventAnalyzerListener;
-import org.apache.skywalking.oap.server.library.module.ModuleManager;
 import org.apache.skywalking.oap.server.analyzer.event.listener.EventAnalyzerListenerFactoryManager;
+import org.apache.skywalking.oap.server.library.module.ModuleManager;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @RequiredArgsConstructor
 public class EventAnalyzerServiceImpl implements EventAnalyzerService, EventAnalyzerListenerFactoryManager {

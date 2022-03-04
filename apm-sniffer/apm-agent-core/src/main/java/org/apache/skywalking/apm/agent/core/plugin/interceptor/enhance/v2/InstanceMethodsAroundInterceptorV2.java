@@ -17,9 +17,10 @@
 
 package org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.v2;
 
-import java.lang.reflect.Method;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.ClassInstanceMethodsEnhancePluginDefine;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
+
+import java.lang.reflect.Method;
 
 /**
  * A v2 interceptor, which intercept method's invocation. The target methods will be defined in {@link

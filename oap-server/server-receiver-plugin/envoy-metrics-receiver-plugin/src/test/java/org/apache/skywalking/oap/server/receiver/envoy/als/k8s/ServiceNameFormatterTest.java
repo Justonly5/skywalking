@@ -22,11 +22,12 @@ import com.google.common.collect.ImmutableMap;
 import io.kubernetes.client.openapi.models.V1ObjectMeta;
 import io.kubernetes.client.openapi.models.V1Pod;
 import io.kubernetes.client.openapi.models.V1Service;
-import java.util.Map;
 import lombok.RequiredArgsConstructor;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+
+import java.util.Map;
 
 import static com.google.common.collect.ImmutableSortedMap.of;
 import static junit.framework.TestCase.assertEquals;

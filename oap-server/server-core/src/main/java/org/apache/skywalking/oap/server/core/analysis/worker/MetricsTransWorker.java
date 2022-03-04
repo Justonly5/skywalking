@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.oap.server.core.analysis.worker;
 
-import java.util.Objects;
 import org.apache.skywalking.oap.server.core.analysis.metrics.Metrics;
 import org.apache.skywalking.oap.server.core.worker.AbstractWorker;
 import org.apache.skywalking.oap.server.library.module.ModuleDefineHolder;
+
+import java.util.Objects;
 
 /**
  * MetricsTransWorker is transferring the metrics for down sampling. All streaming process metrics are in the minute

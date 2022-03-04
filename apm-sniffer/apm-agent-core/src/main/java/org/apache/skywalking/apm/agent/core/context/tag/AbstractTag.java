@@ -18,8 +18,9 @@
 
 package org.apache.skywalking.apm.agent.core.context.tag;
 
-import java.util.Objects;
 import org.apache.skywalking.apm.agent.core.context.trace.AbstractSpan;
+
+import java.util.Objects;
 
 public abstract class AbstractTag<T> {
 

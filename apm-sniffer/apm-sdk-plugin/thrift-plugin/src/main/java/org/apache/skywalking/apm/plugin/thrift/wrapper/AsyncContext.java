@@ -18,8 +18,9 @@
 
 package org.apache.skywalking.apm.plugin.thrift.wrapper;
 
-import java.util.Map;
 import org.apache.thrift.AsyncProcessFunction;
+
+import java.util.Map;
 
 public class AsyncContext extends AbstractContext {
     private final Map<String, AsyncProcessFunction> processMapView;

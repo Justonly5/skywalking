@@ -21,10 +21,11 @@ package org.apache.skywalking.oap.meter.analyzer.dsl.tagOpt;
 import com.google.common.base.Strings;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Maps;
-import java.util.Arrays;
-import java.util.Map;
 import org.apache.skywalking.oap.meter.analyzer.dsl.Sample;
 import org.apache.skywalking.oap.meter.analyzer.k8s.K8sInfoRegistry;
+
+import java.util.Arrays;
+import java.util.Map;
 
 public enum K8sRetagType implements Retag {
     Pod2Service {

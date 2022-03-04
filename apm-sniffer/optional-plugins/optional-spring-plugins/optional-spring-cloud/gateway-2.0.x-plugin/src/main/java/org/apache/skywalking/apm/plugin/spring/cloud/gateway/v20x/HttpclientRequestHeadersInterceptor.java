@@ -18,11 +18,12 @@
 package org.apache.skywalking.apm.plugin.spring.cloud.gateway.v20x;
 
 import io.netty.handler.codec.http.HttpHeaders;
-import java.lang.reflect.Method;
 import org.apache.skywalking.apm.agent.core.context.CarrierItem;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceMethodsAroundInterceptor;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
+
+import java.lang.reflect.Method;
 
 public class HttpclientRequestHeadersInterceptor implements InstanceMethodsAroundInterceptor {
     @Override

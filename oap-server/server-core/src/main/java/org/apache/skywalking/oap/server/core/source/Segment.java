@@ -18,11 +18,12 @@
 
 package org.apache.skywalking.oap.server.core.source;
 
-import java.util.ArrayList;
-import java.util.List;
 import lombok.Getter;
 import lombok.Setter;
 import org.apache.skywalking.oap.server.core.analysis.manual.searchtag.Tag;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.apache.skywalking.oap.server.core.source.DefaultScopeDefine.SEGMENT;
 

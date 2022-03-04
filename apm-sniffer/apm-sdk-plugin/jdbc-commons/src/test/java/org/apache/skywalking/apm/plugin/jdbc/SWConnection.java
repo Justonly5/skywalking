@@ -18,29 +18,16 @@
 
 package org.apache.skywalking.apm.plugin.jdbc;
 
-import java.sql.Array;
-import java.sql.Blob;
-import java.sql.CallableStatement;
-import java.sql.Clob;
-import java.sql.Connection;
-import java.sql.DatabaseMetaData;
-import java.sql.NClob;
-import java.sql.PreparedStatement;
-import java.sql.SQLClientInfoException;
-import java.sql.SQLException;
-import java.sql.SQLWarning;
-import java.sql.SQLXML;
-import java.sql.Savepoint;
-import java.sql.Statement;
-import java.sql.Struct;
+import org.apache.skywalking.apm.plugin.jdbc.connectionurl.parser.URLParser;
+import org.apache.skywalking.apm.plugin.jdbc.trace.ConnectionInfo;
+import org.apache.skywalking.apm.plugin.jdbc.trace.SWCallableStatement;
+import org.apache.skywalking.apm.plugin.jdbc.trace.SWPreparedStatement;
+import org.apache.skywalking.apm.plugin.jdbc.trace.SWStatement;
+
+import java.sql.*;
 import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.Executor;
-import org.apache.skywalking.apm.plugin.jdbc.connectionurl.parser.URLParser;
-import org.apache.skywalking.apm.plugin.jdbc.trace.SWCallableStatement;
-import org.apache.skywalking.apm.plugin.jdbc.trace.SWPreparedStatement;
-import org.apache.skywalking.apm.plugin.jdbc.trace.ConnectionInfo;
-import org.apache.skywalking.apm.plugin.jdbc.trace.SWStatement;
 
 public class SWConnection implements Connection {
     private ConnectionInfo connectInfo;

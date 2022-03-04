@@ -18,13 +18,14 @@
 
 package org.apache.skywalking.apm.plugin.jdk.threading;
 
-import java.util.ArrayList;
-import java.util.List;
 import org.apache.skywalking.apm.agent.core.logging.api.ILog;
 import org.apache.skywalking.apm.agent.core.logging.api.LogManager;
 import org.apache.skywalking.apm.agent.core.plugin.match.IndirectMatch;
 import org.apache.skywalking.apm.agent.core.plugin.match.PrefixMatch;
 import org.apache.skywalking.apm.agent.core.plugin.match.logical.LogicalMatchOperation;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.apache.skywalking.apm.agent.core.plugin.match.PrefixMatch.nameStartsWith;
 

@@ -24,12 +24,7 @@ import org.apache.skywalking.apm.util.StringUtil;
 import org.springframework.http.server.reactive.ServerHttpRequest;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class RequestUtil {
     public static void collectHttpParam(HttpServletRequest request, AbstractSpan span) {

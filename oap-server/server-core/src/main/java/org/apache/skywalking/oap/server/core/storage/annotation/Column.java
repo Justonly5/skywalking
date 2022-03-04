@@ -18,13 +18,14 @@
 
 package org.apache.skywalking.oap.server.core.storage.annotation;
 
+import lombok.Getter;
+import org.apache.skywalking.oap.server.core.query.sql.Function;
+import org.apache.skywalking.oap.server.core.storage.model.ModelManipulator;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-import lombok.Getter;
-import org.apache.skywalking.oap.server.core.query.sql.Function;
-import org.apache.skywalking.oap.server.core.storage.model.ModelManipulator;
 
 /**
  * Data column of all persistent entity.

@@ -18,7 +18,6 @@
 
 package org.apache.skywalking.apm.plugin.jetty.v9.client;
 
-import java.lang.reflect.Method;
 import org.apache.skywalking.apm.agent.core.context.CarrierItem;
 import org.apache.skywalking.apm.agent.core.context.ContextCarrier;
 import org.apache.skywalking.apm.agent.core.context.ContextManager;
@@ -31,6 +30,8 @@ import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInt
 import org.apache.skywalking.apm.network.trace.component.ComponentsDefine;
 import org.eclipse.jetty.client.HttpRequest;
 import org.eclipse.jetty.http.HttpFields;
+
+import java.lang.reflect.Method;
 
 public class SyncHttpRequestSendInterceptor implements InstanceMethodsAroundInterceptor {
 

@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.oap.server.core.analysis.manual.service;
 
-import java.util.Map;
 import org.apache.skywalking.oap.server.core.analysis.NodeType;
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.util.Map;
 
 public class ServiceTrafficTest {
     @Test

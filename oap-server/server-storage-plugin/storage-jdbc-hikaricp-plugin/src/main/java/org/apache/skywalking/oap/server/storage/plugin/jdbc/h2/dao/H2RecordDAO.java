@@ -18,9 +18,6 @@
 
 package org.apache.skywalking.oap.server.storage.plugin.jdbc.h2.dao;
 
-import java.io.IOException;
-import java.util.Arrays;
-import java.util.Map;
 import org.apache.skywalking.oap.server.core.Const;
 import org.apache.skywalking.oap.server.core.CoreModule;
 import org.apache.skywalking.oap.server.core.UnexpectedException;
@@ -35,6 +32,10 @@ import org.apache.skywalking.oap.server.core.storage.model.Model;
 import org.apache.skywalking.oap.server.library.client.jdbc.hikaricp.JDBCHikariCPClient;
 import org.apache.skywalking.oap.server.library.client.request.InsertRequest;
 import org.apache.skywalking.oap.server.library.module.ModuleManager;
+
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.Map;
 
 public class H2RecordDAO extends H2SQLExecutor implements IRecordDAO {
     private JDBCHikariCPClient h2Client;

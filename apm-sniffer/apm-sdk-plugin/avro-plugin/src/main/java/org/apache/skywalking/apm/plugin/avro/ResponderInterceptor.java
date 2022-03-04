@@ -18,7 +18,6 @@
 
 package org.apache.skywalking.apm.plugin.avro;
 
-import java.lang.reflect.Method;
 import org.apache.avro.Protocol;
 import org.apache.avro.ipc.Responder;
 import org.apache.skywalking.apm.agent.core.context.ContextManager;
@@ -26,6 +25,8 @@ import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedI
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceConstructorInterceptor;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceMethodsAroundInterceptor;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
+
+import java.lang.reflect.Method;
 
 public class ResponderInterceptor implements InstanceConstructorInterceptor, InstanceMethodsAroundInterceptor {
 

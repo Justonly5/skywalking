@@ -18,8 +18,9 @@
 
 package org.apache.skywalking.oap.server.library.util.prometheus;
 
-import java.io.InputStream;
 import org.apache.skywalking.oap.server.library.util.prometheus.parser.TextParser;
+
+import java.io.InputStream;
 
 public class Parsers {
     public static Parser text(final InputStream stream) {

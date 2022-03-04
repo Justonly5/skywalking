@@ -18,11 +18,7 @@
 
 package org.apache.skywalking.oap.server.telemetry.prometheus;
 
-import org.apache.skywalking.oap.server.telemetry.api.CounterMetrics;
-import org.apache.skywalking.oap.server.telemetry.api.GaugeMetrics;
-import org.apache.skywalking.oap.server.telemetry.api.HistogramMetrics;
-import org.apache.skywalking.oap.server.telemetry.api.MetricsCreator;
-import org.apache.skywalking.oap.server.telemetry.api.MetricsTag;
+import org.apache.skywalking.oap.server.telemetry.api.*;
 
 /**
  * Create metrics instance for Prometheus exporter.

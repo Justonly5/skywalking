@@ -18,7 +18,6 @@
 
 package org.apache.skywalking.apm.plugin.elasticsearch.v5;
 
-import java.lang.reflect.Method;
 import org.apache.skywalking.apm.agent.core.context.ContextManager;
 import org.apache.skywalking.apm.agent.core.context.tag.Tags;
 import org.apache.skywalking.apm.agent.core.context.trace.AbstractSpan;
@@ -29,12 +28,9 @@ import org.apache.skywalking.apm.network.trace.component.ComponentsDefine;
 import org.elasticsearch.action.bulk.BulkResponse;
 import org.elasticsearch.action.search.SearchResponse;
 
-import static org.apache.skywalking.apm.plugin.elasticsearch.v5.Constants.BASE_FUTURE_METHOD;
-import static org.apache.skywalking.apm.plugin.elasticsearch.v5.Constants.DB_TYPE;
-import static org.apache.skywalking.apm.plugin.elasticsearch.v5.Constants.ELASTICSEARCH_DB_OP_PREFIX;
-import static org.apache.skywalking.apm.plugin.elasticsearch.v5.Constants.ES_INGEST_TOOK_MILLIS;
-import static org.apache.skywalking.apm.plugin.elasticsearch.v5.Constants.ES_TOOK_MILLIS;
-import static org.apache.skywalking.apm.plugin.elasticsearch.v5.Constants.ES_TOTAL_HITS;
+import java.lang.reflect.Method;
+
+import static org.apache.skywalking.apm.plugin.elasticsearch.v5.Constants.*;
 
 public class PlainListenableActionFutureInterceptor implements InstanceMethodsAroundInterceptor {
 

@@ -18,8 +18,6 @@
 
 package org.apache.skywalking.oap.server.configuration.zookeeper;
 
-import java.util.Optional;
-import java.util.Set;
 import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
@@ -28,6 +26,9 @@ import org.apache.curator.framework.recipes.cache.PathChildrenCache;
 import org.apache.curator.retry.ExponentialBackoffRetry;
 import org.apache.skywalking.oap.server.configuration.api.ConfigTable;
 import org.apache.skywalking.oap.server.configuration.api.ConfigWatcherRegister;
+
+import java.util.Optional;
+import java.util.Set;
 
 public class ZookeeperConfigWatcherRegister extends ConfigWatcherRegister {
     private final PathChildrenCache childrenCache;

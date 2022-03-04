@@ -18,15 +18,16 @@
 
 package org.apache.skywalking.apm.agent.core.meter;
 
+import org.apache.skywalking.apm.network.language.agent.v3.MeterBucketValue;
+import org.apache.skywalking.apm.network.language.agent.v3.MeterData;
+import org.apache.skywalking.apm.network.language.agent.v3.MeterHistogram;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.stream.Collectors;
-import org.apache.skywalking.apm.network.language.agent.v3.MeterBucketValue;
-import org.apache.skywalking.apm.network.language.agent.v3.MeterData;
-import org.apache.skywalking.apm.network.language.agent.v3.MeterHistogram;
 
 /**
  * Histogram represents the distribution of data. It includes the buckets representing continuous ranges of values, with

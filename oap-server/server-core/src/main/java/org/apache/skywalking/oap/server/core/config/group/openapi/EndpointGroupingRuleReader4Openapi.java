@@ -18,6 +18,11 @@
 
 package org.apache.skywalking.oap.server.core.config.group.openapi;
 
+import org.apache.skywalking.apm.util.StringUtil;
+import org.apache.skywalking.oap.server.library.util.ResourceUtils;
+import org.yaml.snakeyaml.Yaml;
+import org.yaml.snakeyaml.constructor.SafeConstructor;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -26,10 +31,6 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import org.apache.skywalking.apm.util.StringUtil;
-import org.apache.skywalking.oap.server.library.util.ResourceUtils;
-import org.yaml.snakeyaml.Yaml;
-import org.yaml.snakeyaml.constructor.SafeConstructor;
 
 public class EndpointGroupingRuleReader4Openapi {
 

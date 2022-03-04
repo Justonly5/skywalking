@@ -18,13 +18,14 @@
 
 package org.apache.skywalking.oap.server.core.analysis.worker;
 
-import java.io.IOException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.skywalking.oap.server.core.analysis.management.ManagementData;
 import org.apache.skywalking.oap.server.core.storage.IManagementDAO;
 import org.apache.skywalking.oap.server.core.storage.model.Model;
 import org.apache.skywalking.oap.server.core.worker.AbstractWorker;
 import org.apache.skywalking.oap.server.library.module.ModuleDefineHolder;
+
+import java.io.IOException;
 
 @Slf4j
 public class ManagementPersistentWorker extends AbstractWorker<ManagementData> {

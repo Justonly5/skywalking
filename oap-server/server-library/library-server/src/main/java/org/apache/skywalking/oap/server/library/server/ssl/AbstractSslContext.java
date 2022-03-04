@@ -21,12 +21,13 @@ package org.apache.skywalking.oap.server.library.server.ssl;
 import io.netty.buffer.ByteBufAllocator;
 import io.netty.handler.ssl.ApplicationProtocolNegotiator;
 import io.netty.handler.ssl.SslContext;
-import java.util.List;
-import javax.net.ssl.SSLEngine;
-import javax.net.ssl.SSLSessionContext;
 import lombok.AccessLevel;
 import lombok.Setter;
 import org.apache.skywalking.oap.server.library.util.MultipleFilesChangeMonitor;
+
+import javax.net.ssl.SSLEngine;
+import javax.net.ssl.SSLSessionContext;
+import java.util.List;
 
 public abstract class AbstractSslContext extends SslContext {
     private final MultipleFilesChangeMonitor monitor;

@@ -18,7 +18,6 @@
 
 package org.apache.skywalking.apm.agent.core.plugin.bootstrap.template;
 
-import java.lang.reflect.Method;
 import net.bytebuddy.implementation.bind.annotation.AllArguments;
 import net.bytebuddy.implementation.bind.annotation.Morph;
 import net.bytebuddy.implementation.bind.annotation.Origin;
@@ -28,6 +27,8 @@ import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.Bootstrap
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.OverrideCallable;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.StaticMethodsAroundInterceptor;
+
+import java.lang.reflect.Method;
 
 /**
  * --------CLASS TEMPLATE---------

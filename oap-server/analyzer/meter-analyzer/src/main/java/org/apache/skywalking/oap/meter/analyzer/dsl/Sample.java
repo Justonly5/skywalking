@@ -21,13 +21,14 @@ package org.apache.skywalking.oap.meter.analyzer.dsl;
 import com.google.common.collect.ImmutableMap;
 import io.vavr.Function2;
 import io.vavr.Tuple2;
-import java.time.Duration;
-import java.util.function.Function;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
 import org.apache.skywalking.oap.meter.analyzer.dsl.counter.CounterWindow;
+
+import java.time.Duration;
+import java.util.function.Function;
 
 /**
  * Sample represents the metric data point in a range of time.

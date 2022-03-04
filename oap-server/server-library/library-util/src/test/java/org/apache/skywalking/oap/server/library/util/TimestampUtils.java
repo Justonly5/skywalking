@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.oap.server.library.util;
 
-import java.sql.Timestamp;
-import java.text.SimpleDateFormat;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
 
 public class TimestampUtils {
 

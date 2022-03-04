@@ -21,13 +21,14 @@ package org.apache.skywalking.oap.server.receiver.envoy.metrics.adapters;
 import com.google.protobuf.Struct;
 import com.google.protobuf.Value;
 import io.prometheus.client.Metrics;
-import java.util.Map;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.skywalking.apm.util.StringUtil;
 import org.apache.skywalking.oap.server.receiver.envoy.EnvoyMetricReceiverConfig;
 import org.apache.skywalking.oap.server.receiver.envoy.als.ServiceMetaInfo;
+
+import java.util.Map;
 
 @Slf4j
 @RequiredArgsConstructor

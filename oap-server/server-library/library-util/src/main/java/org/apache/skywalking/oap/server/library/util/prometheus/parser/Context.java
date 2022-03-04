@@ -19,24 +19,18 @@
 package org.apache.skywalking.oap.server.library.util.prometheus.parser;
 
 import com.google.common.collect.Maps;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.tuple.Pair;
-import org.apache.skywalking.oap.server.library.util.prometheus.metrics.Counter;
-import org.apache.skywalking.oap.server.library.util.prometheus.metrics.Gauge;
-import org.apache.skywalking.oap.server.library.util.prometheus.metrics.Histogram;
-import org.apache.skywalking.oap.server.library.util.prometheus.metrics.MetricFamily;
-import org.apache.skywalking.oap.server.library.util.prometheus.metrics.MetricType;
-import org.apache.skywalking.oap.server.library.util.prometheus.metrics.Summary;
+import org.apache.skywalking.oap.server.library.util.prometheus.metrics.*;
 import org.apache.skywalking.oap.server.library.util.prometheus.parser.sample.TextSample;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static java.util.stream.Collectors.groupingBy;
-import static java.util.stream.Collectors.mapping;
-import static java.util.stream.Collectors.toList;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import static java.util.stream.Collectors.*;
 
 @RequiredArgsConstructor
 public class Context {

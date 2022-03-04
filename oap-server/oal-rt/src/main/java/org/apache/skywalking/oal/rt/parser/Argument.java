@@ -18,9 +18,10 @@
 
 package org.apache.skywalking.oal.rt.parser;
 
-import java.util.List;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+
+import java.util.List;
 
 /**
  * Function argument.

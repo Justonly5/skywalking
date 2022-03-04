@@ -18,9 +18,8 @@
 
 package org.apache.skywalking.apm.plugin.lettuce.v5;
 
-import java.lang.reflect.Method;
-import java.util.Collection;
-
+import io.lettuce.core.protocol.CommandArgs;
+import io.lettuce.core.protocol.RedisCommand;
 import org.apache.skywalking.apm.agent.core.conf.Constants;
 import org.apache.skywalking.apm.agent.core.context.ContextManager;
 import org.apache.skywalking.apm.agent.core.context.tag.Tags;
@@ -33,8 +32,8 @@ import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInt
 import org.apache.skywalking.apm.network.trace.component.ComponentsDefine;
 import org.apache.skywalking.apm.util.StringUtil;
 
-import io.lettuce.core.protocol.CommandArgs;
-import io.lettuce.core.protocol.RedisCommand;
+import java.lang.reflect.Method;
+import java.util.Collection;
 
 public class RedisChannelWriterInterceptor implements InstanceMethodsAroundInterceptor, InstanceConstructorInterceptor {
 

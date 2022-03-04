@@ -18,7 +18,6 @@
 
 package org.apache.skywalking.oap.server.storage.plugin.influxdb.base;
 
-import java.util.concurrent.TimeUnit;
 import org.apache.skywalking.apm.commons.datacarrier.common.AtomicRangeInteger;
 import org.apache.skywalking.oap.server.core.analysis.TimeBucket;
 import org.apache.skywalking.oap.server.core.analysis.config.NoneStream;
@@ -27,6 +26,8 @@ import org.apache.skywalking.oap.server.core.storage.StorageHashMapBuilder;
 import org.apache.skywalking.oap.server.core.storage.model.Model;
 import org.apache.skywalking.oap.server.storage.plugin.influxdb.InfluxClient;
 import org.apache.skywalking.oap.server.storage.plugin.influxdb.TableMetaInfo;
+
+import java.util.concurrent.TimeUnit;
 
 public class NoneStreamDAO implements INoneStreamDAO {
     private static final int PADDING_SIZE = 1_000_000;

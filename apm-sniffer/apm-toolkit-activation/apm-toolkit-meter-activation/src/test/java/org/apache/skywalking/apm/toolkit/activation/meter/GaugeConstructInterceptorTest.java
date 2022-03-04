@@ -18,15 +18,8 @@
 
 package org.apache.skywalking.apm.toolkit.activation.meter;
 
-import java.util.Arrays;
-import java.util.Map;
-import java.util.function.Supplier;
 import org.apache.skywalking.apm.agent.core.boot.ServiceManager;
-import org.apache.skywalking.apm.agent.core.meter.BaseMeter;
-import org.apache.skywalking.apm.agent.core.meter.Gauge;
-import org.apache.skywalking.apm.agent.core.meter.MeterService;
-import org.apache.skywalking.apm.agent.core.meter.MeterTag;
-import org.apache.skywalking.apm.agent.core.meter.MeterType;
+import org.apache.skywalking.apm.agent.core.meter.*;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.test.tools.AgentServiceRule;
 import org.apache.skywalking.apm.toolkit.meter.MeterId;
@@ -34,6 +27,10 @@ import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 import org.powermock.reflect.Whitebox;
+
+import java.util.Arrays;
+import java.util.Map;
+import java.util.function.Supplier;
 
 public class GaugeConstructInterceptorTest {
 

@@ -18,9 +18,10 @@
 
 package org.apache.skywalking.apm.plugin.jedis.v2;
 
-import java.net.URI;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceConstructorInterceptor;
+
+import java.net.URI;
 
 public class JedisConstructorWithUriArgInterceptor implements InstanceConstructorInterceptor {
 

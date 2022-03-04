@@ -30,9 +30,7 @@ import org.apache.skywalking.apm.agent.core.plugin.match.ClassMatch;
 import static net.bytebuddy.matcher.ElementMatchers.isAnnotatedWith;
 import static net.bytebuddy.matcher.ElementMatchers.named;
 import static org.apache.skywalking.apm.agent.core.plugin.match.MethodAnnotationMatch.byMethodAnnotationMatch;
-import static org.apache.skywalking.apm.agent.core.plugin.match.logical.LogicalMatchOperation.and;
-import static org.apache.skywalking.apm.agent.core.plugin.match.logical.LogicalMatchOperation.not;
-import static org.apache.skywalking.apm.agent.core.plugin.match.logical.LogicalMatchOperation.or;
+import static org.apache.skywalking.apm.agent.core.plugin.match.logical.LogicalMatchOperation.*;
 
 /**
  * Intercepts all methods annotated with {@link org.apache.skywalking.apm.toolkit.trace.Tag}

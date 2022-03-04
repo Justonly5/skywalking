@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.apm.commons.datacarrier.consumer;
 
-import java.util.ArrayList;
-import java.util.List;
 import org.apache.skywalking.apm.commons.datacarrier.buffer.Channels;
 import org.apache.skywalking.apm.commons.datacarrier.buffer.QueueBuffer;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * MultipleChannelsConsumer represent a single consumer thread, but support multiple channels with their {@link

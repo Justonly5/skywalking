@@ -21,8 +21,6 @@ package org.apache.skywalking.oap.server.receiver.trace.mock;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.stub.StreamObserver;
-import java.util.UUID;
-import java.util.concurrent.TimeUnit;
 import org.apache.skywalking.apm.network.common.v3.Commands;
 import org.apache.skywalking.apm.network.common.v3.KeyStringValuePair;
 import org.apache.skywalking.apm.network.language.agent.v3.SegmentObject;
@@ -30,6 +28,9 @@ import org.apache.skywalking.apm.network.language.agent.v3.TraceSegmentReportSer
 import org.apache.skywalking.apm.network.management.v3.InstancePingPkg;
 import org.apache.skywalking.apm.network.management.v3.InstanceProperties;
 import org.apache.skywalking.apm.network.management.v3.ManagementServiceGrpc;
+
+import java.util.UUID;
+import java.util.concurrent.TimeUnit;
 
 public class AgentDataMock {
     private static boolean IS_COMPLETED = false;

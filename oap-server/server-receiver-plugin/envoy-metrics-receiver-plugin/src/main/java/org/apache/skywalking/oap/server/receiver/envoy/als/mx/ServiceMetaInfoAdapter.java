@@ -20,15 +20,12 @@ package org.apache.skywalking.oap.server.receiver.envoy.als.mx;
 
 import Wasm.Common.FlatNode;
 import Wasm.Common.KeyVal;
-import com.google.protobuf.Any;
-import com.google.protobuf.ByteString;
-import com.google.protobuf.BytesValue;
-import com.google.protobuf.Struct;
-import com.google.protobuf.Value;
-import java.nio.ByteBuffer;
+import com.google.protobuf.*;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.skywalking.oap.server.receiver.envoy.als.ServiceMetaInfo;
+
+import java.nio.ByteBuffer;
 
 import static com.google.common.base.Strings.nullToEmpty;
 import static java.util.Objects.nonNull;

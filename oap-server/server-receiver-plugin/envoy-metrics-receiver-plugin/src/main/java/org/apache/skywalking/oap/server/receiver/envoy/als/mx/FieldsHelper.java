@@ -18,12 +18,21 @@
 
 package org.apache.skywalking.oap.server.receiver.envoy.als.mx;
 
+import com.google.common.base.Splitter;
+import com.google.common.base.Strings;
+import com.google.protobuf.Struct;
+import com.google.protobuf.Value;
+import lombok.RequiredArgsConstructor;
+import lombok.experimental.Delegate;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.skywalking.oap.server.library.module.ModuleStartException;
+import org.apache.skywalking.oap.server.library.util.ResourceUtils;
+import org.apache.skywalking.oap.server.receiver.envoy.als.ServiceMetaInfo;
+import org.yaml.snakeyaml.Yaml;
+
 import java.io.InputStream;
-import java.lang.invoke.CallSite;
-import java.lang.invoke.LambdaMetafactory;
-import java.lang.invoke.MethodHandle;
-import java.lang.invoke.MethodHandles;
-import java.lang.invoke.MethodType;
+import java.lang.invoke.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -32,21 +41,6 @@ import java.util.function.BiConsumer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
-
-import org.apache.commons.lang3.StringUtils;
-import org.apache.skywalking.oap.server.library.module.ModuleStartException;
-import org.apache.skywalking.oap.server.library.util.ResourceUtils;
-import org.apache.skywalking.oap.server.receiver.envoy.als.ServiceMetaInfo;
-import org.yaml.snakeyaml.Yaml;
-
-import com.google.common.base.Splitter;
-import com.google.common.base.Strings;
-import com.google.protobuf.Struct;
-import com.google.protobuf.Value;
-
-import lombok.RequiredArgsConstructor;
-import lombok.experimental.Delegate;
-import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public enum FieldsHelper {

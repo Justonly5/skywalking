@@ -19,10 +19,11 @@
 package org.apache.skywalking.oap.server.analyzer.agent.kafka.mock;
 
 import com.google.common.collect.Maps;
-import java.util.Map;
 import org.apache.skywalking.oap.server.library.module.ModuleServiceHolder;
 import org.apache.skywalking.oap.server.library.module.Service;
 import org.apache.skywalking.oap.server.library.module.ServiceNotProvidedException;
+
+import java.util.Map;
 
 public abstract class MockModuleProvider implements ModuleServiceHolder {
     protected Map<Class<? extends Service>, Service> serviceMap = Maps.newHashMap();

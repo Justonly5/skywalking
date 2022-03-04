@@ -19,6 +19,9 @@
 package org.apache.skywalking.oap.server.receiver.envoy.als.k8s;
 
 import com.google.common.base.Strings;
+import org.apache.commons.beanutils.PropertyUtils;
+import org.apache.commons.lang3.StringUtils;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -26,8 +29,6 @@ import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
-import org.apache.commons.beanutils.PropertyUtils;
-import org.apache.commons.lang3.StringUtils;
 
 public class ServiceNameFormatter {
 

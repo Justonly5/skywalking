@@ -18,11 +18,7 @@
 
 package org.apache.skywalking.apm.agent.core.util;
 
-import java.io.ByteArrayOutputStream;
-import java.io.Closeable;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.*;
 
 /**
  * Copied from commons-io-2.2 (org.apache.commons.io.IOUtils)

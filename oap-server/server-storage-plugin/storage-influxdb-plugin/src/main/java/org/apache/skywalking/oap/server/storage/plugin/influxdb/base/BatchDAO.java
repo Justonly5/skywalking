@@ -18,7 +18,6 @@
 
 package org.apache.skywalking.oap.server.storage.plugin.influxdb.base;
 
-import java.util.List;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.skywalking.oap.server.core.storage.IBatchDAO;
 import org.apache.skywalking.oap.server.library.client.request.InsertRequest;
@@ -26,6 +25,8 @@ import org.apache.skywalking.oap.server.library.client.request.PrepareRequest;
 import org.apache.skywalking.oap.server.library.util.CollectionUtils;
 import org.apache.skywalking.oap.server.storage.plugin.influxdb.InfluxClient;
 import org.influxdb.dto.BatchPoints;
+
+import java.util.List;
 
 @Slf4j
 public class BatchDAO implements IBatchDAO {

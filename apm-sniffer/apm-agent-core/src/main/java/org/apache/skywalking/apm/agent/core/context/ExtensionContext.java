@@ -18,7 +18,6 @@
 
 package org.apache.skywalking.apm.agent.core.context;
 
-import java.util.Objects;
 import lombok.Getter;
 import lombok.Setter;
 import org.apache.skywalking.apm.agent.core.context.tag.Tags;
@@ -26,6 +25,8 @@ import org.apache.skywalking.apm.agent.core.context.trace.AbstractSpan;
 import org.apache.skywalking.apm.agent.core.logging.api.ILog;
 import org.apache.skywalking.apm.agent.core.logging.api.LogManager;
 import org.apache.skywalking.apm.util.StringUtil;
+
+import java.util.Objects;
 
 /**
  * Extension context, It provides the interaction capabilities between the agents deployed in upstream and downstream

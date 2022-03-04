@@ -18,11 +18,12 @@
 
 package org.apache.skywalking.apm.agent.core.jvm.gc;
 
+import org.apache.skywalking.apm.network.language.agent.v3.GC;
+import org.apache.skywalking.apm.network.language.agent.v3.GCPhrase;
+
 import java.lang.management.GarbageCollectorMXBean;
 import java.util.LinkedList;
 import java.util.List;
-import org.apache.skywalking.apm.network.language.agent.v3.GC;
-import org.apache.skywalking.apm.network.language.agent.v3.GCPhrase;
 
 public abstract class GCModule implements GCMetricAccessor {
     private List<GarbageCollectorMXBean> beans;

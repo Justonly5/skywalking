@@ -20,12 +20,13 @@ package org.apache.skywalking.oal.rt.parser;
 
 import com.google.common.collect.ImmutableSet;
 import com.google.common.reflect.ClassPath;
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
 import lombok.SneakyThrows;
 import org.apache.skywalking.oap.server.core.analysis.metrics.Metrics;
 import org.apache.skywalking.oap.server.core.analysis.metrics.annotation.MetricsFunction;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 @SuppressWarnings("UnstableApiUsage")
 public class MetricsHolder {

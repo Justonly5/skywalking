@@ -18,8 +18,8 @@
 
 package org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance;
 
-import org.apache.skywalking.apm.agent.core.plugin.interceptor.InstanceMethodsInterceptPoint;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.ConstructorInterceptPoint;
+import org.apache.skywalking.apm.agent.core.plugin.interceptor.InstanceMethodsInterceptPoint;
 
 /**
  * Plugins, which only need enhance class static methods. Actually, inherit from {@link

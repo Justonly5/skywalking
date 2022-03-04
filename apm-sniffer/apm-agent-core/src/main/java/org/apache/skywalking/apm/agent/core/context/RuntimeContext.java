@@ -18,11 +18,12 @@
 
 package org.apache.skywalking.apm.agent.core.context;
 
+import org.apache.skywalking.apm.agent.core.conf.RuntimeContextConfiguration;
+
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-import org.apache.skywalking.apm.agent.core.conf.RuntimeContextConfiguration;
 
 /**
  * RuntimeContext is alive during the tracing context. It will not be serialized to the collector, and always stays in

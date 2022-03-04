@@ -18,9 +18,10 @@
 
 package org.apache.skywalking.oap.server.core.analysis.metrics.expression;
 
+import org.apache.skywalking.oap.server.core.analysis.metrics.annotation.FilterMatcher;
+
 import java.util.List;
 import java.util.Objects;
-import org.apache.skywalking.oap.server.core.analysis.metrics.annotation.FilterMatcher;
 
 @FilterMatcher
 public class NotContainMatch {

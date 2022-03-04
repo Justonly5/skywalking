@@ -18,14 +18,15 @@
 
 package org.apache.skywalking.oap.server.core.query;
 
-import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
 import org.apache.skywalking.apm.util.StringUtil;
 import org.apache.skywalking.oap.server.core.query.enumeration.MetricsType;
 import org.apache.skywalking.oap.server.core.source.DefaultScopeDefine;
 import org.apache.skywalking.oap.server.core.storage.annotation.ValueColumnMetadata;
 import org.apache.skywalking.oap.server.library.module.Service;
+
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
 
 /**
  * MetricsMetadataQueryService provides the metadata of metrics to other modules.

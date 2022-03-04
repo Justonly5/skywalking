@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.oap.server.library.util.prometheus.parser.sample;
 
-import java.util.Map;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+
+import java.util.Map;
 
 @RequiredArgsConstructor(access = AccessLevel.PRIVATE)
 @Getter

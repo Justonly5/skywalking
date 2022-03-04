@@ -18,9 +18,6 @@
 
 package org.apache.skywalking.oap.server.analyzer.provider.trace.parser.listener;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.skywalking.apm.network.language.agent.v3.SegmentObject;
@@ -42,6 +39,10 @@ import org.apache.skywalking.oap.server.core.source.Segment;
 import org.apache.skywalking.oap.server.core.source.SourceReceiver;
 import org.apache.skywalking.oap.server.library.module.ModuleManager;
 import org.apache.skywalking.oap.server.library.util.BooleanUtils;
+
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
 
 /**
  * SegmentSpanListener forwards the segment raw data to the persistence layer with the query required conditions.

@@ -18,7 +18,6 @@
 
 package org.apache.skywalking.oap.server.tool.profile.core.mock;
 
-import java.lang.annotation.Annotation;
 import org.apache.skywalking.oap.server.core.UnexpectedException;
 import org.apache.skywalking.oap.server.core.analysis.Stream;
 import org.apache.skywalking.oap.server.core.analysis.StreamAnnotationListener;
@@ -27,6 +26,8 @@ import org.apache.skywalking.oap.server.core.analysis.worker.RecordStreamProcess
 import org.apache.skywalking.oap.server.core.annotation.AnnotationListener;
 import org.apache.skywalking.oap.server.core.storage.StorageException;
 import org.apache.skywalking.oap.server.library.module.ModuleDefineHolder;
+
+import java.lang.annotation.Annotation;
 
 /**
  * Mock from {@link StreamAnnotationListener}

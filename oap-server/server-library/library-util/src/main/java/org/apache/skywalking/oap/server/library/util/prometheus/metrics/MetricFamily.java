@@ -18,11 +18,12 @@
 
 package org.apache.skywalking.oap.server.library.util.prometheus.metrics;
 
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
 
 /**
  * Contains all metrics within a family (that is, of the same name). All metrics in a family have the same type.

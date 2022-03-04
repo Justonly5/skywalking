@@ -18,11 +18,7 @@
 
 package org.apache.skywalking.oap.server.core.storage.annotation;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Repeatable;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
 /**
  * QueryIndex defines the unified index is required in the query stage. This works only the storage supports this kind

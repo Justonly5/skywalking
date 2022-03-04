@@ -18,16 +18,17 @@
 
 package org.apache.skywalking.oap.server.receiver.otel;
 
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.skywalking.apm.util.StringUtil;
+import org.apache.skywalking.oap.server.library.module.ModuleConfig;
+
 import java.lang.reflect.Field;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
-import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.StringUtils;
-import org.apache.skywalking.apm.util.StringUtil;
-import org.apache.skywalking.oap.server.library.module.ModuleConfig;
 
 @Slf4j
 public class OtelMetricReceiverConfig extends ModuleConfig {

@@ -18,18 +18,11 @@
 
 package org.apache.skywalking.apm.agent.core.plugin.bootstrap.template;
 
-import java.lang.reflect.Method;
-import net.bytebuddy.implementation.bind.annotation.AllArguments;
-import net.bytebuddy.implementation.bind.annotation.Morph;
-import net.bytebuddy.implementation.bind.annotation.Origin;
-import net.bytebuddy.implementation.bind.annotation.RuntimeType;
-import net.bytebuddy.implementation.bind.annotation.This;
+import net.bytebuddy.implementation.bind.annotation.*;
 import org.apache.skywalking.apm.agent.core.plugin.bootstrap.IBootstrapLog;
-import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.BootstrapInterRuntimeAssist;
-import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
-import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceMethodsAroundInterceptor;
-import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
-import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.OverrideCallable;
+import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.*;
+
+import java.lang.reflect.Method;
 
 /**
  * --------CLASS TEMPLATE---------

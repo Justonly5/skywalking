@@ -20,12 +20,13 @@ package org.apache.skywalking.oap.server.core.query.type.event;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 import lombok.Data;
 import org.apache.skywalking.apm.util.StringUtil;
 import org.apache.skywalking.oap.server.core.query.type.KeyValue;
+
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 @Data
 public class Event {

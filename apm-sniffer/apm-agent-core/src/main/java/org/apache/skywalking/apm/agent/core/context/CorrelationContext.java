@@ -17,19 +17,14 @@
 
 package org.apache.skywalking.apm.agent.core.context;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Optional;
-import java.util.stream.Collectors;
 import org.apache.skywalking.apm.agent.core.base64.Base64;
 import org.apache.skywalking.apm.agent.core.conf.Config;
 import org.apache.skywalking.apm.agent.core.context.tag.StringTag;
 import org.apache.skywalking.apm.agent.core.context.trace.AbstractSpan;
 import org.apache.skywalking.apm.util.StringUtil;
+
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * Correlation context, use to propagation user custom data.

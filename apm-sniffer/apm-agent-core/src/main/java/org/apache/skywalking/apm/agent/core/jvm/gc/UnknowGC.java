@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.apm.agent.core.jvm.gc;
 
-import java.util.LinkedList;
-import java.util.List;
 import org.apache.skywalking.apm.network.language.agent.v3.GC;
 import org.apache.skywalking.apm.network.language.agent.v3.GCPhrase;
+
+import java.util.LinkedList;
+import java.util.List;
 
 public class UnknowGC implements GCMetricAccessor {
     @Override

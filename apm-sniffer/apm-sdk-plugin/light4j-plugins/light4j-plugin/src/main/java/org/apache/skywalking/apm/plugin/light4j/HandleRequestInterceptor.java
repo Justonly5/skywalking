@@ -24,7 +24,6 @@ import com.networknt.handler.MiddlewareHandler;
 import com.networknt.handler.OrchestrationHandler;
 import io.undertow.server.HttpServerExchange;
 import io.undertow.util.HeaderMap;
-import java.lang.reflect.Method;
 import org.apache.skywalking.apm.agent.core.context.CarrierItem;
 import org.apache.skywalking.apm.agent.core.context.ContextCarrier;
 import org.apache.skywalking.apm.agent.core.context.ContextManager;
@@ -36,6 +35,8 @@ import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedI
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceMethodsAroundInterceptor;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
 import org.apache.skywalking.apm.network.trace.component.ComponentsDefine;
+
+import java.lang.reflect.Method;
 
 /**
  * {@link HandleRequestInterceptor} creates an entry span before the execution of {@link

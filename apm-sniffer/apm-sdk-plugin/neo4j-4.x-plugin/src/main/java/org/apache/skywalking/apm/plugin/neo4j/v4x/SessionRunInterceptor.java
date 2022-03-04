@@ -18,8 +18,6 @@
 
 package org.apache.skywalking.apm.plugin.neo4j.v4x;
 
-import java.lang.reflect.Method;
-import java.util.concurrent.CompletionStage;
 import org.apache.skywalking.apm.agent.core.context.ContextManager;
 import org.apache.skywalking.apm.agent.core.context.tag.Tags;
 import org.apache.skywalking.apm.agent.core.context.trace.AbstractSpan;
@@ -29,6 +27,9 @@ import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInt
 import org.apache.skywalking.apm.plugin.neo4j.v4x.Neo4jPluginConfig.Plugin.Neo4j;
 import org.apache.skywalking.apm.plugin.neo4j.v4x.util.CypherUtils;
 import org.neo4j.driver.Query;
+
+import java.lang.reflect.Method;
+import java.util.concurrent.CompletionStage;
 
 /**
  * This interceptor do the following steps:

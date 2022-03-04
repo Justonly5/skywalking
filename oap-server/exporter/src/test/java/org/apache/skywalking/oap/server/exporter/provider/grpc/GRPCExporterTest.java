@@ -19,9 +19,6 @@
 package org.apache.skywalking.oap.server.exporter.provider.grpc;
 
 import io.grpc.testing.GrpcServerRule;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
 import org.apache.skywalking.oap.server.core.analysis.metrics.MetricsMetaInfo;
 import org.apache.skywalking.oap.server.core.analysis.metrics.WithMetadata;
 import org.apache.skywalking.oap.server.core.exporter.ExportData;
@@ -32,6 +29,10 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.powermock.reflect.Whitebox;
+
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
 
 import static org.apache.skywalking.oap.server.core.exporter.ExportEvent.EventType.INCREMENT;
 

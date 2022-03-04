@@ -18,8 +18,6 @@
 
 package org.apache.skywalking.oap.server.storage.plugin.influxdb.base;
 
-import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.skywalking.oap.server.core.analysis.management.ManagementData;
 import org.apache.skywalking.oap.server.core.management.ui.template.UITemplate;
@@ -32,6 +30,9 @@ import org.influxdb.dto.Point;
 import org.influxdb.dto.QueryResult;
 import org.influxdb.querybuilder.SelectQueryImpl;
 import org.influxdb.querybuilder.WhereQueryImpl;
+
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import static org.apache.skywalking.oap.server.storage.plugin.influxdb.InfluxConstants.ID_COLUMN;
 import static org.apache.skywalking.oap.server.storage.plugin.influxdb.InfluxConstants.NAME;

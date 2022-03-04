@@ -19,12 +19,13 @@
 package org.apache.skywalking.oap.server.storage.plugin.elasticsearch.base;
 
 import com.google.gson.JsonObject;
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
-import java.util.List;
 import org.apache.skywalking.oap.server.core.analysis.NodeType;
 import org.apache.skywalking.oap.server.core.storage.model.DataTypeMapping;
 import org.apache.skywalking.oap.server.core.storage.type.StorageDataComplexObject;
+
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+import java.util.List;
 
 public class ColumnTypeEsMapping implements DataTypeMapping {
 

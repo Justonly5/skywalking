@@ -18,9 +18,9 @@
 
 package org.apache.skywalking.oap.server.library.server.jetty;
 
-import java.io.IOException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 public class JettyDefaultHandler extends JettyHandler {
     @Override

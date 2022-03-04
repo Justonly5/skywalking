@@ -18,8 +18,8 @@
 
 package org.apache.skywalking.apm.toolkit.activation.opentracing.continuation;
 
-import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.context.ContextManager;
+import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceConstructorInterceptor;
 
 public class ConstructorInterceptor implements InstanceConstructorInterceptor {

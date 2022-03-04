@@ -18,7 +18,6 @@
 
 package org.apache.skywalking.apm.plugin.thrift.client;
 
-import java.lang.reflect.Method;
 import org.apache.skywalking.apm.agent.core.context.AsyncSpan;
 import org.apache.skywalking.apm.agent.core.context.ContextManager;
 import org.apache.skywalking.apm.agent.core.context.trace.AbstractSpan;
@@ -31,6 +30,8 @@ import org.apache.skywalking.apm.network.trace.component.ComponentsDefine;
 import org.apache.skywalking.apm.plugin.thrift.commons.ReflectionUtils;
 import org.apache.thrift.async.AsyncMethodCallback;
 import org.apache.thrift.async.TAsyncMethodCall;
+
+import java.lang.reflect.Method;
 
 /**
  * Here is asynchronized client.

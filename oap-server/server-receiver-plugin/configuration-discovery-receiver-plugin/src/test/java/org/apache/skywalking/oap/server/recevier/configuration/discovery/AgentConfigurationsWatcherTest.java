@@ -18,9 +18,6 @@
 
 package org.apache.skywalking.oap.server.recevier.configuration.discovery;
 
-import java.io.IOException;
-import java.io.Reader;
-import java.util.Map;
 import org.apache.skywalking.oap.server.configuration.api.ConfigChangeWatcher;
 import org.apache.skywalking.oap.server.library.util.ResourceUtils;
 import org.junit.Assert;
@@ -29,6 +26,10 @@ import org.junit.Test;
 import org.mockito.MockitoAnnotations;
 import org.mockito.Spy;
 import org.powermock.reflect.Whitebox;
+
+import java.io.IOException;
+import java.io.Reader;
+import java.util.Map;
 
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.spy;

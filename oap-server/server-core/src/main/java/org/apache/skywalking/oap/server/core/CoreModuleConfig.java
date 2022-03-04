@@ -18,12 +18,13 @@
 
 package org.apache.skywalking.oap.server.core;
 
-import java.util.ArrayList;
-import java.util.List;
 import lombok.Getter;
 import lombok.Setter;
 import org.apache.skywalking.oap.server.core.source.ScopeDefaultColumn;
 import org.apache.skywalking.oap.server.library.module.ModuleConfig;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Getter
 public class CoreModuleConfig extends ModuleConfig {

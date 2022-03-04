@@ -18,12 +18,13 @@
 
 package org.apache.skywalking.apm.dependencies.org.slf4j.impl;
 
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
 import org.apache.skywalking.apm.agent.core.logging.api.ILog;
 import org.apache.skywalking.apm.agent.core.logging.api.LogManager;
 import org.slf4j.ILoggerFactory;
 import org.slf4j.Logger;
+
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
 
 /**
  * implement {@link ILoggerFactory},factory adapter logger for {@link Logger}

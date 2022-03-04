@@ -19,11 +19,7 @@
 
 package org.apache.skywalking.apm.plugin.hystrix.v1;
 
-import com.netflix.hystrix.strategy.concurrency.HystrixRequestContext;
-import com.netflix.hystrix.strategy.concurrency.HystrixRequestVariable;
-import com.netflix.hystrix.strategy.concurrency.HystrixRequestVariableDefault;
-import com.netflix.hystrix.strategy.concurrency.HystrixRequestVariableLifecycle;
-import com.netflix.hystrix.strategy.concurrency.HystrixConcurrencyStrategy;
+import com.netflix.hystrix.strategy.concurrency.*;
 
 /**
  * Implementation of {@link HystrixRequestVariable} which forwards to the wrapped

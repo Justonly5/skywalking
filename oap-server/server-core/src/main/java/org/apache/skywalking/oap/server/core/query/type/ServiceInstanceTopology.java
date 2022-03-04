@@ -18,9 +18,10 @@
 
 package org.apache.skywalking.oap.server.core.query.type;
 
+import lombok.Getter;
+
 import java.util.ArrayList;
 import java.util.List;
-import lombok.Getter;
 
 @Getter
 public class ServiceInstanceTopology {

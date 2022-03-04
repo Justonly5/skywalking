@@ -17,8 +17,9 @@
 
 package org.apache.skywalking.oap.server.core.analysis;
 
-import java.util.Calendar;
 import org.apache.skywalking.oap.server.core.UnexpectedException;
+
+import java.util.Calendar;
 
 public class TimeBucket {
 

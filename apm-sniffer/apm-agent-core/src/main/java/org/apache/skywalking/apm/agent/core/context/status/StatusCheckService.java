@@ -18,12 +18,13 @@
 
 package org.apache.skywalking.apm.agent.core.context.status;
 
-import java.util.Arrays;
 import lombok.Getter;
 import org.apache.skywalking.apm.agent.core.boot.BootService;
 import org.apache.skywalking.apm.agent.core.boot.DefaultImplementor;
 import org.apache.skywalking.apm.agent.core.conf.Config;
 import org.apache.skywalking.apm.util.StringUtil;
+
+import java.util.Arrays;
 
 import static org.apache.skywalking.apm.agent.core.context.status.StatusChecker.HIERARCHY_MATCH;
 import static org.apache.skywalking.apm.agent.core.context.status.StatusChecker.OFF;

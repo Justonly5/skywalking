@@ -20,11 +20,12 @@ package org.apache.skywalking.oap.server.core.cache;
 
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
-import java.util.List;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.skywalking.oap.server.core.CoreModuleConfig;
 import org.apache.skywalking.oap.server.core.analysis.manual.networkalias.NetworkAddressAlias;
 import org.apache.skywalking.oap.server.library.module.Service;
+
+import java.util.List;
 
 /**
  * NetworkAddressAliasCache set the temporary network address - service/instance mapping in the memory cache. This data

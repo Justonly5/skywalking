@@ -18,8 +18,6 @@
 
 package org.apache.skywalking.apm.plugin.activemq;
 
-import java.util.List;
-
 import org.apache.activemq.ActiveMQMessageProducer;
 import org.apache.activemq.command.ActiveMQDestination;
 import org.apache.skywalking.apm.agent.core.context.trace.AbstractTracingSpan;
@@ -27,11 +25,7 @@ import org.apache.skywalking.apm.agent.core.context.trace.SpanLayer;
 import org.apache.skywalking.apm.agent.core.context.trace.TraceSegment;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.test.helper.SegmentHelper;
-import org.apache.skywalking.apm.agent.test.tools.AgentServiceRule;
-import org.apache.skywalking.apm.agent.test.tools.SegmentStorage;
-import org.apache.skywalking.apm.agent.test.tools.SegmentStoragePoint;
-import org.apache.skywalking.apm.agent.test.tools.SpanAssert;
-import org.apache.skywalking.apm.agent.test.tools.TracingSegmentRunner;
+import org.apache.skywalking.apm.agent.test.tools.*;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -43,6 +37,7 @@ import javax.jms.Destination;
 import javax.jms.JMSException;
 import javax.jms.Message;
 import java.util.Enumeration;
+import java.util.List;
 
 import static org.apache.skywalking.apm.network.trace.component.ComponentsDefine.ACTIVEMQ_PRODUCER;
 import static org.hamcrest.CoreMatchers.is;

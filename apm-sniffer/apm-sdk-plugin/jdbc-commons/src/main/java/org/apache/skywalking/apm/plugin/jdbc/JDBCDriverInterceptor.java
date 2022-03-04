@@ -18,12 +18,13 @@
 
 package org.apache.skywalking.apm.plugin.jdbc;
 
-import java.lang.reflect.Method;
-import java.sql.Connection;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
-import org.apache.skywalking.apm.plugin.jdbc.connectionurl.parser.URLParser;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceMethodsAroundInterceptor;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
+import org.apache.skywalking.apm.plugin.jdbc.connectionurl.parser.URLParser;
+
+import java.lang.reflect.Method;
+import java.sql.Connection;
 
 /**
  * {@link JDBCDriverInterceptor} set <code>ConnectionInfo</code> to {@link Connection} object when {@link

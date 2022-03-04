@@ -18,12 +18,13 @@
 
 package org.apache.skywalking.oap.server.core.analysis.metrics;
 
-import java.util.ArrayList;
-import java.util.List;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import org.apache.skywalking.oap.server.core.Const;
 import org.apache.skywalking.oap.server.core.storage.type.StorageDataComplexObject;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * IntList is a serializable array list carrying int values.

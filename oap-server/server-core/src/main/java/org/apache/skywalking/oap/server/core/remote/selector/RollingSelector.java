@@ -18,9 +18,10 @@
 
 package org.apache.skywalking.oap.server.core.remote.selector;
 
-import java.util.List;
 import org.apache.skywalking.oap.server.core.remote.client.RemoteClient;
 import org.apache.skywalking.oap.server.core.remote.data.StreamData;
+
+import java.util.List;
 
 public class RollingSelector implements RemoteClientSelector {
 

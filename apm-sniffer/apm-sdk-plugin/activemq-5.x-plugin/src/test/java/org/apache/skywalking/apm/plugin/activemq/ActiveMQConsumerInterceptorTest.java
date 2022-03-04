@@ -18,9 +18,6 @@
 
 package org.apache.skywalking.apm.plugin.activemq;
 
-import java.io.IOException;
-import java.util.List;
-import javax.jms.JMSException;
 import org.apache.activemq.command.ActiveMQDestination;
 import org.apache.activemq.command.Message;
 import org.apache.activemq.command.MessageDispatch;
@@ -39,6 +36,10 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.powermock.modules.junit4.PowerMockRunner;
 import org.powermock.modules.junit4.PowerMockRunnerDelegate;
+
+import javax.jms.JMSException;
+import java.io.IOException;
+import java.util.List;
 
 import static org.hamcrest.CoreMatchers.is;
 

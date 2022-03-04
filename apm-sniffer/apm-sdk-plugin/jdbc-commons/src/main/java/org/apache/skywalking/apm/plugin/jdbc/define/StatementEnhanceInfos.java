@@ -18,8 +18,9 @@
 
 package org.apache.skywalking.apm.plugin.jdbc.define;
 
-import java.util.Arrays;
 import org.apache.skywalking.apm.plugin.jdbc.trace.ConnectionInfo;
+
+import java.util.Arrays;
 
 /**
  * {@link StatementEnhanceInfos} contain the {@link ConnectionInfo} and

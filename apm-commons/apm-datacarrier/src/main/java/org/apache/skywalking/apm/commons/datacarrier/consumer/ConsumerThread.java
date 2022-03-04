@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.apm.commons.datacarrier.consumer;
 
-import java.util.ArrayList;
-import java.util.List;
 import org.apache.skywalking.apm.commons.datacarrier.buffer.Buffer;
 import org.apache.skywalking.apm.commons.datacarrier.buffer.QueueBuffer;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ConsumerThread<T> extends Thread {
     private volatile boolean running;

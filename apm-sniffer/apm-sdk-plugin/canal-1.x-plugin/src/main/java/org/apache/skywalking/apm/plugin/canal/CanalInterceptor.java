@@ -19,7 +19,6 @@
 package org.apache.skywalking.apm.plugin.canal;
 
 import com.alibaba.otter.canal.client.impl.SimpleCanalConnector;
-import java.util.Objects;
 import org.apache.skywalking.apm.agent.core.context.ContextManager;
 import org.apache.skywalking.apm.agent.core.context.tag.Tags;
 import org.apache.skywalking.apm.agent.core.context.trace.AbstractSpan;
@@ -31,6 +30,7 @@ import org.apache.skywalking.apm.network.trace.component.ComponentsDefine;
 import java.lang.reflect.Method;
 import java.net.InetSocketAddress;
 import java.util.List;
+import java.util.Objects;
 
 public class CanalInterceptor implements InstanceMethodsAroundInterceptor {
     @Override

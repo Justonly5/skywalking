@@ -18,9 +18,10 @@
 
 package org.apache.skywalking.oap.server.library.module;
 
+import lombok.Setter;
+
 import java.util.HashMap;
 import java.util.Map;
-import lombok.Setter;
 
 /**
  * The <code>ModuleProvider</code> is an implementation of a {@link ModuleDefine}.

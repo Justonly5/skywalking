@@ -18,13 +18,14 @@
 
 package org.apache.skywalking.apm.agent.core.context;
 
-import java.io.Serializable;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
 import org.apache.skywalking.apm.agent.core.base64.Base64;
 import org.apache.skywalking.apm.agent.core.conf.Constants;
 import org.apache.skywalking.apm.util.StringUtil;
+
+import java.io.Serializable;
 
 /**
  * {@link ContextCarrier} is a data carrier of {@link TracingContext}. It holds the snapshot (current state) of {@link

@@ -18,12 +18,13 @@
 
 package org.apache.skywalking.apm.toolkit.activation.opentracing.span;
 
-import java.lang.reflect.Method;
-import java.util.Map;
-import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.context.trace.AbstractSpan;
+import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceMethodsAroundInterceptor;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
+
+import java.lang.reflect.Method;
+import java.util.Map;
 
 public class SpanLogInterceptor implements InstanceMethodsAroundInterceptor {
     @Override

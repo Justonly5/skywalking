@@ -18,11 +18,6 @@
 
 package org.apache.skywalking.oap.server.starter.config;
 
-import java.io.FileNotFoundException;
-import java.io.Reader;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Properties;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.skywalking.apm.util.PropertyPlaceholderHelper;
 import org.apache.skywalking.oap.server.library.module.ApplicationConfiguration;
@@ -30,6 +25,12 @@ import org.apache.skywalking.oap.server.library.module.ProviderNotFoundException
 import org.apache.skywalking.oap.server.library.util.CollectionUtils;
 import org.apache.skywalking.oap.server.library.util.ResourceUtils;
 import org.yaml.snakeyaml.Yaml;
+
+import java.io.FileNotFoundException;
+import java.io.Reader;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Properties;
 
 /**
  * Initialize collector settings with following sources. Use application.yml as primary setting, and fix missing setting

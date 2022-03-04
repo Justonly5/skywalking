@@ -18,10 +18,6 @@
 
 package org.apache.skywalking.oap.server.configuration.zookeeper.it;
 
-import java.io.FileNotFoundException;
-import java.io.Reader;
-import java.util.Map;
-import java.util.Properties;
 import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
@@ -37,9 +33,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.yaml.snakeyaml.Yaml;
 
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
+import java.io.FileNotFoundException;
+import java.io.Reader;
+import java.util.Map;
+import java.util.Properties;
+
+import static org.junit.Assert.*;
 
 public class ITZookeeperConfigurationTest {
     private static final Logger LOGGER = LoggerFactory.getLogger(ITZookeeperConfigurationTest.class);

@@ -18,15 +18,6 @@
 
 package org.apache.skywalking.oap.server.core.profile.analyze;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
-import java.util.stream.Collectors;
 import org.apache.skywalking.oap.server.core.profile.ProfileThreadSnapshotRecord;
 import org.apache.skywalking.oap.server.core.query.type.ProfileAnalyzation;
 import org.apache.skywalking.oap.server.core.query.type.ProfileAnalyzeTimeRange;
@@ -37,6 +28,10 @@ import org.apache.skywalking.oap.server.library.module.ModuleManager;
 import org.apache.skywalking.oap.server.library.util.CollectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * Analyze {@link ProfileStack} data to {@link ProfileAnalyzation}

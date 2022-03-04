@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.oap.server.core.analysis.data;
 
-import java.util.Objects;
 import org.apache.skywalking.oap.server.core.storage.ComparableStorageData;
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.util.Objects;
 
 public class LimitedSizeBufferedDataTest {
     @Test

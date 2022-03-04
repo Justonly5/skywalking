@@ -19,9 +19,10 @@
 package org.apache.skywalking.oap.server.telemetry.prometheus;
 
 import io.prometheus.client.Gauge;
-import java.util.Optional;
 import org.apache.skywalking.oap.server.telemetry.api.GaugeMetrics;
 import org.apache.skywalking.oap.server.telemetry.api.MetricsTag;
+
+import java.util.Optional;
 
 /**
  * Gauge metrics in Prometheus implementor.

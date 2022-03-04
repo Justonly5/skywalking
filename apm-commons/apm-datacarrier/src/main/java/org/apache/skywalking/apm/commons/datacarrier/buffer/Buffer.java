@@ -18,8 +18,9 @@
 
 package org.apache.skywalking.apm.commons.datacarrier.buffer;
 
-import java.util.List;
 import org.apache.skywalking.apm.commons.datacarrier.common.AtomicRangeInteger;
+
+import java.util.List;
 
 /**
  * Self implementation ring queue.

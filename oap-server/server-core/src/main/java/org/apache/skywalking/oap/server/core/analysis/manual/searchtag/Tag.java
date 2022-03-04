@@ -17,15 +17,12 @@
 
 package org.apache.skywalking.oap.server.core.analysis.manual.searchtag;
 
+import lombok.*;
+import org.apache.skywalking.oap.server.library.util.CollectionUtils;
+
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import org.apache.skywalking.oap.server.library.util.CollectionUtils;
 
 @Getter
 @Setter

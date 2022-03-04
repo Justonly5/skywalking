@@ -21,10 +21,10 @@ package org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance;
 import net.bytebuddy.implementation.bind.annotation.AllArguments;
 import net.bytebuddy.implementation.bind.annotation.RuntimeType;
 import net.bytebuddy.implementation.bind.annotation.This;
+import org.apache.skywalking.apm.agent.core.logging.api.ILog;
 import org.apache.skywalking.apm.agent.core.logging.api.LogManager;
 import org.apache.skywalking.apm.agent.core.plugin.PluginException;
 import org.apache.skywalking.apm.agent.core.plugin.loader.InterceptorInstanceLoader;
-import org.apache.skywalking.apm.agent.core.logging.api.ILog;
 
 /**
  * The actual byte-buddy's interceptor to intercept constructor methods. In this class, it provide a bridge between

@@ -18,8 +18,6 @@
 
 package org.apache.skywalking.oap.server.tool.profile.core;
 
-import java.io.IOException;
-import java.util.Collections;
 import org.apache.skywalking.oap.server.core.CoreModule;
 import org.apache.skywalking.oap.server.core.CoreModuleConfig;
 import org.apache.skywalking.oap.server.core.CoreModuleProvider;
@@ -36,18 +34,7 @@ import org.apache.skywalking.oap.server.core.config.group.EndpointNameGrouping;
 import org.apache.skywalking.oap.server.core.management.ui.template.UITemplateManagementService;
 import org.apache.skywalking.oap.server.core.oal.rt.OALEngineLoaderService;
 import org.apache.skywalking.oap.server.core.profile.ProfileTaskMutationService;
-import org.apache.skywalking.oap.server.core.query.AggregationQueryService;
-import org.apache.skywalking.oap.server.core.query.AlarmQueryService;
-import org.apache.skywalking.oap.server.core.query.BrowserLogQueryService;
-import org.apache.skywalking.oap.server.core.query.EventQueryService;
-import org.apache.skywalking.oap.server.core.query.LogQueryService;
-import org.apache.skywalking.oap.server.core.query.MetadataQueryService;
-import org.apache.skywalking.oap.server.core.query.MetricsMetadataQueryService;
-import org.apache.skywalking.oap.server.core.query.MetricsQueryService;
-import org.apache.skywalking.oap.server.core.query.ProfileTaskQueryService;
-import org.apache.skywalking.oap.server.core.query.TopNRecordsQueryService;
-import org.apache.skywalking.oap.server.core.query.TopologyQueryService;
-import org.apache.skywalking.oap.server.core.query.TraceQueryService;
+import org.apache.skywalking.oap.server.core.query.*;
 import org.apache.skywalking.oap.server.core.remote.RemoteSenderService;
 import org.apache.skywalking.oap.server.core.remote.client.RemoteClientManager;
 import org.apache.skywalking.oap.server.core.server.GRPCHandlerRegister;
@@ -66,13 +53,10 @@ import org.apache.skywalking.oap.server.library.module.ModuleDefine;
 import org.apache.skywalking.oap.server.library.module.ModuleStartException;
 import org.apache.skywalking.oap.server.library.module.ServiceNotProvidedException;
 import org.apache.skywalking.oap.server.telemetry.TelemetryModule;
-import org.apache.skywalking.oap.server.tool.profile.core.mock.MockComponentLibraryCatalogService;
-import org.apache.skywalking.oap.server.tool.profile.core.mock.MockGRPCHandlerRegister;
-import org.apache.skywalking.oap.server.tool.profile.core.mock.MockJettyHandlerRegister;
-import org.apache.skywalking.oap.server.tool.profile.core.mock.MockRemoteClientManager;
-import org.apache.skywalking.oap.server.tool.profile.core.mock.MockSourceReceiver;
-import org.apache.skywalking.oap.server.tool.profile.core.mock.MockStreamAnnotationListener;
-import org.apache.skywalking.oap.server.tool.profile.core.mock.MockWorkerInstancesService;
+import org.apache.skywalking.oap.server.tool.profile.core.mock.*;
+
+import java.io.IOException;
+import java.util.Collections;
 
 public class MockCoreModuleProvider extends CoreModuleProvider {
 

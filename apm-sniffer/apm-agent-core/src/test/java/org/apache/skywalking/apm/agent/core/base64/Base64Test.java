@@ -18,9 +18,9 @@
 
 package org.apache.skywalking.apm.agent.core.base64;
 
-import static org.junit.Assert.assertEquals;
-
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class Base64Test {
 

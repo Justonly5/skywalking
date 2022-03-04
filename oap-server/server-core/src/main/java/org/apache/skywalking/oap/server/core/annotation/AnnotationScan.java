@@ -20,12 +20,13 @@ package org.apache.skywalking.oap.server.core.annotation;
 
 import com.google.common.collect.ImmutableSet;
 import com.google.common.reflect.ClassPath;
+import org.apache.skywalking.oap.server.core.storage.StorageException;
+
 import java.io.IOException;
 import java.lang.annotation.Annotation;
 import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
-import org.apache.skywalking.oap.server.core.storage.StorageException;
 
 /**
  * Scan the annotation, and notify the listener(s)

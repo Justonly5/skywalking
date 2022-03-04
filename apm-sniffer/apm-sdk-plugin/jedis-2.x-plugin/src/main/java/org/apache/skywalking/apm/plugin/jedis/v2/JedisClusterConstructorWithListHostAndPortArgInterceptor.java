@@ -18,9 +18,9 @@
 
 package org.apache.skywalking.apm.plugin.jedis.v2;
 
+import org.apache.skywalking.apm.agent.core.context.util.PeerFormat;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceConstructorInterceptor;
-import org.apache.skywalking.apm.agent.core.context.util.PeerFormat;
 import redis.clients.jedis.HostAndPort;
 
 import java.util.Set;

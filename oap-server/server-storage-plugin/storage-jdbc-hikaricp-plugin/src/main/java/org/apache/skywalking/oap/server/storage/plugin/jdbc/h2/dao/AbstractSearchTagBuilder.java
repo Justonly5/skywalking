@@ -17,11 +17,12 @@
 
 package org.apache.skywalking.oap.server.storage.plugin.jdbc.h2.dao;
 
-import java.util.List;
-import java.util.Map;
 import org.apache.skywalking.oap.server.core.analysis.manual.searchtag.Tag;
 import org.apache.skywalking.oap.server.core.analysis.record.Record;
 import org.apache.skywalking.oap.server.core.storage.StorageHashMapBuilder;
+
+import java.util.List;
+import java.util.Map;
 
 public abstract class AbstractSearchTagBuilder<T extends Record> implements StorageHashMapBuilder<T> {
 

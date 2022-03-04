@@ -18,7 +18,6 @@
 package org.apache.skywalking.apm.plugin.asynchttpclient.v2;
 
 import io.netty.handler.codec.http.HttpHeaders;
-import java.lang.reflect.Method;
 import org.apache.skywalking.apm.agent.core.context.CarrierItem;
 import org.apache.skywalking.apm.agent.core.context.ContextCarrier;
 import org.apache.skywalking.apm.agent.core.context.ContextManager;
@@ -32,6 +31,8 @@ import org.apache.skywalking.apm.network.trace.component.ComponentsDefine;
 import org.asynchttpclient.AsyncHandler;
 import org.asynchttpclient.Request;
 import org.asynchttpclient.uri.Uri;
+
+import java.lang.reflect.Method;
 
 /**
  * interceptor for {@link org.asynchttpclient.DefaultAsyncHttpClient}

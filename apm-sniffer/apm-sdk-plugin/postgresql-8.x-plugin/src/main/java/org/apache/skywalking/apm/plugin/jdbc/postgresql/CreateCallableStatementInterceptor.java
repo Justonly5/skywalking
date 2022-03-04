@@ -18,12 +18,13 @@
 
 package org.apache.skywalking.apm.plugin.jdbc.postgresql;
 
-import java.lang.reflect.Method;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceMethodsAroundInterceptor;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
 import org.apache.skywalking.apm.plugin.jdbc.define.StatementEnhanceInfos;
 import org.apache.skywalking.apm.plugin.jdbc.trace.ConnectionInfo;
+
+import java.lang.reflect.Method;
 
 public class CreateCallableStatementInterceptor implements InstanceMethodsAroundInterceptor {
     @Override

@@ -19,11 +19,12 @@
 package org.apache.skywalking.oap.server.library.server.ssl;
 
 import io.netty.handler.ssl.SslContextBuilder;
+
+import javax.net.ssl.SSLException;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.security.GeneralSecurityException;
-import javax.net.ssl.SSLException;
 
 public class HttpDynamicSslContext extends AbstractSslContext {
 

@@ -18,11 +18,12 @@
 
 package org.apache.skywalking.apm.plugin.jdbc.connectionurl.parser;
 
-import java.util.ArrayList;
-import java.util.List;
 import org.apache.skywalking.apm.network.trace.component.ComponentsDefine;
 import org.apache.skywalking.apm.plugin.jdbc.trace.ConnectionInfo;
 import org.apache.skywalking.apm.util.StringUtil;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * {@link OracleURLParser} presents that how to parse oracle connection url.

@@ -18,18 +18,15 @@
 
 package org.apache.skywalking.oap.server.library.util;
 
+import org.apache.skywalking.apm.util.PropertyPlaceholderHelper;
+import org.junit.*;
+import org.junit.contrib.java.lang.system.EnvironmentVariables;
+import org.yaml.snakeyaml.Yaml;
+
 import java.io.FileNotFoundException;
 import java.io.Reader;
 import java.util.Map;
 import java.util.Properties;
-import org.apache.skywalking.apm.util.PropertyPlaceholderHelper;
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
-import org.junit.contrib.java.lang.system.EnvironmentVariables;
-import org.yaml.snakeyaml.Yaml;
 
 public class PropertyPlaceholderHelperTest {
     private PropertyPlaceholderHelper placeholderHelper;

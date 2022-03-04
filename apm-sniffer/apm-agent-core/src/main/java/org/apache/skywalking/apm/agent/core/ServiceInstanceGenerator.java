@@ -18,11 +18,12 @@
 
 package org.apache.skywalking.apm.agent.core;
 
-import java.util.UUID;
 import lombok.Getter;
 import org.apache.skywalking.apm.agent.core.boot.BootService;
 import org.apache.skywalking.apm.agent.core.conf.Config;
 import org.apache.skywalking.apm.agent.core.os.OSUtil;
+
+import java.util.UUID;
 
 import static org.apache.skywalking.apm.util.StringUtil.isEmpty;
 

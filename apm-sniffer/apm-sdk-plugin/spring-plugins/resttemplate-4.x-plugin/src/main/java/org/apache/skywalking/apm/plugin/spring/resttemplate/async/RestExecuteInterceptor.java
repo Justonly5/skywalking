@@ -18,8 +18,6 @@
 
 package org.apache.skywalking.apm.plugin.spring.resttemplate.async;
 
-import java.lang.reflect.Method;
-import java.net.URI;
 import org.apache.skywalking.apm.agent.core.context.ContextCarrier;
 import org.apache.skywalking.apm.agent.core.context.ContextManager;
 import org.apache.skywalking.apm.agent.core.context.ContextSnapshot;
@@ -33,6 +31,9 @@ import org.apache.skywalking.apm.network.trace.component.ComponentsDefine;
 import org.apache.skywalking.apm.plugin.spring.commons.EnhanceCacheObjects;
 import org.apache.skywalking.apm.plugin.spring.resttemplate.helper.RestTemplateRuntimeContextHelper;
 import org.springframework.http.HttpMethod;
+
+import java.lang.reflect.Method;
+import java.net.URI;
 
 public class RestExecuteInterceptor implements InstanceMethodsAroundInterceptor {
 

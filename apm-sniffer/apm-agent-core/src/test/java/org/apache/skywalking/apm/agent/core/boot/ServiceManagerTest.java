@@ -18,14 +18,7 @@
 
 package org.apache.skywalking.apm.agent.core.boot;
 
-import java.lang.reflect.Field;
-import java.util.HashMap;
-import java.util.List;
-import org.apache.skywalking.apm.agent.core.context.ContextManager;
-import org.apache.skywalking.apm.agent.core.context.IgnoredTracerContext;
-import org.apache.skywalking.apm.agent.core.context.TracingContext;
-import org.apache.skywalking.apm.agent.core.context.TracingContextListener;
-import org.apache.skywalking.apm.agent.core.context.TracingThreadListener;
+import org.apache.skywalking.apm.agent.core.context.*;
 import org.apache.skywalking.apm.agent.core.jvm.JVMService;
 import org.apache.skywalking.apm.agent.core.meter.MeterService;
 import org.apache.skywalking.apm.agent.core.profile.ProfileTaskChannelService;
@@ -38,6 +31,10 @@ import org.apache.skywalking.apm.agent.core.test.tools.AgentServiceRule;
 import org.junit.AfterClass;
 import org.junit.Rule;
 import org.junit.Test;
+
+import java.lang.reflect.Field;
+import java.util.HashMap;
+import java.util.List;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;

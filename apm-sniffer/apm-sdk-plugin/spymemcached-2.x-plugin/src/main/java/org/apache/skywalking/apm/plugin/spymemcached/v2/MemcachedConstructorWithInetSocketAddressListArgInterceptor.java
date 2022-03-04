@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.apm.plugin.spymemcached.v2;
 
-import java.net.InetSocketAddress;
-import java.util.List;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceConstructorInterceptor;
+
+import java.net.InetSocketAddress;
+import java.util.List;
 
 public class MemcachedConstructorWithInetSocketAddressListArgInterceptor implements InstanceConstructorInterceptor {
 

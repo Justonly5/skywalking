@@ -20,16 +20,17 @@ package org.apache.skywalking.oap.server.receiver.envoy.als.mx;
 
 import com.google.protobuf.util.JsonFormat;
 import io.envoyproxy.envoy.service.accesslog.v3.StreamAccessLogsMessage;
-import java.io.ByteArrayInputStream;
-import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.Collection;
 import org.apache.skywalking.oap.server.receiver.envoy.als.ServiceMetaInfo;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.powermock.reflect.Whitebox;
+
+import java.io.ByteArrayInputStream;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.Collection;
 
 import static org.apache.skywalking.oap.server.receiver.envoy.als.k8s.K8SALSServiceMeshHTTPAnalysisTest.getResourceAsStream;
 import static org.hamcrest.CoreMatchers.equalTo;

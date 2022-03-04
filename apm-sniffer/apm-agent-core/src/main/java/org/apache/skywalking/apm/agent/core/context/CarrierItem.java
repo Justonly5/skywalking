@@ -18,8 +18,9 @@
 
 package org.apache.skywalking.apm.agent.core.context;
 
-import java.util.Iterator;
 import org.apache.skywalking.apm.util.StringUtil;
+
+import java.util.Iterator;
 
 import static org.apache.skywalking.apm.agent.core.conf.Config.Agent.NAMESPACE;
 

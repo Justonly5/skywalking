@@ -18,11 +18,12 @@
 
 package org.apache.skywalking.apm.toolkit.activation.trace;
 
-import java.lang.reflect.Method;
 import org.apache.skywalking.apm.agent.core.context.ContextManager;
 import org.apache.skywalking.apm.agent.core.context.trace.AbstractSpan;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.StaticMethodsAroundInterceptor;
+
+import java.lang.reflect.Method;
 
 public class ActiveSpanSetOperationNameInterceptor implements StaticMethodsAroundInterceptor {
     @Override

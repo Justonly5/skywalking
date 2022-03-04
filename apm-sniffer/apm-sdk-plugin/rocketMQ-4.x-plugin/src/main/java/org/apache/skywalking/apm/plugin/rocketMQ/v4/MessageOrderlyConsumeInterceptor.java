@@ -18,12 +18,13 @@
 
 package org.apache.skywalking.apm.plugin.rocketMQ.v4;
 
-import java.lang.reflect.Method;
 import org.apache.rocketmq.client.consumer.listener.ConsumeOrderlyStatus;
+import org.apache.skywalking.apm.agent.core.context.ContextManager;
 import org.apache.skywalking.apm.agent.core.context.tag.Tags;
 import org.apache.skywalking.apm.agent.core.context.trace.AbstractSpan;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
-import org.apache.skywalking.apm.agent.core.context.ContextManager;
+
+import java.lang.reflect.Method;
 
 /**
  * {@link MessageOrderlyConsumeInterceptor} set the process status after the {@link

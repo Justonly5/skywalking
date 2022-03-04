@@ -18,9 +18,10 @@
 
 package org.apache.skywalking.oap.server.core.config.group;
 
+import org.apache.skywalking.apm.util.StringFormatGroup;
+
 import java.util.HashMap;
 import java.util.Map;
-import org.apache.skywalking.apm.util.StringFormatGroup;
 
 /**
  * Endpoint group rule hosts all group rules of all services.

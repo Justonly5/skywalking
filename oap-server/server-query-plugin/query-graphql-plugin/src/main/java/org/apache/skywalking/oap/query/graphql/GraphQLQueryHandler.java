@@ -27,18 +27,19 @@ import graphql.ExecutionInput;
 import graphql.ExecutionResult;
 import graphql.GraphQL;
 import graphql.GraphQLError;
+import lombok.RequiredArgsConstructor;
+import org.apache.skywalking.oap.server.library.server.jetty.JettyJsonHandler;
+import org.apache.skywalking.oap.server.library.util.CollectionUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import javax.servlet.http.HttpServletRequest;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.lang.reflect.Type;
 import java.util.List;
 import java.util.Map;
-import javax.servlet.http.HttpServletRequest;
-import lombok.RequiredArgsConstructor;
-import org.apache.skywalking.oap.server.library.server.jetty.JettyJsonHandler;
-import org.apache.skywalking.oap.server.library.util.CollectionUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 @RequiredArgsConstructor
 public class GraphQLQueryHandler extends JettyJsonHandler {

@@ -23,11 +23,7 @@ import org.apache.skywalking.oap.log.analyzer.provider.log.LogAnalyzerServiceImp
 import org.apache.skywalking.oap.log.analyzer.provider.log.listener.LogFilterListener;
 import org.apache.skywalking.oap.server.configuration.api.ConfigurationModule;
 import org.apache.skywalking.oap.server.core.CoreModule;
-import org.apache.skywalking.oap.server.library.module.ModuleConfig;
-import org.apache.skywalking.oap.server.library.module.ModuleDefine;
-import org.apache.skywalking.oap.server.library.module.ModuleProvider;
-import org.apache.skywalking.oap.server.library.module.ModuleStartException;
-import org.apache.skywalking.oap.server.library.module.ServiceNotProvidedException;
+import org.apache.skywalking.oap.server.library.module.*;
 
 public class LogAnalyzerModuleProvider extends ModuleProvider {
 

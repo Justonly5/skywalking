@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.oap.server.recevier.configuration.discovery;
 
-import java.util.Map;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+
+import java.util.Map;
 
 /**
  * Dynamic configuration items, save the dynamic configuration of the agent corresponding to the service.

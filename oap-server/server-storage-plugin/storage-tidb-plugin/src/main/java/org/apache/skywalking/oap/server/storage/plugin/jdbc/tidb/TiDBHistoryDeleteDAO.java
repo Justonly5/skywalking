@@ -18,15 +18,16 @@
 
 package org.apache.skywalking.oap.server.storage.plugin.jdbc.tidb;
 
-import java.io.IOException;
-import java.sql.Connection;
-import java.sql.SQLException;
 import org.apache.skywalking.oap.server.core.storage.IHistoryDeleteDAO;
 import org.apache.skywalking.oap.server.core.storage.model.Model;
 import org.apache.skywalking.oap.server.library.client.jdbc.JDBCClientException;
 import org.apache.skywalking.oap.server.library.client.jdbc.hikaricp.JDBCHikariCPClient;
 import org.apache.skywalking.oap.server.storage.plugin.jdbc.SQLBuilder;
 import org.joda.time.DateTime;
+
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.SQLException;
 
 public class TiDBHistoryDeleteDAO implements IHistoryDeleteDAO {
 

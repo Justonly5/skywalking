@@ -18,20 +18,17 @@
 
 package org.apache.skywalking.apm.toolkit.log.log4j.v2.x.log;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.io.Serializable;
 import org.apache.logging.log4j.core.Filter;
 import org.apache.logging.log4j.core.Layout;
 import org.apache.logging.log4j.core.LogEvent;
 import org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender;
 import org.apache.logging.log4j.core.appender.OutputStreamManager;
 import org.apache.logging.log4j.core.config.Configuration;
-import org.apache.logging.log4j.core.config.plugins.Plugin;
-import org.apache.logging.log4j.core.config.plugins.PluginAttribute;
-import org.apache.logging.log4j.core.config.plugins.PluginConfiguration;
-import org.apache.logging.log4j.core.config.plugins.PluginElement;
-import org.apache.logging.log4j.core.config.plugins.PluginFactory;
+import org.apache.logging.log4j.core.config.plugins.*;
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.Serializable;
 
 @Plugin(name = "GRPCLogClientAppender", category = "Core", elementType = "appender")
 public class GRPCLogClientAppender extends AbstractOutputStreamAppender<OutputStreamManager> {

@@ -18,13 +18,9 @@
 
 package org.apache.skywalking.apm.toolkit.opentracing;
 
-import io.opentracing.ActiveSpan;
-import io.opentracing.BaseSpan;
-import io.opentracing.References;
-import io.opentracing.Span;
-import io.opentracing.SpanContext;
-import io.opentracing.Tracer;
+import io.opentracing.*;
 import io.opentracing.tag.Tags;
+
 import java.util.ArrayList;
 import java.util.List;
 

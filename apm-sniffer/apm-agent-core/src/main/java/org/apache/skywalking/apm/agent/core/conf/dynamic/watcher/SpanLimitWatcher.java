@@ -18,11 +18,12 @@
 
 package org.apache.skywalking.apm.agent.core.conf.dynamic.watcher;
 
-import java.util.concurrent.atomic.AtomicInteger;
 import org.apache.skywalking.apm.agent.core.conf.Config;
 import org.apache.skywalking.apm.agent.core.conf.dynamic.AgentConfigChangeWatcher;
 import org.apache.skywalking.apm.agent.core.logging.api.ILog;
 import org.apache.skywalking.apm.agent.core.logging.api.LogManager;
+
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class SpanLimitWatcher extends AgentConfigChangeWatcher {
     private static final ILog LOGGER = LogManager.getLogger(SpanLimitWatcher.class);

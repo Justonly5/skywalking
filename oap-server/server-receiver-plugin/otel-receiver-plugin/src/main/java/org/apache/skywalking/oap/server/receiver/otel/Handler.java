@@ -20,12 +20,13 @@ package org.apache.skywalking.oap.server.receiver.otel;
 
 import com.google.common.collect.ImmutableSet;
 import com.google.common.reflect.ClassPath;
+import org.apache.skywalking.oap.server.core.analysis.meter.MeterSystem;
+import org.apache.skywalking.oap.server.core.server.GRPCHandlerRegister;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import org.apache.skywalking.oap.server.core.analysis.meter.MeterSystem;
-import org.apache.skywalking.oap.server.core.server.GRPCHandlerRegister;
 
 public interface Handler {
     static List<Handler> all() throws HandlerInitializationException {

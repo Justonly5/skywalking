@@ -22,9 +22,6 @@ import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import io.netty.handler.codec.http.HttpHeaderValues;
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.util.List;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.http.HttpHeaders;
 import org.apache.http.HttpStatus;
@@ -39,6 +36,10 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.skywalking.oap.server.core.alarm.AlarmCallback;
 import org.apache.skywalking.oap.server.core.alarm.AlarmMessage;
 import org.apache.skywalking.oap.server.core.alarm.provider.AlarmRulesWatcher;
+
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.util.List;
 
 /**
  * Use SkyWalking alarm slack webhook API call a remote endpoints.

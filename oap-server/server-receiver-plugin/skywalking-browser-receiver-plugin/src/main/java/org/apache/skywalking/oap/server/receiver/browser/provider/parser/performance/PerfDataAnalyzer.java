@@ -17,14 +17,15 @@
 
 package org.apache.skywalking.oap.server.receiver.browser.provider.parser.performance;
 
-import java.util.LinkedList;
-import java.util.List;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.skywalking.apm.network.language.agent.v3.BrowserPerfData;
 import org.apache.skywalking.oap.server.library.module.ModuleManager;
 import org.apache.skywalking.oap.server.receiver.browser.provider.BrowserServiceModuleConfig;
 import org.apache.skywalking.oap.server.receiver.browser.provider.parser.performance.listener.PerfDataAnalysisListener;
+
+import java.util.LinkedList;
+import java.util.List;
 
 @Slf4j
 @RequiredArgsConstructor

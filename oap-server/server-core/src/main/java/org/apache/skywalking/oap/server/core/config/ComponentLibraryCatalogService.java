@@ -18,14 +18,15 @@
 
 package org.apache.skywalking.oap.server.core.config;
 
-import java.io.FileNotFoundException;
-import java.io.Reader;
-import java.util.HashMap;
-import java.util.Map;
 import org.apache.skywalking.oap.server.library.util.ResourceUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.yaml.snakeyaml.Yaml;
+
+import java.io.FileNotFoundException;
+import java.io.Reader;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Load settings from component-libraries.yml this file includes all component defines, and the component mappings,

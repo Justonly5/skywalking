@@ -18,11 +18,12 @@
 package org.apache.skywalking.oap.server.configuration.etcd;
 
 import com.google.common.base.Strings;
-import java.util.Arrays;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import org.apache.skywalking.oap.server.library.module.ModuleConfig;
+
+import java.util.Arrays;
 
 @Data
 @ToString

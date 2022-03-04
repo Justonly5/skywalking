@@ -18,11 +18,12 @@
 
 package org.apache.skywalking.oap.server.core.command;
 
-import java.util.UUID;
 import org.apache.skywalking.apm.network.trace.component.command.ProfileTaskCommand;
 import org.apache.skywalking.oap.server.core.query.type.ProfileTask;
 import org.apache.skywalking.oap.server.library.module.ModuleManager;
 import org.apache.skywalking.oap.server.library.module.Service;
+
+import java.util.UUID;
 
 /**
  * CommandService represents the command creation factory. All commands for downstream agents should be created here.

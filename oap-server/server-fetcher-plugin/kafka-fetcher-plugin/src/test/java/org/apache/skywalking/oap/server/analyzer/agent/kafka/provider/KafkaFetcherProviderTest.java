@@ -18,9 +18,9 @@
 
 package org.apache.skywalking.oap.server.analyzer.agent.kafka.provider;
 
-import org.apache.skywalking.oap.server.library.module.ModuleConfig;
 import org.apache.skywalking.oap.server.analyzer.agent.kafka.module.KafkaFetcherConfig;
 import org.apache.skywalking.oap.server.analyzer.agent.kafka.module.KafkaFetcherModule;
+import org.apache.skywalking.oap.server.library.module.ModuleConfig;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

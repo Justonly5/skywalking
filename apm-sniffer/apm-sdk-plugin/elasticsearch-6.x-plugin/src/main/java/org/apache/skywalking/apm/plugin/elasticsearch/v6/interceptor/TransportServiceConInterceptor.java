@@ -20,8 +20,8 @@ package org.apache.skywalking.apm.plugin.elasticsearch.v6.interceptor;
 
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceConstructorInterceptor;
-import org.apache.skywalking.apm.plugin.elasticsearch.v6.TransportClientEnhanceInfo;
 import org.apache.skywalking.apm.plugin.elasticsearch.v6.TransportAddressCache;
+import org.apache.skywalking.apm.plugin.elasticsearch.v6.TransportClientEnhanceInfo;
 import org.elasticsearch.common.settings.Settings;
 
 public class TransportServiceConInterceptor implements InstanceConstructorInterceptor {

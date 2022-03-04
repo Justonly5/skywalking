@@ -18,8 +18,9 @@
 
 package org.apache.skywalking.oap.server.core.analysis.metrics.expression;
 
-import java.util.Objects;
 import org.apache.skywalking.oap.server.core.analysis.metrics.annotation.FilterMatcher;
+
+import java.util.Objects;
 
 @FilterMatcher
 public class NotEqualMatch {

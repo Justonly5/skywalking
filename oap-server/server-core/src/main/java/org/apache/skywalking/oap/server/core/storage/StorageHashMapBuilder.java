@@ -18,8 +18,9 @@
 
 package org.apache.skywalking.oap.server.core.storage;
 
-import java.util.Map;
 import org.apache.skywalking.oap.server.core.storage.type.StorageBuilder;
+
+import java.util.Map;
 
 /**
  * Converter between the give T and Map. Map is a general usable type using in the storage implementation.

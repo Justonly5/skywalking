@@ -31,9 +31,7 @@ import reactor.core.publisher.Mono;
 
 import java.lang.reflect.Method;
 
-import static org.apache.skywalking.apm.plugin.spring.mvc.commons.Constants.REACTIVE_ASYNC_SPAN_IN_RUNTIME_CONTEXT;
-import static org.apache.skywalking.apm.plugin.spring.mvc.commons.Constants.REQUEST_KEY_IN_RUNTIME_CONTEXT;
-import static org.apache.skywalking.apm.plugin.spring.mvc.commons.Constants.RESPONSE_KEY_IN_RUNTIME_CONTEXT;
+import static org.apache.skywalking.apm.plugin.spring.mvc.commons.Constants.*;
 
 public class InvokeInterceptor implements InstanceMethodsAroundInterceptorV2 {
     @Override

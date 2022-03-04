@@ -17,11 +17,12 @@
 
 package org.apache.skywalking.apm.plugin.spring.cloud.gateway.v21x;
 
-import java.lang.reflect.Method;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceMethodsAroundInterceptor;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
 import org.apache.skywalking.apm.plugin.spring.cloud.gateway.v21x.define.EnhanceObjectCache;
+
+import java.lang.reflect.Method;
 
 public class HttpClientFinalizerURIInterceptor implements InstanceMethodsAroundInterceptor {
     @Override

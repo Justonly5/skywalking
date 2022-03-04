@@ -19,6 +19,7 @@
 package org.apache.skywalking.apm.toolkit.opentracing;
 
 import io.opentracing.SpanContext;
+
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 import java.util.HashMap;

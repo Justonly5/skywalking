@@ -22,26 +22,11 @@ import com.mongodb.bulk.DeleteRequest;
 import com.mongodb.bulk.InsertRequest;
 import com.mongodb.bulk.UpdateRequest;
 import com.mongodb.bulk.WriteRequest;
-import com.mongodb.operation.CountOperation;
-import com.mongodb.operation.CreateCollectionOperation;
-import com.mongodb.operation.CreateIndexesOperation;
-import com.mongodb.operation.CreateViewOperation;
-import com.mongodb.operation.DeleteOperation;
-import com.mongodb.operation.DistinctOperation;
-import com.mongodb.operation.FindAndDeleteOperation;
-import com.mongodb.operation.FindAndReplaceOperation;
-import com.mongodb.operation.FindAndUpdateOperation;
-import com.mongodb.operation.FindOperation;
-import com.mongodb.operation.GroupOperation;
-import com.mongodb.operation.InsertOperation;
-import com.mongodb.operation.ListCollectionsOperation;
-import com.mongodb.operation.MapReduceToCollectionOperation;
-import com.mongodb.operation.MapReduceWithInlineResultsOperation;
-import com.mongodb.operation.MixedBulkWriteOperation;
-import com.mongodb.operation.UpdateOperation;
-import java.util.List;
+import com.mongodb.operation.*;
 import org.apache.skywalking.apm.plugin.mongodb.v3.MongoPluginConfig;
 import org.bson.BsonDocument;
+
+import java.util.List;
 
 @SuppressWarnings({
     "deprecation",

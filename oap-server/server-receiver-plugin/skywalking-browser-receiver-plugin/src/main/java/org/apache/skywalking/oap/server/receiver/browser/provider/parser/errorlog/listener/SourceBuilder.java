@@ -21,12 +21,7 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import org.apache.skywalking.apm.network.language.agent.v3.ErrorCategory;
-import org.apache.skywalking.oap.server.core.browser.source.BrowserAppPageTraffic;
-import org.apache.skywalking.oap.server.core.browser.source.BrowserAppSingleVersionTraffic;
-import org.apache.skywalking.oap.server.core.browser.source.BrowserAppTraffic;
-import org.apache.skywalking.oap.server.core.browser.source.BrowserAppTrafficCategory;
-import org.apache.skywalking.oap.server.core.browser.source.BrowserAppTrafficSource;
-import org.apache.skywalking.oap.server.core.browser.source.BrowserErrorCategory;
+import org.apache.skywalking.oap.server.core.browser.source.*;
 import org.apache.skywalking.oap.server.core.config.NamingControl;
 
 @RequiredArgsConstructor

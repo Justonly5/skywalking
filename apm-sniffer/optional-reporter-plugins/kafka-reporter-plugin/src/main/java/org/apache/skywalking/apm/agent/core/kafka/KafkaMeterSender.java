@@ -18,8 +18,6 @@
 
 package org.apache.skywalking.apm.agent.core.kafka;
 
-import java.util.Map;
-
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.common.utils.Bytes;
@@ -33,6 +31,8 @@ import org.apache.skywalking.apm.agent.core.meter.MeterId;
 import org.apache.skywalking.apm.agent.core.meter.MeterSender;
 import org.apache.skywalking.apm.agent.core.meter.MeterService;
 import org.apache.skywalking.apm.network.language.agent.v3.MeterDataCollection;
+
+import java.util.Map;
 
 /**
  * A report to send Metrics data of meter system to Kafka Broker.

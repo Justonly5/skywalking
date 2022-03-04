@@ -18,12 +18,13 @@
 
 package org.apache.skywalking.oap.server.receiver.trace.provider.parser.listener;
 
-import java.util.ArrayList;
-import java.util.List;
 import lombok.Getter;
 import org.apache.skywalking.oap.server.core.analysis.DispatcherDetectorListener;
 import org.apache.skywalking.oap.server.core.source.ISource;
 import org.apache.skywalking.oap.server.core.source.SourceReceiver;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Mock receiver for testing.

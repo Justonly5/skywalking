@@ -18,12 +18,12 @@
 
 package org.apache.skywalking.apm.plugin.xmemcached.v2;
 
+import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
+import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceConstructorInterceptor;
+
 import java.net.InetSocketAddress;
 import java.util.Map;
 import java.util.Map.Entry;
-
-import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
-import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceConstructorInterceptor;
 
 public class XMemcachedConstructorWithComplexArgInterceptor implements InstanceConstructorInterceptor {
 

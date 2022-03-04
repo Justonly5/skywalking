@@ -18,15 +18,16 @@
 
 package org.apache.skywalking.oap.server.core.storage;
 
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import org.apache.skywalking.oap.server.library.util.CollectionUtils;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import org.apache.skywalking.oap.server.library.util.CollectionUtils;
 
 @RequiredArgsConstructor
 public class BlockingBatchQueueWithReentrantLock<E> implements BlockingBatchQueue<E> {

@@ -19,15 +19,16 @@
 package org.apache.skywalking.oal.rt.parser;
 
 import com.google.common.reflect.ClassPath;
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.skywalking.oap.server.core.analysis.metrics.annotation.BooleanValueFilterMatcher;
 import org.apache.skywalking.oap.server.core.analysis.metrics.annotation.FilterMatcher;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
 
 @SuppressWarnings("UnstableApiUsage")
 public enum FilterMatchers {

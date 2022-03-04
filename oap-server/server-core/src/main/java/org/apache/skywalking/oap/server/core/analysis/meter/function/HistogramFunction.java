@@ -18,9 +18,6 @@
 
 package org.apache.skywalking.oap.server.core.analysis.meter.function;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -34,6 +31,10 @@ import org.apache.skywalking.oap.server.core.query.type.Bucket;
 import org.apache.skywalking.oap.server.core.remote.grpc.proto.RemoteData;
 import org.apache.skywalking.oap.server.core.storage.StorageHashMapBuilder;
 import org.apache.skywalking.oap.server.core.storage.annotation.Column;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
 
 /**
  * Histogram includes data range buckets and the amount matched/grouped in the buckets. This is for original histogram

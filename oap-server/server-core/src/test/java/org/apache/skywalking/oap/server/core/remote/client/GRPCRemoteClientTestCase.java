@@ -19,7 +19,6 @@
 package org.apache.skywalking.oap.server.core.remote.client;
 
 import io.grpc.testing.GrpcServerRule;
-import java.util.concurrent.TimeUnit;
 import org.apache.skywalking.oap.server.core.CoreModule;
 import org.apache.skywalking.oap.server.core.remote.RemoteServiceHandler;
 import org.apache.skywalking.oap.server.core.remote.data.StreamData;
@@ -40,11 +39,9 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 
-import static org.mockito.Mockito.any;
-import static org.mockito.Mockito.doReturn;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.spy;
-import static org.mockito.Mockito.when;
+import java.util.concurrent.TimeUnit;
+
+import static org.mockito.Mockito.*;
 
 public class GRPCRemoteClientTestCase {
 

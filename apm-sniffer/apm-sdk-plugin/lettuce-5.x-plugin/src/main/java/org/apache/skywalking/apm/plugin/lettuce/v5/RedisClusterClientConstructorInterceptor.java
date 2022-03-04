@@ -20,9 +20,9 @@ package org.apache.skywalking.apm.plugin.lettuce.v5;
 
 import io.lettuce.core.RedisURI;
 import io.lettuce.core.cluster.RedisClusterClient;
+import org.apache.skywalking.apm.agent.core.context.util.PeerFormat;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceConstructorInterceptor;
-import org.apache.skywalking.apm.agent.core.context.util.PeerFormat;
 
 public class RedisClusterClientConstructorInterceptor implements InstanceConstructorInterceptor {
 

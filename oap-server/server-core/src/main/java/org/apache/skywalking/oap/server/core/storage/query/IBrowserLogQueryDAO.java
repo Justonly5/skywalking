@@ -18,13 +18,14 @@
 package org.apache.skywalking.oap.server.core.storage.query;
 
 import com.google.protobuf.InvalidProtocolBufferException;
-import java.io.IOException;
-import java.util.Base64;
 import org.apache.skywalking.oap.server.core.browser.source.BrowserErrorCategory;
 import org.apache.skywalking.oap.server.core.query.type.BrowserErrorLog;
 import org.apache.skywalking.oap.server.core.query.type.BrowserErrorLogs;
 import org.apache.skywalking.oap.server.core.query.type.ErrorCategory;
 import org.apache.skywalking.oap.server.library.module.Service;
+
+import java.io.IOException;
+import java.util.Base64;
 
 public interface IBrowserLogQueryDAO extends Service {
     BrowserErrorLogs queryBrowserErrorLogs(String serviceId,

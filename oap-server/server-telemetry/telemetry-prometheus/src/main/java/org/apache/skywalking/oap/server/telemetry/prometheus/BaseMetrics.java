@@ -19,11 +19,12 @@
 package org.apache.skywalking.oap.server.telemetry.prometheus;
 
 import io.prometheus.client.SimpleCollector;
+import org.apache.skywalking.oap.server.telemetry.api.MetricsTag;
+import org.apache.skywalking.oap.server.telemetry.api.TelemetryRelatedContext;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.locks.ReentrantLock;
-import org.apache.skywalking.oap.server.telemetry.api.MetricsTag;
-import org.apache.skywalking.oap.server.telemetry.api.TelemetryRelatedContext;
 
 /**
  * BaseMetrics parent class represents the metrics

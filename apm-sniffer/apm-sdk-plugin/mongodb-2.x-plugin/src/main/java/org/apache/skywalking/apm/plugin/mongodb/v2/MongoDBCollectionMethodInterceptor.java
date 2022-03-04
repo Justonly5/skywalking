@@ -18,13 +18,7 @@
 
 package org.apache.skywalking.apm.plugin.mongodb.v2;
 
-import com.mongodb.AggregationOutput;
-import com.mongodb.CommandResult;
-import com.mongodb.DB;
-import com.mongodb.ServerAddress;
-import com.mongodb.WriteResult;
-import java.lang.reflect.Method;
-import java.util.List;
+import com.mongodb.*;
 import org.apache.skywalking.apm.agent.core.context.ContextCarrier;
 import org.apache.skywalking.apm.agent.core.context.ContextManager;
 import org.apache.skywalking.apm.agent.core.context.tag.Tags;
@@ -35,6 +29,9 @@ import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceC
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceMethodsAroundInterceptor;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
 import org.apache.skywalking.apm.network.trace.component.ComponentsDefine;
+
+import java.lang.reflect.Method;
+import java.util.List;
 
 public class MongoDBCollectionMethodInterceptor implements InstanceMethodsAroundInterceptor, InstanceConstructorInterceptor {
 

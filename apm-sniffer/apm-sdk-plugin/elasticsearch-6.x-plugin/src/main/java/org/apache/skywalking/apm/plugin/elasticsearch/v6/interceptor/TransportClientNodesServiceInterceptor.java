@@ -22,8 +22,8 @@ import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedI
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceConstructorInterceptor;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceMethodsAroundInterceptor;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
-import org.apache.skywalking.apm.plugin.elasticsearch.v6.TransportClientEnhanceInfo;
 import org.apache.skywalking.apm.plugin.elasticsearch.v6.TransportAddressCache;
+import org.apache.skywalking.apm.plugin.elasticsearch.v6.TransportClientEnhanceInfo;
 import org.elasticsearch.action.support.AdapterActionFuture;
 import org.elasticsearch.common.transport.TransportAddress;
 

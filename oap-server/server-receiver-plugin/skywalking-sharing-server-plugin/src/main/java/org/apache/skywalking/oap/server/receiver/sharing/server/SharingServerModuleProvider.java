@@ -18,7 +18,6 @@
 
 package org.apache.skywalking.oap.server.receiver.sharing.server;
 
-import java.util.Objects;
 import org.apache.logging.log4j.util.Strings;
 import org.apache.skywalking.apm.util.StringUtil;
 import org.apache.skywalking.oap.server.core.CoreModule;
@@ -36,6 +35,8 @@ import org.apache.skywalking.oap.server.library.server.ServerException;
 import org.apache.skywalking.oap.server.library.server.grpc.GRPCServer;
 import org.apache.skywalking.oap.server.library.server.jetty.JettyServer;
 import org.apache.skywalking.oap.server.library.server.jetty.JettyServerConfig;
+
+import java.util.Objects;
 
 public class SharingServerModuleProvider extends ModuleProvider {
 

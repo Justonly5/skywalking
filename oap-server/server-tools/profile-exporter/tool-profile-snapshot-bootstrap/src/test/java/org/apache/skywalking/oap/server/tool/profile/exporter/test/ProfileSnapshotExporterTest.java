@@ -18,11 +18,6 @@
 
 package org.apache.skywalking.oap.server.tool.profile.exporter.test;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.Reader;
-import java.util.Collections;
-import java.util.List;
 import org.apache.skywalking.apm.network.language.profile.v3.ThreadSnapshot;
 import org.apache.skywalking.oap.server.core.CoreModule;
 import org.apache.skywalking.oap.server.core.CoreModuleConfig;
@@ -49,6 +44,12 @@ import org.mockito.Mockito;
 import org.powermock.modules.junit4.PowerMockRunner;
 import org.powermock.reflect.Whitebox;
 import org.yaml.snakeyaml.Yaml;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.Reader;
+import java.util.Collections;
+import java.util.List;
 
 @RunWith(PowerMockRunner.class)
 public class ProfileSnapshotExporterTest {

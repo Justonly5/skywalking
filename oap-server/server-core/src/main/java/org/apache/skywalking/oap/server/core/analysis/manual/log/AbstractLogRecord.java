@@ -18,9 +18,6 @@
 
 package org.apache.skywalking.oap.server.core.analysis.manual.log;
 
-import java.util.Base64;
-import java.util.List;
-import java.util.Map;
 import lombok.Getter;
 import lombok.Setter;
 import org.apache.skywalking.apm.util.StringUtil;
@@ -32,6 +29,10 @@ import org.apache.skywalking.oap.server.core.query.type.ContentType;
 import org.apache.skywalking.oap.server.core.storage.StorageHashMapBuilder;
 import org.apache.skywalking.oap.server.core.storage.annotation.Column;
 import org.apache.skywalking.oap.server.library.util.CollectionUtils;
+
+import java.util.Base64;
+import java.util.List;
+import java.util.Map;
 
 public abstract class AbstractLogRecord extends Record {
 

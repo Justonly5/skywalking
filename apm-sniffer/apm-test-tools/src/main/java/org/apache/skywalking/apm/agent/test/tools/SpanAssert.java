@@ -18,13 +18,13 @@
 
 package org.apache.skywalking.apm.agent.test.tools;
 
-import org.hamcrest.CoreMatchers;
-import org.junit.Assert;
 import org.apache.skywalking.apm.agent.core.context.trace.AbstractSpan;
 import org.apache.skywalking.apm.agent.core.context.trace.LogDataEntity;
 import org.apache.skywalking.apm.agent.core.context.trace.SpanLayer;
 import org.apache.skywalking.apm.agent.test.helper.SpanHelper;
 import org.apache.skywalking.apm.network.trace.component.Component;
+import org.hamcrest.CoreMatchers;
+import org.junit.Assert;
 
 import static junit.framework.TestCase.assertNotNull;
 import static org.hamcrest.CoreMatchers.is;

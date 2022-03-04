@@ -18,13 +18,14 @@
 
 package org.apache.skywalking.oap.server.library.module;
 
+import org.apache.skywalking.oap.server.library.util.CollectionUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import org.apache.skywalking.oap.server.library.util.CollectionUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 class BootstrapFlow {
     private static final Logger LOGGER = LoggerFactory.getLogger(BootstrapFlow.class);

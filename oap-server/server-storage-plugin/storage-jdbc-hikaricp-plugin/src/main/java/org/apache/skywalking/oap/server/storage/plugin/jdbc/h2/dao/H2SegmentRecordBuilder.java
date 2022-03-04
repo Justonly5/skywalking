@@ -18,10 +18,6 @@
 
 package org.apache.skywalking.oap.server.storage.plugin.jdbc.h2.dao;
 
-import java.util.Base64;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import joptsimple.internal.Strings;
 import org.apache.skywalking.apm.util.StringUtil;
 import org.apache.skywalking.oap.server.core.Const;
@@ -30,20 +26,12 @@ import org.apache.skywalking.oap.server.core.analysis.record.Record;
 import org.apache.skywalking.oap.server.core.analysis.topn.TopN;
 import org.apache.skywalking.oap.server.library.util.CollectionUtils;
 
-import static org.apache.skywalking.oap.server.core.analysis.manual.segment.SegmentRecord.DATA_BINARY;
-import static org.apache.skywalking.oap.server.core.analysis.manual.segment.SegmentRecord.ENDPOINT_ID;
-import static org.apache.skywalking.oap.server.core.analysis.manual.segment.SegmentRecord.ENDPOINT_NAME;
-import static org.apache.skywalking.oap.server.core.analysis.manual.segment.SegmentRecord.END_TIME;
-import static org.apache.skywalking.oap.server.core.analysis.manual.segment.SegmentRecord.IS_ERROR;
-import static org.apache.skywalking.oap.server.core.analysis.manual.segment.SegmentRecord.LATENCY;
-import static org.apache.skywalking.oap.server.core.analysis.manual.segment.SegmentRecord.SEGMENT_ID;
-import static org.apache.skywalking.oap.server.core.analysis.manual.segment.SegmentRecord.SERVICE_ID;
-import static org.apache.skywalking.oap.server.core.analysis.manual.segment.SegmentRecord.SERVICE_INSTANCE_ID;
-import static org.apache.skywalking.oap.server.core.analysis.manual.segment.SegmentRecord.START_TIME;
-import static org.apache.skywalking.oap.server.core.analysis.manual.segment.SegmentRecord.TAGS;
-import static org.apache.skywalking.oap.server.core.analysis.manual.segment.SegmentRecord.TIME_BUCKET;
-import static org.apache.skywalking.oap.server.core.analysis.manual.segment.SegmentRecord.TRACE_ID;
-import static org.apache.skywalking.oap.server.core.analysis.manual.segment.SegmentRecord.VERSION;
+import java.util.Base64;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import static org.apache.skywalking.oap.server.core.analysis.manual.segment.SegmentRecord.*;
 
 /**
  * H2/MySQL is different from standard {@link org.apache.skywalking.oap.server.core.analysis.manual.segment.SegmentRecord.Builder},

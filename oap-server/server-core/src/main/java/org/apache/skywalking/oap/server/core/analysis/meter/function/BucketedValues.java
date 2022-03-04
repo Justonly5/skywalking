@@ -18,14 +18,15 @@
 
 package org.apache.skywalking.oap.server.core.analysis.meter.function;
 
-import java.util.Arrays;
-import java.util.List;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 import org.apache.skywalking.oap.server.core.analysis.metrics.DataTable;
 import org.apache.skywalking.oap.server.core.query.type.Bucket;
 import org.apache.skywalking.oap.server.core.query.type.HeatMap;
+
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * BucketedValues represents a value set, which elements are grouped by time bucket.

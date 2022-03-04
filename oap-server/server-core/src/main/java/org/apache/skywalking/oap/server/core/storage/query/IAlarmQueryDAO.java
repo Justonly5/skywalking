@@ -18,10 +18,6 @@
 
 package org.apache.skywalking.oap.server.core.storage.query;
 
-import java.io.IOException;
-import java.util.Base64;
-import java.util.List;
-
 import com.google.common.base.Charsets;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -29,6 +25,10 @@ import org.apache.skywalking.oap.server.core.analysis.manual.searchtag.Tag;
 import org.apache.skywalking.oap.server.core.query.type.Alarms;
 import org.apache.skywalking.oap.server.core.query.type.KeyValue;
 import org.apache.skywalking.oap.server.core.storage.DAO;
+
+import java.io.IOException;
+import java.util.Base64;
+import java.util.List;
 
 public interface IAlarmQueryDAO extends DAO {
 

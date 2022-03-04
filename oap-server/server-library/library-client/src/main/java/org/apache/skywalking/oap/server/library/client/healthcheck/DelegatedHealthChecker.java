@@ -18,9 +18,10 @@
 
 package org.apache.skywalking.oap.server.library.client.healthcheck;
 
+import org.apache.skywalking.oap.server.library.util.HealthChecker;
+
 import java.util.Optional;
 import java.util.concurrent.atomic.AtomicReference;
-import org.apache.skywalking.oap.server.library.util.HealthChecker;
 
 public class DelegatedHealthChecker implements HealthChecker {
     private final AtomicReference<HealthChecker> delegated = new AtomicReference<>();

@@ -17,7 +17,6 @@
 
 package org.apache.skywalking.oap.server.analyzer.agent.kafka.provider.handler;
 
-import java.io.IOException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.common.utils.Bytes;
@@ -25,6 +24,8 @@ import org.apache.skywalking.apm.network.logging.v3.LogData;
 import org.apache.skywalking.oap.server.analyzer.agent.kafka.module.KafkaFetcherConfig;
 import org.apache.skywalking.oap.server.library.module.ModuleManager;
 import org.apache.skywalking.oap.server.library.util.ProtoBufJsonUtils;
+
+import java.io.IOException;
 
 @Slf4j
 public class JsonLogHandler extends LogHandler {

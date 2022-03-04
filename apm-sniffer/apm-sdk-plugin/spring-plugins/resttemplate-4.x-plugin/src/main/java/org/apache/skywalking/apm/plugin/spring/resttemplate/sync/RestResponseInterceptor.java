@@ -18,14 +18,15 @@
 
 package org.apache.skywalking.apm.plugin.spring.resttemplate.sync;
 
-import java.lang.reflect.Method;
+import org.apache.skywalking.apm.agent.core.context.ContextManager;
 import org.apache.skywalking.apm.agent.core.context.tag.Tags;
 import org.apache.skywalking.apm.agent.core.context.trace.AbstractSpan;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
-import org.apache.skywalking.apm.agent.core.context.ContextManager;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceMethodsAroundInterceptor;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
 import org.springframework.http.client.ClientHttpResponse;
+
+import java.lang.reflect.Method;
 
 public class RestResponseInterceptor implements InstanceMethodsAroundInterceptor {
 

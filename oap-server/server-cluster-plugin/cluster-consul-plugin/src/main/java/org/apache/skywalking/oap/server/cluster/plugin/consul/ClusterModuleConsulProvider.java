@@ -21,8 +21,6 @@ package org.apache.skywalking.oap.server.cluster.plugin.consul;
 import com.google.common.net.HostAndPort;
 import com.orbitz.consul.Consul;
 import com.orbitz.consul.ConsulException;
-import java.util.ArrayList;
-import java.util.List;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.skywalking.oap.server.core.CoreModule;
 import org.apache.skywalking.oap.server.core.cluster.ClusterModule;
@@ -35,6 +33,9 @@ import org.apache.skywalking.oap.server.library.module.ServiceNotProvidedExcepti
 import org.apache.skywalking.oap.server.library.util.Address;
 import org.apache.skywalking.oap.server.library.util.ConnectStringParseException;
 import org.apache.skywalking.oap.server.library.util.ConnectUtils;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Use consul to manage all service instances in SkyWalking cluster.

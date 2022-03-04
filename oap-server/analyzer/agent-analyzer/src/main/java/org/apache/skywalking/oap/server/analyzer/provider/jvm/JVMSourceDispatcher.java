@@ -18,29 +18,20 @@
 
 package org.apache.skywalking.oap.server.analyzer.provider.jvm;
 
-import java.util.List;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.skywalking.apm.network.common.v3.CPU;
 import org.apache.skywalking.apm.network.language.agent.v3.Class;
-import org.apache.skywalking.apm.network.language.agent.v3.GC;
-import org.apache.skywalking.apm.network.language.agent.v3.JVMMetric;
-import org.apache.skywalking.apm.network.language.agent.v3.Memory;
-import org.apache.skywalking.apm.network.language.agent.v3.MemoryPool;
 import org.apache.skywalking.apm.network.language.agent.v3.Thread;
+import org.apache.skywalking.apm.network.language.agent.v3.*;
 import org.apache.skywalking.oap.server.core.CoreModule;
 import org.apache.skywalking.oap.server.core.analysis.IDManager;
 import org.apache.skywalking.oap.server.core.analysis.NodeType;
 import org.apache.skywalking.oap.server.core.analysis.TimeBucket;
 import org.apache.skywalking.oap.server.core.source.GCPhrase;
-import org.apache.skywalking.oap.server.core.source.MemoryPoolType;
-import org.apache.skywalking.oap.server.core.source.ServiceInstanceJVMCPU;
-import org.apache.skywalking.oap.server.core.source.ServiceInstanceJVMClass;
-import org.apache.skywalking.oap.server.core.source.ServiceInstanceJVMGC;
-import org.apache.skywalking.oap.server.core.source.ServiceInstanceJVMMemory;
-import org.apache.skywalking.oap.server.core.source.ServiceInstanceJVMMemoryPool;
-import org.apache.skywalking.oap.server.core.source.ServiceInstanceJVMThread;
-import org.apache.skywalking.oap.server.core.source.SourceReceiver;
+import org.apache.skywalking.oap.server.core.source.*;
 import org.apache.skywalking.oap.server.library.module.ModuleManager;
+
+import java.util.List;
 
 @Slf4j
 public class JVMSourceDispatcher {

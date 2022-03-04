@@ -18,12 +18,12 @@
 
 package org.apache.skywalking.apm.agent.core.remote;
 
-import java.util.List;
-
 import org.apache.skywalking.apm.agent.core.boot.BootService;
 import org.apache.skywalking.apm.agent.core.boot.DefaultImplementor;
 import org.apache.skywalking.apm.commons.datacarrier.consumer.IConsumer;
 import org.apache.skywalking.apm.network.logging.v3.LogData;
+
+import java.util.List;
 
 @DefaultImplementor
 public class LogReportServiceClient implements BootService, IConsumer<LogData> {

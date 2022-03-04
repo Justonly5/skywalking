@@ -20,13 +20,13 @@
 package org.apache.skywalking.apm.plugin.hystrix.v1;
 
 import com.netflix.hystrix.strategy.concurrency.HystrixConcurrencyStrategy;
-import java.util.concurrent.Callable;
-
 import com.netflix.hystrix.strategy.concurrency.HystrixRequestVariable;
 import com.netflix.hystrix.strategy.concurrency.HystrixRequestVariableLifecycle;
 import org.apache.skywalking.apm.agent.core.conf.RuntimeContextConfiguration;
 import org.apache.skywalking.apm.agent.core.context.ContextManager;
 import org.apache.skywalking.apm.agent.core.context.RuntimeContextSnapshot;
+
+import java.util.concurrent.Callable;
 
 public class SWHystrixConcurrencyStrategyWrapper extends HystrixConcurrencyStrategy {
 

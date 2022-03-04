@@ -18,8 +18,6 @@
 
 package org.apache.skywalking.apm.plugin.avro;
 
-import java.io.IOException;
-import java.lang.reflect.Method;
 import org.apache.avro.Protocol;
 import org.apache.avro.ipc.Requestor;
 import org.apache.avro.ipc.Transceiver;
@@ -29,6 +27,9 @@ import org.apache.skywalking.apm.agent.core.logging.api.LogManager;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceConstructorInterceptor;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceMethodsAroundInterceptor;
+
+import java.io.IOException;
+import java.lang.reflect.Method;
 
 public abstract class AbstractRequestInterceptor implements InstanceConstructorInterceptor, InstanceMethodsAroundInterceptor {
     private static final ILog LOGGER = LogManager.getLogger(GenericRequestorInterceptor.class);

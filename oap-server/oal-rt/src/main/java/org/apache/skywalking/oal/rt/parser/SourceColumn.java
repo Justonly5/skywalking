@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.oal.rt.parser;
 
-import java.util.Objects;
 import lombok.Getter;
 import lombok.Setter;
 import org.apache.skywalking.oal.rt.util.ClassMethodUtil;
+
+import java.util.Objects;
 
 @Getter
 @Setter

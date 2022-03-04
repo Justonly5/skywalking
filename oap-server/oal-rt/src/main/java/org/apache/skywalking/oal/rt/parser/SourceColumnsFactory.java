@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.oal.rt.parser;
 
-import java.util.ArrayList;
-import java.util.List;
 import org.apache.skywalking.oap.server.core.source.DefaultScopeDefine;
 import org.apache.skywalking.oap.server.core.source.ScopeDefaultColumn;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class SourceColumnsFactory {
     public static List<SourceColumn> getColumns(String source) {

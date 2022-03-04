@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.oap.server.core.storage.model;
 
-import java.lang.reflect.Type;
 import lombok.Getter;
 import org.apache.skywalking.oap.server.core.analysis.metrics.DataTable;
 import org.apache.skywalking.oap.server.core.storage.annotation.Column;
+
+import java.lang.reflect.Type;
 
 @Getter
 public class ModelColumn {

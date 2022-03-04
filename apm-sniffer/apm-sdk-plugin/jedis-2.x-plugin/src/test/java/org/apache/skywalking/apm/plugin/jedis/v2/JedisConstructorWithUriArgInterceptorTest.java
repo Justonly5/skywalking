@@ -18,7 +18,6 @@
 
 package org.apache.skywalking.apm.plugin.jedis.v2;
 
-import java.net.URI;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.junit.Before;
 import org.junit.Test;
@@ -26,6 +25,8 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
+
+import java.net.URI;
 
 import static org.mockito.Mockito.verify;
 

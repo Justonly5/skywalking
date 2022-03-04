@@ -18,14 +18,15 @@
 
 package org.apache.skywalking.apm.plugin.jdbc;
 
+import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
+import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceMethodsAroundInterceptor;
+import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
+import org.apache.skywalking.apm.plugin.jdbc.trace.ConnectionInfo;
+import org.apache.skywalking.apm.plugin.jdbc.trace.SWCallableStatement;
+
 import java.lang.reflect.Method;
 import java.sql.CallableStatement;
 import java.sql.Connection;
-import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
-import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceMethodsAroundInterceptor;
-import org.apache.skywalking.apm.plugin.jdbc.trace.SWCallableStatement;
-import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
-import org.apache.skywalking.apm.plugin.jdbc.trace.ConnectionInfo;
 
 /**
  * {@link JDBCPrepareCallInterceptor} return {@link SWCallableStatement} instance that wrapper the real CallStatement

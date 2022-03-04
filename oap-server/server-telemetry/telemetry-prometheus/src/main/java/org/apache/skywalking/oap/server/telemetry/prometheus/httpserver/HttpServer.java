@@ -25,12 +25,13 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
-import java.util.Optional;
-import java.util.concurrent.ThreadFactory;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.skywalking.oap.server.library.server.ssl.HttpDynamicSslContext;
 import org.apache.skywalking.oap.server.telemetry.prometheus.PrometheusConfig;
+
+import java.util.Optional;
+import java.util.concurrent.ThreadFactory;
 
 /**
  * An HTTP server that sends back the content of the received HTTP request

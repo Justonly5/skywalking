@@ -18,9 +18,10 @@
 
 package org.apache.skywalking.apm.agent.core.kafka;
 
+import org.apache.skywalking.apm.agent.core.boot.PluginConfig;
+
 import java.util.HashMap;
 import java.util.Map;
-import org.apache.skywalking.apm.agent.core.boot.PluginConfig;
 
 public class KafkaReporterPluginConfig {
     public static class Plugin {

@@ -18,11 +18,12 @@
 
 package org.apache.skywalking.oap.server.core.config.group.openapi;
 
+import lombok.Getter;
+import org.apache.skywalking.apm.util.StringFormatGroup;
+
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
-import lombok.Getter;
-import org.apache.skywalking.apm.util.StringFormatGroup;
 
 public class EndpointGroupingRule4Openapi {
     private final Map<String/*serviceName*/, Map<String/*endpointName*/, String/*endpointGroupName*/>> directLookup = new HashMap<>();

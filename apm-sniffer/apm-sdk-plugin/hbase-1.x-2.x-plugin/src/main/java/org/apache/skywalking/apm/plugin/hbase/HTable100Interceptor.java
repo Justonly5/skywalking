@@ -18,12 +18,13 @@
 
 package org.apache.skywalking.apm.plugin.hbase;
 
-import java.lang.reflect.Field;
-import java.util.Properties;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.client.ClusterConnection;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.util.StringUtil;
+
+import java.lang.reflect.Field;
+import java.util.Properties;
 
 public class HTable100Interceptor extends HTableInterceptor {
 

@@ -20,18 +20,15 @@ package org.apache.skywalking.oap.server.receiver.envoy.als;
 
 import com.google.protobuf.Duration;
 import com.google.protobuf.Timestamp;
-import io.envoyproxy.envoy.data.accesslog.v3.AccessLogCommon;
-import io.envoyproxy.envoy.data.accesslog.v3.HTTPAccessLogEntry;
-import io.envoyproxy.envoy.data.accesslog.v3.HTTPRequestProperties;
-import io.envoyproxy.envoy.data.accesslog.v3.ResponseFlags;
-import io.envoyproxy.envoy.data.accesslog.v3.TLSProperties;
-import java.time.Instant;
-import java.util.List;
-import java.util.Optional;
+import io.envoyproxy.envoy.data.accesslog.v3.*;
 import lombok.RequiredArgsConstructor;
 import org.apache.skywalking.apm.network.common.v3.DetectPoint;
 import org.apache.skywalking.apm.network.servicemesh.v3.Protocol;
 import org.apache.skywalking.apm.network.servicemesh.v3.ServiceMeshMetric;
+
+import java.time.Instant;
+import java.util.List;
+import java.util.Optional;
 
 import static com.google.common.base.Strings.isNullOrEmpty;
 

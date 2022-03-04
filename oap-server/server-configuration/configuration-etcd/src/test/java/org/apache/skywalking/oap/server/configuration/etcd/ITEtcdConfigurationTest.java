@@ -21,20 +21,9 @@ package org.apache.skywalking.oap.server.configuration.etcd;
 import io.etcd.jetcd.ByteSequence;
 import io.etcd.jetcd.Client;
 import io.etcd.jetcd.KV;
-import java.io.FileNotFoundException;
-import java.io.Reader;
-import java.nio.charset.Charset;
-import java.util.Collections;
-import java.util.Map;
-import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.skywalking.apm.util.PropertyPlaceholderHelper;
-import org.apache.skywalking.oap.server.library.module.ApplicationConfiguration;
-import org.apache.skywalking.oap.server.library.module.ModuleConfigException;
-import org.apache.skywalking.oap.server.library.module.ModuleManager;
-import org.apache.skywalking.oap.server.library.module.ModuleNotFoundException;
-import org.apache.skywalking.oap.server.library.module.ModuleStartException;
+import org.apache.skywalking.oap.server.library.module.*;
 import org.apache.skywalking.oap.server.library.util.CollectionUtils;
 import org.apache.skywalking.oap.server.library.util.ResourceUtils;
 import org.junit.AfterClass;
@@ -46,9 +35,15 @@ import org.testcontainers.containers.wait.strategy.Wait;
 import org.testcontainers.utility.DockerImageName;
 import org.yaml.snakeyaml.Yaml;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
+import java.io.FileNotFoundException;
+import java.io.Reader;
+import java.nio.charset.Charset;
+import java.util.Collections;
+import java.util.Map;
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
+
+import static org.junit.Assert.*;
 
 @Slf4j
 public class ITEtcdConfigurationTest {

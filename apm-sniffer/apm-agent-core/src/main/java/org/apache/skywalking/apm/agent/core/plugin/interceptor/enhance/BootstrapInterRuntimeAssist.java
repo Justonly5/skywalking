@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance;
 
+import org.apache.skywalking.apm.agent.core.plugin.bootstrap.IBootstrapLog;
+
 import java.io.PrintStream;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import org.apache.skywalking.apm.agent.core.plugin.bootstrap.IBootstrapLog;
 
 /**
  * This assist help all bootstrap class core interceptor.

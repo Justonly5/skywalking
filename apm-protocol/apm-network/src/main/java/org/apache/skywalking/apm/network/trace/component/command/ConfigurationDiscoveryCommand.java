@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.apm.network.trace.component.command;
 
-import java.util.ArrayList;
-import java.util.List;
 import org.apache.skywalking.apm.network.common.v3.Command;
 import org.apache.skywalking.apm.network.common.v3.KeyStringValuePair;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ConfigurationDiscoveryCommand extends BaseCommand implements Serializable, Deserializable<ConfigurationDiscoveryCommand> {
     public static final Deserializable<ConfigurationDiscoveryCommand> DESERIALIZER = new ConfigurationDiscoveryCommand(

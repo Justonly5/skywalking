@@ -18,9 +18,10 @@
 
 package org.apache.skywalking.oap.server.recevier.configuration.discovery;
 
-import java.util.Map;
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.util.Map;
 
 public class AgentConfigurationsReaderTest {
     @Test

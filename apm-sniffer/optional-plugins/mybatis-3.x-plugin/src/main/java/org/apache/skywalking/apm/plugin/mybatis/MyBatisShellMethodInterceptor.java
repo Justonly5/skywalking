@@ -18,13 +18,14 @@
 
 package org.apache.skywalking.apm.plugin.mybatis;
 
-import java.lang.reflect.Method;
-import java.util.Objects;
 import org.apache.skywalking.apm.agent.core.context.ContextManager;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.v2.InstanceMethodsAroundInterceptorV2;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.v2.MethodInvocationContext;
 import org.apache.skywalking.apm.agent.core.util.MethodUtil;
+
+import java.lang.reflect.Method;
+import java.util.Objects;
 
 public class MyBatisShellMethodInterceptor implements InstanceMethodsAroundInterceptorV2 {
 

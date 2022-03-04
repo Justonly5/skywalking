@@ -19,9 +19,6 @@ package org.apache.skywalking.apm.plugin.asynchttpclient.v2;
 
 import io.netty.channel.Channel;
 import io.netty.handler.codec.http.HttpHeaders;
-import java.net.InetSocketAddress;
-import java.util.List;
-import javax.net.ssl.SSLSession;
 import org.apache.skywalking.apm.agent.core.context.tag.Tags;
 import org.apache.skywalking.apm.agent.core.context.trace.AbstractSpan;
 import org.apache.skywalking.apm.agent.core.logging.api.ILog;
@@ -31,6 +28,10 @@ import org.asynchttpclient.AsyncHandler;
 import org.asynchttpclient.HttpResponseBodyPart;
 import org.asynchttpclient.HttpResponseStatus;
 import org.asynchttpclient.netty.request.NettyRequest;
+
+import javax.net.ssl.SSLSession;
+import java.net.InetSocketAddress;
+import java.util.List;
 
 /**
  * {@link AsyncHandlerWrapper} wrapper the {@link AsyncHandler} object for tracing.

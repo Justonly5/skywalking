@@ -18,8 +18,6 @@
 
 package org.apache.skywalking.apm.plugin.thrift;
 
-import java.lang.reflect.Method;
-import java.util.Map;
 import org.apache.skywalking.apm.agent.core.context.ContextManager;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceConstructorInterceptor;
@@ -30,6 +28,9 @@ import org.apache.skywalking.apm.plugin.thrift.wrapper.ServerInProtocolWrapper;
 import org.apache.thrift.ProcessFunction;
 import org.apache.thrift.TBaseAsyncProcessor;
 import org.apache.thrift.TBaseProcessor;
+
+import java.lang.reflect.Method;
+import java.util.Map;
 
 /**
  * To wrap the ProcessFunction for getting arguments of method.

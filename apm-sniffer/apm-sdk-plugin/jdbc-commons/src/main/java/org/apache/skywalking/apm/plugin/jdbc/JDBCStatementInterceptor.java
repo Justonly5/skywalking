@@ -18,13 +18,14 @@
 
 package org.apache.skywalking.apm.plugin.jdbc;
 
-import java.lang.reflect.Method;
-import java.sql.Connection;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceMethodsAroundInterceptor;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
 import org.apache.skywalking.apm.plugin.jdbc.trace.ConnectionInfo;
 import org.apache.skywalking.apm.plugin.jdbc.trace.SWStatement;
+
+import java.lang.reflect.Method;
+import java.sql.Connection;
 
 /**
  * {@link JDBCStatementInterceptor} return {@link SWStatement} instance that wrapper the real Statement instance when

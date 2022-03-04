@@ -18,11 +18,12 @@
 
 package org.apache.skywalking.oap.server.core.analysis.data;
 
+import org.apache.skywalking.oap.server.core.analysis.metrics.Metrics;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-import org.apache.skywalking.oap.server.core.analysis.metrics.Metrics;
 
 /**
  * MergableBufferedData is a thread no safe implementation of {@link BufferedData}. {@link Metrics} in this cache would

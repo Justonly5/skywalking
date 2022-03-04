@@ -18,12 +18,13 @@
 
 package org.apache.skywalking.apm.agent.core.context;
 
-import java.util.ArrayList;
-import java.util.List;
 import org.apache.skywalking.apm.agent.core.context.ids.DistributedTraceId;
 import org.apache.skywalking.apm.agent.core.context.ids.PropagatedTraceId;
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ContextCarrierV3HeaderTest {
 

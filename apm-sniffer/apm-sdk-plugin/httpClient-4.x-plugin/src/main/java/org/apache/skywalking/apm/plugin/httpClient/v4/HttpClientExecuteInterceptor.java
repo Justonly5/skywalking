@@ -18,11 +18,6 @@
 
 package org.apache.skywalking.apm.plugin.httpClient.v4;
 
-import java.lang.reflect.Method;
-import java.net.MalformedURLException;
-import java.net.URI;
-import java.net.URL;
-
 import org.apache.http.HttpHost;
 import org.apache.http.HttpRequest;
 import org.apache.http.HttpResponse;
@@ -40,6 +35,11 @@ import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInt
 import org.apache.skywalking.apm.network.trace.component.ComponentsDefine;
 import org.apache.skywalking.apm.plugin.httpclient.HttpClientPluginConfig;
 import org.apache.skywalking.apm.util.StringUtil;
+
+import java.lang.reflect.Method;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URL;
 
 public class HttpClientExecuteInterceptor implements InstanceMethodsAroundInterceptor {
 

@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.oap.server.storage.plugin.elasticsearch.base;
 
-import java.lang.reflect.Type;
-import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.lang.reflect.Type;
+import java.util.List;
 
 public class ElasticSearchColumnTypeMappingTestCase {
     public List<String> a;

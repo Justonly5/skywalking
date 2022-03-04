@@ -17,10 +17,11 @@
 
 package org.apache.skywalking.apm.plugin.elasticsearch.v5;
 
+import org.elasticsearch.common.transport.TransportAddress;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import org.elasticsearch.common.transport.TransportAddress;
 
 public class TransportAddressCache {
 

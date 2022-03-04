@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.apm.agent.core.jvm.thread;
 
+import org.apache.skywalking.apm.network.language.agent.v3.Thread;
+
 import java.lang.management.ManagementFactory;
 import java.lang.management.ThreadInfo;
 import java.lang.management.ThreadMXBean;
-import org.apache.skywalking.apm.network.language.agent.v3.Thread;
 
 public enum ThreadProvider {
     INSTANCE;

@@ -18,11 +18,12 @@
 
 package org.apache.skywalking.apm.plugin.spring.patch;
 
-import java.lang.reflect.Method;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceMethodsAroundInterceptor;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
 import org.springframework.aop.framework.AdvisedSupport;
+
+import java.lang.reflect.Method;
 
 /**
  * <code>CreateAopProxyInterceptor</code> check that the bean has been implement {@link EnhancedInstance}.

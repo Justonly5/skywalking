@@ -18,8 +18,8 @@
 
 package org.apache.skywalking.apm.toolkit.activation.opentracing.span;
 
-import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.context.ContextManager;
+import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceConstructorInterceptor;
 
 public class ConstructorWithTracerInterceptor implements InstanceConstructorInterceptor {

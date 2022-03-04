@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.oap.server.core.storage.model;
 
-import java.util.List;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import org.apache.skywalking.oap.server.core.analysis.DownSampling;
+
+import java.util.List;
 
 /**
  * The model definition of a logic entity.

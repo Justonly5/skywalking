@@ -19,7 +19,6 @@
 package org.apache.skywalking.oap.server.core.remote;
 
 import io.grpc.stub.StreamObserver;
-import java.util.Objects;
 import org.apache.skywalking.oap.server.core.CoreModule;
 import org.apache.skywalking.oap.server.core.remote.data.StreamData;
 import org.apache.skywalking.oap.server.core.remote.grpc.proto.Empty;
@@ -38,6 +37,8 @@ import org.apache.skywalking.oap.server.telemetry.api.MetricsCreator;
 import org.apache.skywalking.oap.server.telemetry.api.MetricsTag;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.Objects;
 
 /**
  * This class is Server-side streaming RPC implementation. It's a common service for OAP servers to receive message from

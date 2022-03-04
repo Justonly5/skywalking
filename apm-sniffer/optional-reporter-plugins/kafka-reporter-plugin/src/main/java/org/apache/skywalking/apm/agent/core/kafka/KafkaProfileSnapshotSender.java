@@ -18,8 +18,6 @@
 
 package org.apache.skywalking.apm.agent.core.kafka;
 
-import java.util.List;
-
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.common.utils.Bytes;
@@ -30,6 +28,8 @@ import org.apache.skywalking.apm.agent.core.logging.api.LogManager;
 import org.apache.skywalking.apm.agent.core.profile.ProfileSnapshotSender;
 import org.apache.skywalking.apm.agent.core.profile.TracingThreadSnapshot;
 import org.apache.skywalking.apm.network.language.profile.v3.ThreadSnapshot;
+
+import java.util.List;
 
 /**
  * To transport profiling tasks between OAP Server and agent with gRPC. This is why we still have to configure gRPC. But

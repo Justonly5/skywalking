@@ -17,11 +17,6 @@
 
 package org.apache.skywalking.oap.server.receiver.browser.provider.handler.rest;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.StringReader;
-import java.util.List;
-import javax.servlet.http.HttpServletRequest;
 import org.apache.skywalking.apm.network.language.agent.v3.BrowserErrorLog;
 import org.apache.skywalking.apm.network.language.agent.v3.BrowserPerfData;
 import org.apache.skywalking.apm.network.language.agent.v3.ErrorCategory;
@@ -39,6 +34,12 @@ import org.mockito.Mockito;
 import org.powermock.core.classloader.annotations.PowerMockIgnore;
 import org.powermock.modules.junit4.PowerMockRunner;
 import org.powermock.reflect.Whitebox;
+
+import javax.servlet.http.HttpServletRequest;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.StringReader;
+import java.util.List;
 
 import static org.mockito.Mockito.when;
 

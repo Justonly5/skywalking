@@ -18,11 +18,12 @@
 
 package org.apache.skywalking.apm.plugin.neo4j.v4x;
 
-import java.lang.reflect.Method;
-import java.util.concurrent.CompletionStage;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceMethodsAroundInterceptor;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
+
+import java.lang.reflect.Method;
+import java.util.concurrent.CompletionStage;
 
 /**
  * This interceptor is used to propagate the context snapshot in {@link SessionRequiredInfo} after {@link

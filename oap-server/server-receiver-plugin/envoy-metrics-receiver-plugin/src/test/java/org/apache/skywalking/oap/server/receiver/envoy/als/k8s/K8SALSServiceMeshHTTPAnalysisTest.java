@@ -20,9 +20,6 @@ package org.apache.skywalking.oap.server.receiver.envoy.als.k8s;
 
 import com.google.protobuf.util.JsonFormat;
 import io.envoyproxy.envoy.service.accesslog.v3.StreamAccessLogsMessage;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import org.apache.skywalking.apm.network.common.v3.DetectPoint;
 import org.apache.skywalking.apm.network.servicemesh.v3.ServiceMeshMetric;
 import org.apache.skywalking.oap.server.library.module.ModuleManager;
@@ -36,6 +33,10 @@ import org.apache.skywalking.oap.server.receiver.envoy.als.ServiceMetaInfo;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.mock;

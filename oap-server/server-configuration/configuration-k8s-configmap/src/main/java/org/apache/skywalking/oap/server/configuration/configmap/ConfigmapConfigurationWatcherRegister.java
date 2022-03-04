@@ -19,11 +19,12 @@
 package org.apache.skywalking.oap.server.configuration.configmap;
 
 import io.kubernetes.client.openapi.models.V1ConfigMap;
-import java.util.Optional;
-import java.util.Set;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.skywalking.oap.server.configuration.api.ConfigTable;
 import org.apache.skywalking.oap.server.configuration.api.ConfigWatcherRegister;
+
+import java.util.Optional;
+import java.util.Set;
 
 @Slf4j
 public class ConfigmapConfigurationWatcherRegister extends ConfigWatcherRegister {

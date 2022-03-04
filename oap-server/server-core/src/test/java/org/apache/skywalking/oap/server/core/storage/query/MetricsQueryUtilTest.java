@@ -19,11 +19,6 @@
 package org.apache.skywalking.oap.server.core.storage.query;
 
 import com.google.gson.Gson;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
 import lombok.RequiredArgsConstructor;
 import org.apache.skywalking.oap.server.core.analysis.metrics.DataTable;
 import org.apache.skywalking.oap.server.core.query.input.MetricsCondition;
@@ -34,6 +29,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+
+import java.util.*;
 
 import static com.google.common.collect.ImmutableMap.of;
 import static java.util.Arrays.asList;

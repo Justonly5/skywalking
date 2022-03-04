@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.oap.server.core.storage;
 
-import java.io.IOException;
 import org.apache.skywalking.oap.server.core.analysis.record.Record;
 import org.apache.skywalking.oap.server.core.storage.model.Model;
 import org.apache.skywalking.oap.server.library.client.request.InsertRequest;
+
+import java.io.IOException;
 
 /**
  * DAO specifically for {@link Record} implementations.

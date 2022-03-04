@@ -18,13 +18,14 @@
 
 package org.apache.skywalking.oap.server.core.query.type;
 
-import java.util.ArrayList;
-import java.util.List;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
 import org.apache.skywalking.oap.server.core.analysis.IDManager;
 import org.apache.skywalking.oap.server.core.source.DetectPoint;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Getter
 @Setter

@@ -18,9 +18,6 @@
 
 package org.apache.skywalking.apm.toolkit.activation.log.log4j.v2.x.log;
 
-import java.lang.reflect.Method;
-import java.util.Objects;
-import java.util.Optional;
 import org.apache.logging.log4j.core.LogEvent;
 import org.apache.logging.log4j.core.appender.AbstractAppender;
 import org.apache.skywalking.apm.agent.core.boot.ServiceManager;
@@ -32,12 +29,12 @@ import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceM
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
 import org.apache.skywalking.apm.agent.core.remote.LogReportServiceClient;
 import org.apache.skywalking.apm.network.common.v3.KeyStringValuePair;
-import org.apache.skywalking.apm.network.logging.v3.LogData;
-import org.apache.skywalking.apm.network.logging.v3.LogDataBody;
-import org.apache.skywalking.apm.network.logging.v3.LogTags;
-import org.apache.skywalking.apm.network.logging.v3.TextLog;
-import org.apache.skywalking.apm.network.logging.v3.TraceContext;
+import org.apache.skywalking.apm.network.logging.v3.*;
 import org.apache.skywalking.apm.toolkit.logging.common.log.ToolkitConfig;
+
+import java.lang.reflect.Method;
+import java.util.Objects;
+import java.util.Optional;
 
 public class GRPCLogAppenderInterceptor implements InstanceMethodsAroundInterceptor {
 

@@ -18,8 +18,6 @@
 
 package org.apache.skywalking.apm.agent.test.tools;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import org.apache.skywalking.apm.agent.core.boot.BootService;
 import org.apache.skywalking.apm.agent.core.boot.ServiceManager;
 import org.apache.skywalking.apm.agent.core.conf.Config;
@@ -30,6 +28,9 @@ import org.apache.skywalking.apm.agent.core.logging.core.LogLevel;
 import org.apache.skywalking.apm.agent.core.plugin.loader.AgentClassLoader;
 import org.apache.skywalking.apm.agent.test.helper.FieldSetter;
 import org.junit.rules.ExternalResource;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class AgentServiceRule extends ExternalResource {
 

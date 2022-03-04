@@ -18,11 +18,12 @@
 
 package org.apache.skywalking.apm.toolkit.activation.log.log4j.v1.x;
 
-import java.lang.reflect.Method;
-import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.context.ContextManager;
+import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceMethodsAroundInterceptor;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
+
+import java.lang.reflect.Method;
 
 public class PrintTraceIdInterceptor implements InstanceMethodsAroundInterceptor {
 

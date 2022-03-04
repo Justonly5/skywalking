@@ -18,11 +18,11 @@
 
 package org.apache.skywalking.apm.toolkit.activation.trace;
 
-import java.lang.reflect.Method;
-
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.InstanceMethodsAroundInterceptor;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInterceptResult;
+
+import java.lang.reflect.Method;
 
 /**
  * {@link TraceAnnotationMethodInterceptor} create a local span and set the operation name which fetch from

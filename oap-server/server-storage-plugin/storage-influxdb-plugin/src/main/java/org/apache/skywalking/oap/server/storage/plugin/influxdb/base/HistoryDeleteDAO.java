@@ -18,13 +18,14 @@
 
 package org.apache.skywalking.oap.server.storage.plugin.influxdb.base;
 
-import java.io.IOException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.skywalking.oap.server.core.analysis.TimeBucket;
 import org.apache.skywalking.oap.server.core.storage.IHistoryDeleteDAO;
 import org.apache.skywalking.oap.server.core.storage.model.Model;
 import org.apache.skywalking.oap.server.storage.plugin.influxdb.InfluxClient;
 import org.joda.time.DateTime;
+
+import java.io.IOException;
 
 @Slf4j
 public class HistoryDeleteDAO implements IHistoryDeleteDAO {

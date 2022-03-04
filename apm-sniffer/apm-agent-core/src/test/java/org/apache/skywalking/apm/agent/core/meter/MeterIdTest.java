@@ -18,13 +18,14 @@
 
 package org.apache.skywalking.apm.agent.core.meter;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 import org.apache.skywalking.apm.network.language.agent.v3.Label;
 import org.junit.Assert;
 import org.junit.Test;
 import org.powermock.reflect.Whitebox;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class MeterIdTest {
 

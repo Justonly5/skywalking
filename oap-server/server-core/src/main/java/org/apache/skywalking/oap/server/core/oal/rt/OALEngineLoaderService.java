@@ -17,9 +17,6 @@
 
 package org.apache.skywalking.oap.server.core.oal.rt;
 
-import java.lang.reflect.Constructor;
-import java.util.HashSet;
-import java.util.Set;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.skywalking.oap.server.core.CoreModule;
@@ -31,6 +28,10 @@ import org.apache.skywalking.oap.server.library.module.ModuleManager;
 import org.apache.skywalking.oap.server.library.module.ModuleProvider;
 import org.apache.skywalking.oap.server.library.module.ModuleStartException;
 import org.apache.skywalking.oap.server.library.module.Service;
+
+import java.lang.reflect.Constructor;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Activate {@link OALEngine} according to {@link OALDefine}

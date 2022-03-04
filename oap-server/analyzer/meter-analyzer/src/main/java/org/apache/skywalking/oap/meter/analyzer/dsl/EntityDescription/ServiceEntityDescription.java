@@ -18,11 +18,12 @@
 
 package org.apache.skywalking.oap.meter.analyzer.dsl.EntityDescription;
 
-import java.util.List;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.ToString;
 import org.apache.skywalking.oap.server.core.analysis.meter.ScopeType;
+
+import java.util.List;
 
 @Getter
 @RequiredArgsConstructor

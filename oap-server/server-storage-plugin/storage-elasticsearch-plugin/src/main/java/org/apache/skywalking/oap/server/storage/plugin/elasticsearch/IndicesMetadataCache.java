@@ -18,9 +18,10 @@
 
 package org.apache.skywalking.oap.server.storage.plugin.elasticsearch;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.HashSet;
 import java.util.List;
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * IndicesMetadataCache hosts all pseudo real time metadata of indices.

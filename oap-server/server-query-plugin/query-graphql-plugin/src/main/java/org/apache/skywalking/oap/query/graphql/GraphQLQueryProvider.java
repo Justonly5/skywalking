@@ -21,31 +21,11 @@ package org.apache.skywalking.oap.query.graphql;
 import com.coxautodev.graphql.tools.SchemaParser;
 import graphql.GraphQL;
 import graphql.schema.GraphQLSchema;
-import org.apache.skywalking.oap.query.graphql.resolver.AggregationQuery;
-import org.apache.skywalking.oap.query.graphql.resolver.AlarmQuery;
-import org.apache.skywalking.oap.query.graphql.resolver.BrowserLogQuery;
-import org.apache.skywalking.oap.query.graphql.resolver.EventQuery;
-import org.apache.skywalking.oap.query.graphql.resolver.HealthQuery;
-import org.apache.skywalking.oap.query.graphql.resolver.LogQuery;
-import org.apache.skywalking.oap.query.graphql.resolver.MetadataQuery;
-import org.apache.skywalking.oap.query.graphql.resolver.MetricQuery;
-import org.apache.skywalking.oap.query.graphql.resolver.MetricsQuery;
-import org.apache.skywalking.oap.query.graphql.resolver.Mutation;
-import org.apache.skywalking.oap.query.graphql.resolver.ProfileMutation;
-import org.apache.skywalking.oap.query.graphql.resolver.ProfileQuery;
-import org.apache.skywalking.oap.query.graphql.resolver.Query;
-import org.apache.skywalking.oap.query.graphql.resolver.TopNRecordsQuery;
-import org.apache.skywalking.oap.query.graphql.resolver.TopologyQuery;
-import org.apache.skywalking.oap.query.graphql.resolver.TraceQuery;
-import org.apache.skywalking.oap.query.graphql.resolver.UIConfigurationManagement;
+import org.apache.skywalking.oap.query.graphql.resolver.*;
 import org.apache.skywalking.oap.server.core.CoreModule;
 import org.apache.skywalking.oap.server.core.query.QueryModule;
 import org.apache.skywalking.oap.server.core.server.JettyHandlerRegister;
-import org.apache.skywalking.oap.server.library.module.ModuleConfig;
-import org.apache.skywalking.oap.server.library.module.ModuleDefine;
-import org.apache.skywalking.oap.server.library.module.ModuleProvider;
-import org.apache.skywalking.oap.server.library.module.ModuleStartException;
-import org.apache.skywalking.oap.server.library.module.ServiceNotProvidedException;
+import org.apache.skywalking.oap.server.library.module.*;
 
 /**
  * GraphQL query provider.

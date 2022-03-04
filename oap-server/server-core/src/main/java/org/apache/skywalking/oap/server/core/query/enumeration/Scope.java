@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.oap.server.core.query.enumeration;
 
-import java.util.HashMap;
 import lombok.Getter;
 import org.apache.skywalking.oap.server.core.UnexpectedException;
 import org.apache.skywalking.oap.server.core.source.DefaultScopeDefine;
+
+import java.util.HashMap;
 
 public enum Scope {
     All(DefaultScopeDefine.ALL),

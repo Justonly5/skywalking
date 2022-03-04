@@ -18,8 +18,6 @@
 
 package org.apache.skywalking.apm.commons.datacarrier;
 
-import java.util.ArrayList;
-import java.util.List;
 import org.apache.skywalking.apm.commons.datacarrier.buffer.BufferStrategy;
 import org.apache.skywalking.apm.commons.datacarrier.buffer.Channels;
 import org.apache.skywalking.apm.commons.datacarrier.buffer.QueueBuffer;
@@ -29,6 +27,9 @@ import org.apache.skywalking.apm.commons.datacarrier.partition.SimpleRollingPart
 import org.junit.Assert;
 import org.junit.Test;
 import org.powermock.api.support.membermodification.MemberModifier;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class DataCarrierTest {
     @Test

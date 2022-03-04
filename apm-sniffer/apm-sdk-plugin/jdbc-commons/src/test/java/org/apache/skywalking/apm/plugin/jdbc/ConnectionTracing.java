@@ -18,12 +18,13 @@
 
 package org.apache.skywalking.apm.plugin.jdbc;
 
-import java.sql.SQLException;
 import org.apache.skywalking.apm.agent.core.context.ContextManager;
 import org.apache.skywalking.apm.agent.core.context.tag.Tags;
 import org.apache.skywalking.apm.agent.core.context.trace.AbstractSpan;
 import org.apache.skywalking.apm.agent.core.context.trace.SpanLayer;
 import org.apache.skywalking.apm.plugin.jdbc.trace.ConnectionInfo;
+
+import java.sql.SQLException;
 
 public class ConnectionTracing {
 

@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.oap.meter.analyzer.prometheus.rule;
 
-import java.util.List;
-import java.util.Map;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * StaticConfig introduces the fetching targets.

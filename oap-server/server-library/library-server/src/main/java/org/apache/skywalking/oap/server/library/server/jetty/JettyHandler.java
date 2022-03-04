@@ -18,14 +18,15 @@
 
 package org.apache.skywalking.oap.server.library.server.jetty;
 
-import java.io.IOException;
+import org.apache.skywalking.oap.server.library.server.ServerHandler;
+
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.apache.skywalking.oap.server.library.server.ServerHandler;
+import java.io.IOException;
 
 public abstract class JettyHandler extends HttpServlet implements ServerHandler {
     public abstract String pathSpec();

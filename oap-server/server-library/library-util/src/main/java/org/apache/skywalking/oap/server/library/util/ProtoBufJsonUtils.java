@@ -21,6 +21,7 @@ package org.apache.skywalking.oap.server.library.util;
 import com.google.protobuf.BytesValue;
 import com.google.protobuf.Message;
 import com.google.protobuf.util.JsonFormat;
+
 import java.io.IOException;
 
 public class ProtoBufJsonUtils {

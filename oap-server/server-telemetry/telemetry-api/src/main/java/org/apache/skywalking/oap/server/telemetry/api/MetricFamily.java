@@ -18,10 +18,11 @@
 
 package org.apache.skywalking.oap.server.telemetry.api;
 
-import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
+
+import java.util.List;
 
 /**
  * MetricFamily define a metric and all its samples.

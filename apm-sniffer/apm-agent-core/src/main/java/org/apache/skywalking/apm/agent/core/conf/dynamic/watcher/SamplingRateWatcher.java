@@ -18,12 +18,13 @@
 
 package org.apache.skywalking.apm.agent.core.conf.dynamic.watcher;
 
-import java.util.concurrent.atomic.AtomicInteger;
 import org.apache.skywalking.apm.agent.core.conf.Config;
 import org.apache.skywalking.apm.agent.core.conf.dynamic.AgentConfigChangeWatcher;
 import org.apache.skywalking.apm.agent.core.logging.api.ILog;
 import org.apache.skywalking.apm.agent.core.logging.api.LogManager;
 import org.apache.skywalking.apm.agent.core.sampling.SamplingService;
+
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class SamplingRateWatcher extends AgentConfigChangeWatcher {
     private static final ILog LOGGER = LogManager.getLogger(SamplingRateWatcher.class);

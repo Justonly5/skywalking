@@ -20,8 +20,6 @@ package org.apache.skywalking.oap.server.receiver.register.provider.handler.v8.r
 
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
-import java.io.IOException;
-import javax.servlet.http.HttpServletRequest;
 import org.apache.skywalking.apm.network.common.v3.Commands;
 import org.apache.skywalking.apm.network.management.v3.InstanceProperties;
 import org.apache.skywalking.oap.server.core.CoreModule;
@@ -37,6 +35,9 @@ import org.apache.skywalking.oap.server.library.module.ModuleManager;
 import org.apache.skywalking.oap.server.library.server.jetty.ArgumentsParseException;
 import org.apache.skywalking.oap.server.library.server.jetty.JettyJsonHandler;
 import org.apache.skywalking.oap.server.library.util.ProtoBufJsonUtils;
+
+import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
 
 public class ManagementServiceKeepAliveHandler extends JettyJsonHandler {
     private final SourceReceiver sourceReceiver;

@@ -18,7 +18,6 @@
 
 package org.apache.skywalking.apm.agent.core.context;
 
-import java.util.Arrays;
 import org.apache.skywalking.apm.agent.core.boot.BootService;
 import org.apache.skywalking.apm.agent.core.boot.DefaultImplementor;
 import org.apache.skywalking.apm.agent.core.boot.ServiceManager;
@@ -31,6 +30,8 @@ import org.apache.skywalking.apm.agent.core.remote.GRPCChannelManager;
 import org.apache.skywalking.apm.agent.core.remote.GRPCChannelStatus;
 import org.apache.skywalking.apm.agent.core.sampling.SamplingService;
 import org.apache.skywalking.apm.util.StringUtil;
+
+import java.util.Arrays;
 
 @DefaultImplementor
 public class ContextManagerExtendService implements BootService, GRPCChannelListener {

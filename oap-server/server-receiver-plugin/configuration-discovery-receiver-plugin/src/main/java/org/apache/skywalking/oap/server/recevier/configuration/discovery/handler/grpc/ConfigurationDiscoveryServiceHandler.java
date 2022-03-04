@@ -20,18 +20,19 @@ package org.apache.skywalking.oap.server.recevier.configuration.discovery.handle
 
 import com.google.common.collect.Lists;
 import io.grpc.stub.StreamObserver;
-import java.util.List;
-import java.util.Objects;
-import java.util.UUID;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.skywalking.apm.network.language.agent.v3.ConfigurationDiscoveryServiceGrpc;
-import org.apache.skywalking.apm.network.language.agent.v3.ConfigurationSyncRequest;
 import org.apache.skywalking.apm.network.common.v3.Commands;
 import org.apache.skywalking.apm.network.common.v3.KeyStringValuePair;
+import org.apache.skywalking.apm.network.language.agent.v3.ConfigurationDiscoveryServiceGrpc;
+import org.apache.skywalking.apm.network.language.agent.v3.ConfigurationSyncRequest;
 import org.apache.skywalking.apm.network.trace.component.command.ConfigurationDiscoveryCommand;
 import org.apache.skywalking.oap.server.library.server.grpc.GRPCHandler;
 import org.apache.skywalking.oap.server.recevier.configuration.discovery.AgentConfigurations;
 import org.apache.skywalking.oap.server.recevier.configuration.discovery.AgentConfigurationsWatcher;
+
+import java.util.List;
+import java.util.Objects;
+import java.util.UUID;
 
 /**
  * Provide query agent dynamic configuration, through the gRPC protocol,

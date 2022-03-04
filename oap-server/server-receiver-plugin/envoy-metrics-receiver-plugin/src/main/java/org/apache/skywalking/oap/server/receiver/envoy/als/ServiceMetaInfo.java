@@ -18,13 +18,9 @@
 
 package org.apache.skywalking.oap.server.receiver.envoy.als;
 
+import lombok.*;
+
 import java.util.List;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
 
 @Getter
 @Setter

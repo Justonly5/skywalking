@@ -18,12 +18,13 @@
 
 package org.apache.skywalking.apm.agent.core.context.status;
 
+import lombok.AllArgsConstructor;
+import org.apache.skywalking.apm.agent.core.conf.Config;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
-import lombok.AllArgsConstructor;
-import org.apache.skywalking.apm.agent.core.conf.Config;
 
 @AllArgsConstructor
 public enum StatusChecker {

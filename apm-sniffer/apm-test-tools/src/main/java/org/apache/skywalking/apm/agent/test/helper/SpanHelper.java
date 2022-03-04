@@ -18,12 +18,13 @@
 
 package org.apache.skywalking.apm.agent.test.helper;
 
-import java.util.Collections;
-import java.util.List;
 import org.apache.skywalking.apm.agent.core.context.trace.AbstractSpan;
 import org.apache.skywalking.apm.agent.core.context.trace.LogDataEntity;
 import org.apache.skywalking.apm.agent.core.context.trace.SpanLayer;
 import org.apache.skywalking.apm.agent.core.context.util.TagValuePair;
+
+import java.util.Collections;
+import java.util.List;
 
 public class SpanHelper {
     public static int getParentSpanId(AbstractSpan tracingSpan) {

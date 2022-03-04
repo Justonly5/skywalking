@@ -18,12 +18,13 @@
 
 package org.apache.skywalking.apm.agent.core.jvm.memory;
 
+import org.apache.skywalking.apm.network.language.agent.v3.Memory;
+
 import java.lang.management.ManagementFactory;
 import java.lang.management.MemoryMXBean;
 import java.lang.management.MemoryUsage;
 import java.util.LinkedList;
 import java.util.List;
-import org.apache.skywalking.apm.network.language.agent.v3.Memory;
 
 public enum MemoryProvider {
     INSTANCE;

@@ -18,13 +18,14 @@
 package org.apache.skywalking.oap.log.analyzer.provider.log;
 
 import com.google.protobuf.Message;
-import java.util.ArrayList;
-import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.apache.skywalking.apm.network.logging.v3.LogData;
 import org.apache.skywalking.oap.log.analyzer.provider.LogAnalyzerModuleConfig;
 import org.apache.skywalking.oap.log.analyzer.provider.log.listener.LogAnalysisListenerFactory;
 import org.apache.skywalking.oap.server.library.module.ModuleManager;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @RequiredArgsConstructor
 public class LogAnalyzerServiceImpl implements ILogAnalyzerService, ILogAnalysisListenerFactoryManager {

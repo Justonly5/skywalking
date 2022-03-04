@@ -18,11 +18,7 @@
 
 package org.apache.skywalking.apm.toolkit.trace;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Inherited;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
 /**
  * After the exception status checker activated in the agent, the span wouldn't be marked as error status if the

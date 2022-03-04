@@ -17,16 +17,17 @@
 
 package org.apache.skywalking.oap.server.receiver.browser.provider.handler.rest;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.util.Collections;
-import java.util.List;
-import javax.servlet.http.HttpServletRequest;
 import org.apache.skywalking.apm.network.language.agent.v3.BrowserErrorLog;
 import org.apache.skywalking.oap.server.library.module.ModuleManager;
 import org.apache.skywalking.oap.server.library.util.ProtoBufJsonUtils;
 import org.apache.skywalking.oap.server.receiver.browser.provider.BrowserServiceModuleConfig;
 import org.apache.skywalking.oap.server.receiver.browser.provider.parser.errorlog.ErrorLogParserListenerManager;
+
+import javax.servlet.http.HttpServletRequest;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.util.Collections;
+import java.util.List;
 
 public class BrowserErrorLogReportSingleServletHandler extends BrowserErrorLogReportBaseServletHandler {
     public BrowserErrorLogReportSingleServletHandler(final ModuleManager moduleManager,

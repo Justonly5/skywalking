@@ -20,7 +20,6 @@ package org.apache.skywalking.apm.plugin.rocketMQ.v3;
 
 import com.alibaba.rocketmq.common.message.Message;
 import com.alibaba.rocketmq.common.protocol.header.SendMessageRequestHeader;
-import java.lang.reflect.Method;
 import org.apache.skywalking.apm.agent.core.context.CarrierItem;
 import org.apache.skywalking.apm.agent.core.context.ContextCarrier;
 import org.apache.skywalking.apm.agent.core.context.ContextManager;
@@ -33,6 +32,8 @@ import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInt
 import org.apache.skywalking.apm.network.trace.component.ComponentsDefine;
 import org.apache.skywalking.apm.plugin.rocketMQ.v3.define.SendCallBackEnhanceInfo;
 import org.apache.skywalking.apm.util.StringUtil;
+
+import java.lang.reflect.Method;
 
 import static com.alibaba.rocketmq.common.message.MessageDecoder.NAME_VALUE_SEPARATOR;
 import static com.alibaba.rocketmq.common.message.MessageDecoder.PROPERTY_SEPARATOR;

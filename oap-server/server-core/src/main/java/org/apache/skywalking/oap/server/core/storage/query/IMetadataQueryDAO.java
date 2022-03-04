@@ -18,13 +18,14 @@
 
 package org.apache.skywalking.oap.server.core.storage.query;
 
-import java.io.IOException;
-import java.util.List;
 import org.apache.skywalking.oap.server.core.query.type.Database;
 import org.apache.skywalking.oap.server.core.query.type.Endpoint;
 import org.apache.skywalking.oap.server.core.query.type.Service;
 import org.apache.skywalking.oap.server.core.query.type.ServiceInstance;
 import org.apache.skywalking.oap.server.core.storage.DAO;
+
+import java.io.IOException;
+import java.util.List;
 
 public interface IMetadataQueryDAO extends DAO {
     /**

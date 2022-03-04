@@ -18,12 +18,13 @@
 
 package org.apache.skywalking.oal.rt.parser;
 
-import java.util.Arrays;
-import java.util.List;
 import org.antlr.v4.runtime.misc.NotNull;
 import org.apache.skywalking.oal.rt.grammar.OALParser;
 import org.apache.skywalking.oal.rt.grammar.OALParserBaseListener;
 import org.apache.skywalking.oap.server.core.source.DefaultScopeDefine;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class OALListener extends OALParserBaseListener {
     private List<AnalysisResult> results;

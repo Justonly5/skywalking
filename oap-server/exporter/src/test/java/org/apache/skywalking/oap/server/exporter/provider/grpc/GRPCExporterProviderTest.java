@@ -18,28 +18,19 @@
 
 package org.apache.skywalking.oap.server.exporter.provider.grpc;
 
-import java.util.Iterator;
-import java.util.ServiceLoader;
 import org.apache.skywalking.oap.server.core.CoreModule;
 import org.apache.skywalking.oap.server.core.exporter.ExporterModule;
-import org.apache.skywalking.oap.server.library.module.ModuleManager;
-import org.apache.skywalking.oap.server.library.module.ModuleProvider;
-import org.apache.skywalking.oap.server.library.module.ModuleProviderHolder;
-import org.apache.skywalking.oap.server.library.module.ModuleServiceHolder;
-import org.apache.skywalking.oap.server.library.module.ModuleStartException;
-import org.apache.skywalking.oap.server.library.module.ServiceNotProvidedException;
+import org.apache.skywalking.oap.server.library.module.*;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.powermock.reflect.Whitebox;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
-import static org.mockito.Mockito.doNothing;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import java.util.Iterator;
+import java.util.ServiceLoader;
+
+import static org.junit.Assert.*;
+import static org.mockito.Mockito.*;
 
 @Ignore
 public class GRPCExporterProviderTest {

@@ -18,11 +18,7 @@
 
 package org.apache.skywalking.oap.server.telemetry.none;
 
-import org.apache.skywalking.oap.server.telemetry.api.CounterMetrics;
-import org.apache.skywalking.oap.server.telemetry.api.GaugeMetrics;
-import org.apache.skywalking.oap.server.telemetry.api.HistogramMetrics;
-import org.apache.skywalking.oap.server.telemetry.api.MetricsCreator;
-import org.apache.skywalking.oap.server.telemetry.api.MetricsTag;
+import org.apache.skywalking.oap.server.telemetry.api.*;
 
 /**
  * A no-op metrics create, just create nut shell metrics instance.

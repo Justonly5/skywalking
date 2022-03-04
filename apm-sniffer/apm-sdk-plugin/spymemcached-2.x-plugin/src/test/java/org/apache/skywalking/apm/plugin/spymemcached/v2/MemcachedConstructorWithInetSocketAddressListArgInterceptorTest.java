@@ -18,15 +18,16 @@
 
 package org.apache.skywalking.apm.plugin.spymemcached.v2;
 
-import java.net.InetSocketAddress;
-import java.util.ArrayList;
-import java.util.List;
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedInstance;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
+
+import java.net.InetSocketAddress;
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.mockito.Mockito.verify;
 

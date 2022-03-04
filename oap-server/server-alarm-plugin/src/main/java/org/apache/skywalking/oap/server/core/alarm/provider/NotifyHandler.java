@@ -18,19 +18,8 @@
 
 package org.apache.skywalking.oap.server.core.alarm.provider;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.skywalking.oap.server.core.alarm.AlarmCallback;
-import org.apache.skywalking.oap.server.core.alarm.EndpointRelationMetaInAlarm;
-import org.apache.skywalking.oap.server.core.alarm.ServiceInstanceRelationMetaInAlarm;
-import org.apache.skywalking.oap.server.core.alarm.ServiceRelationMetaInAlarm;
-import org.apache.skywalking.oap.server.core.alarm.EndpointMetaInAlarm;
-import org.apache.skywalking.oap.server.core.alarm.MetaInAlarm;
-import org.apache.skywalking.oap.server.core.alarm.MetricsNotify;
-import org.apache.skywalking.oap.server.core.alarm.ServiceInstanceMetaInAlarm;
-import org.apache.skywalking.oap.server.core.alarm.ServiceMetaInAlarm;
+import org.apache.skywalking.oap.server.core.alarm.*;
 import org.apache.skywalking.oap.server.core.alarm.provider.dingtalk.DingtalkHookCallback;
 import org.apache.skywalking.oap.server.core.alarm.provider.feishu.FeishuHookCallback;
 import org.apache.skywalking.oap.server.core.alarm.provider.grpc.GRPCCallback;
@@ -43,6 +32,10 @@ import org.apache.skywalking.oap.server.core.analysis.metrics.MetricsMetaInfo;
 import org.apache.skywalking.oap.server.core.analysis.metrics.WithMetadata;
 import org.apache.skywalking.oap.server.core.source.DefaultScopeDefine;
 import org.apache.skywalking.oap.server.library.module.ModuleManager;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 @Slf4j
 public class NotifyHandler implements MetricsNotify {

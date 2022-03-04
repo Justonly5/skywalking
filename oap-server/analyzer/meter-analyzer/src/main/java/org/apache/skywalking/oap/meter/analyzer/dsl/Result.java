@@ -18,11 +18,7 @@
 
 package org.apache.skywalking.oap.meter.analyzer.dsl;
 
-import lombok.AccessLevel;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 /**
  * Result indicates the parsing result of expression.

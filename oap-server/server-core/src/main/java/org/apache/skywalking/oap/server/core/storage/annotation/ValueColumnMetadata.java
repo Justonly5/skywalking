@@ -18,12 +18,13 @@
 
 package org.apache.skywalking.oap.server.core.storage.annotation;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Optional;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.apache.skywalking.oap.server.core.query.sql.Function;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Optional;
 
 /**
  * ValueColumnMetadata holds the metadata for column values of metrics. The metadata of ValueColumn is declared through

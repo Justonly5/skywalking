@@ -18,15 +18,16 @@
 
 package org.apache.skywalking.oap.server.core.management.ui.template;
 
+import org.apache.skywalking.oap.server.library.util.BooleanUtils;
+import org.apache.skywalking.oap.server.library.util.ResourceUtils;
+import org.junit.Assert;
+import org.junit.Test;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
-import org.apache.skywalking.oap.server.library.util.BooleanUtils;
-import org.apache.skywalking.oap.server.library.util.ResourceUtils;
-import org.junit.Assert;
-import org.junit.Test;
 
 public class UITemplateInitializerTest {
     @Test

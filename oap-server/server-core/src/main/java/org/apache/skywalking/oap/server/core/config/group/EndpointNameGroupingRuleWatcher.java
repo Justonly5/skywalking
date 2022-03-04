@@ -18,13 +18,14 @@
 
 package org.apache.skywalking.oap.server.core.config.group;
 
-import java.io.FileNotFoundException;
-import java.io.StringReader;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.skywalking.oap.server.configuration.api.ConfigChangeWatcher;
 import org.apache.skywalking.oap.server.core.CoreModule;
 import org.apache.skywalking.oap.server.library.module.ModuleProvider;
 import org.apache.skywalking.oap.server.library.util.ResourceUtils;
+
+import java.io.FileNotFoundException;
+import java.io.StringReader;
 
 /**
  * The config change watcher for endpoint name grouping rule.

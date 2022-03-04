@@ -18,7 +18,6 @@
 
 package org.apache.skywalking.oap.server.receiver.trace.provider.parser.listener.segment;
 
-import java.io.IOException;
 import org.apache.skywalking.apm.network.common.v3.Command;
 import org.apache.skywalking.apm.network.common.v3.Commands;
 import org.apache.skywalking.apm.network.language.agent.v3.SegmentObject;
@@ -26,6 +25,8 @@ import org.apache.skywalking.apm.network.language.agent.v3.SpanLayer;
 import org.apache.skywalking.oap.server.library.util.ProtoBufJsonUtils;
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.io.IOException;
 
 public class ProtoBufJsonUtilsTest {
     @Test

@@ -19,9 +19,6 @@
 package org.apache.skywalking.oap.server.receiver.trace.provider.handler.v8.rest;
 
 import com.google.gson.JsonElement;
-import java.io.IOException;
-import java.util.List;
-import javax.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.skywalking.apm.network.language.agent.v3.SegmentObject;
 import org.apache.skywalking.oap.server.analyzer.module.AnalyzerModule;
@@ -33,6 +30,10 @@ import org.apache.skywalking.oap.server.telemetry.api.CounterMetrics;
 import org.apache.skywalking.oap.server.telemetry.api.HistogramMetrics;
 import org.apache.skywalking.oap.server.telemetry.api.MetricsCreator;
 import org.apache.skywalking.oap.server.telemetry.api.MetricsTag;
+
+import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
+import java.util.List;
 
 @Slf4j
 public abstract class TraceSegmentReportBaseServletHandler extends JettyJsonHandler {

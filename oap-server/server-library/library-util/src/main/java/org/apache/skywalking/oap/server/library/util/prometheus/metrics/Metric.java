@@ -19,10 +19,11 @@
 package org.apache.skywalking.oap.server.library.util.prometheus.metrics;
 
 import com.google.common.collect.Maps;
-import java.util.Map;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
+
+import java.util.Map;
 
 @EqualsAndHashCode
 @ToString

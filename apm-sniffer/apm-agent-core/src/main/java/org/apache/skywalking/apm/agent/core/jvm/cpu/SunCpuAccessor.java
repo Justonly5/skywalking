@@ -19,6 +19,7 @@
 package org.apache.skywalking.apm.agent.core.jvm.cpu;
 
 import com.sun.management.OperatingSystemMXBean;
+
 import java.lang.management.ManagementFactory;
 
 public class SunCpuAccessor extends CPUMetricsAccessor {

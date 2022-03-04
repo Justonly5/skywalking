@@ -18,11 +18,6 @@
 
 package org.apache.skywalking.oap.server.core.analysis;
 
-import java.io.FileNotFoundException;
-import java.io.Reader;
-import java.io.StringReader;
-import java.util.Collections;
-import java.util.Map;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.skywalking.oap.server.configuration.api.ConfigChangeWatcher;
 import org.apache.skywalking.oap.server.core.Const;
@@ -31,6 +26,12 @@ import org.apache.skywalking.oap.server.core.CoreModuleProvider;
 import org.apache.skywalking.oap.server.library.util.ResourceUtils;
 import org.yaml.snakeyaml.Yaml;
 import org.yaml.snakeyaml.constructor.SafeConstructor;
+
+import java.io.FileNotFoundException;
+import java.io.Reader;
+import java.io.StringReader;
+import java.util.Collections;
+import java.util.Map;
 
 /**
  * Apdex threshold configuration dictionary adapter. Looking up a service apdex threshold from dynamic config service.

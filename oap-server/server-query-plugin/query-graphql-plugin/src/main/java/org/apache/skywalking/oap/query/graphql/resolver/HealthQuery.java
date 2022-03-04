@@ -19,12 +19,13 @@
 package org.apache.skywalking.oap.query.graphql.resolver;
 
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
-import java.util.Optional;
 import lombok.RequiredArgsConstructor;
 import org.apache.skywalking.oap.server.core.query.type.HealthStatus;
 import org.apache.skywalking.oap.server.health.checker.module.HealthCheckerModule;
 import org.apache.skywalking.oap.server.health.checker.provider.HealthQueryService;
 import org.apache.skywalking.oap.server.library.module.ModuleManager;
+
+import java.util.Optional;
 
 @RequiredArgsConstructor
 public class HealthQuery implements GraphQLQueryResolver {

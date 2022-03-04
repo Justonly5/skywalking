@@ -18,8 +18,6 @@
 
 package org.apache.skywalking.oap.server.core.analysis.meter.function.avg;
 
-import java.util.Map;
-import java.util.stream.IntStream;
 import org.apache.skywalking.oap.server.core.analysis.meter.MeterEntity;
 import org.apache.skywalking.oap.server.core.analysis.meter.function.AcceptableValue;
 import org.apache.skywalking.oap.server.core.analysis.meter.function.BucketedValues;
@@ -29,6 +27,9 @@ import org.apache.skywalking.oap.server.core.query.type.HeatMap;
 import org.apache.skywalking.oap.server.core.storage.StorageHashMapBuilder;
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.util.Map;
+import java.util.stream.IntStream;
 
 import static org.apache.skywalking.oap.server.core.analysis.meter.function.avg.AvgHistogramFunction.DATASET;
 import static org.apache.skywalking.oap.server.core.analysis.meter.function.avg.AvgLabeledFunction.COUNT;

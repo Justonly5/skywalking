@@ -19,9 +19,6 @@
 package org.apache.skywalking.oap.server.core.storage.query;
 
 import com.google.protobuf.InvalidProtocolBufferException;
-import java.io.IOException;
-import java.util.Base64;
-import java.util.List;
 import org.apache.skywalking.apm.network.logging.v3.LogTags;
 import org.apache.skywalking.oap.server.core.analysis.manual.searchtag.Tag;
 import org.apache.skywalking.oap.server.core.query.enumeration.Order;
@@ -29,6 +26,10 @@ import org.apache.skywalking.oap.server.core.query.input.TraceScopeCondition;
 import org.apache.skywalking.oap.server.core.query.type.KeyValue;
 import org.apache.skywalking.oap.server.core.query.type.Logs;
 import org.apache.skywalking.oap.server.library.module.Service;
+
+import java.io.IOException;
+import java.util.Base64;
+import java.util.List;
 
 public interface ILogQueryDAO extends Service {
 

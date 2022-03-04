@@ -20,13 +20,7 @@ package org.apache.skywalking.apm.agent.core.logging.core;
 
 import org.apache.skywalking.apm.agent.core.conf.Config;
 import org.apache.skywalking.apm.agent.core.logging.api.ILog;
-import org.apache.skywalking.apm.agent.core.logging.core.converters.AgentNameConverter;
-import org.apache.skywalking.apm.agent.core.logging.core.converters.ClassConverter;
-import org.apache.skywalking.apm.agent.core.logging.core.converters.DateConverter;
-import org.apache.skywalking.apm.agent.core.logging.core.converters.LevelConverter;
-import org.apache.skywalking.apm.agent.core.logging.core.converters.MessageConverter;
-import org.apache.skywalking.apm.agent.core.logging.core.converters.ThreadConverter;
-import org.apache.skywalking.apm.agent.core.logging.core.converters.ThrowableConverter;
+import org.apache.skywalking.apm.agent.core.logging.core.converters.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;

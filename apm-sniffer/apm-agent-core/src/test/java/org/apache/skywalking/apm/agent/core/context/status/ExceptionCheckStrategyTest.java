@@ -18,7 +18,6 @@
 
 package org.apache.skywalking.apm.agent.core.context.status;
 
-import java.util.Set;
 import org.apache.skywalking.apm.agent.core.boot.ServiceManager;
 import org.apache.skywalking.apm.agent.core.conf.Config;
 import org.junit.After;
@@ -26,6 +25,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.powermock.api.support.membermodification.MemberModifier;
+
+import java.util.Set;
 
 public class ExceptionCheckStrategyTest {
 
